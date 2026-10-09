@@ -1,0 +1,152 @@
+{
+  "sections": [
+    {
+      "id": "s1",
+      "type": "hero",
+      "isActive": true,
+      "sortOrder": 1,
+      "data": {
+        "slides": [
+          {
+            "image": {
+              "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600&q=80"
+            },
+            "title": {
+              "ar": "تشكيلة الخريف الجديدة",
+              "en": "The New Autumn Collection"
+            },
+            "subtitle": {
+              "ar": "ذهب عيار ١٨ و٢١ بتصميمات حصرية",
+              "en": "Exclusive 18K & 21K designs"
+            },
+            "cta": {
+              "label": {
+                "ar": "تسوق الآن",
+                "en": "Shop now"
+              },
+              "href": "/products"
+            },
+            "cta2": {
+              "label": {
+                "ar": "صمّم قطعتك",
+                "en": "Design your piece"
+              },
+              "href": "/pages/customize"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "gold_prices",
+      "isActive": true,
+      "sortOrder": 2,
+      "data": {
+        "title": {
+          "ar": "أسعار الذهب اليوم",
+          "en": "Today's gold prices"
+        },
+        "karats": [
+          24,
+          21,
+          18
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "categories",
+      "isActive": true,
+      "sortOrder": 3,
+      "data": {
+        "title": {
+          "ar": "تسوق حسب القسم",
+          "en": "Shop by category"
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "type": "featured_products",
+      "isActive": true,
+      "sortOrder": 4,
+      "data": {
+        "title": {
+          "ar": "منتجات مميزة",
+          "en": "Featured pieces"
+        },
+        "source": "featured",
+        "limit": 8
+      }
+    },
+    {
+      "id": "s5",
+      "type": "promotion",
+      "isActive": true,
+      "sortOrder": 5,
+      "data": {
+        "title": {
+          "ar": "خصم ٥٠٪ على المصنعية",
+          "en": "50% off making charges"
+        },
+        "description": {
+          "ar": "على جميع الأطقم حتى نهاية الشهر",
+          "en": "On all sets until the end of the month"
+        },
+        "image": {
+          "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1200&q=80"
+        },
+        "cta": {
+          "label": {
+            "ar": "اكتشف العرض",
+            "en": "See the offer"
+          },
+          "href": "/categories/sets"
+        }
+      }
+    },
+    {
+      "id": "s6",
+      "type": "featured_products",
+      "isActive": true,
+      "sortOrder": 6,
+      "data": {
+        "title": {
+          "ar": "وصل حديثاً",
+          "en": "New arrivals"
+        },
+        "source": "new",
+        "limit": 4
+      }
+    },
+    {
+      "id": "s7",
+      "type": "brands",
+      "isActive": true,
+      "sortOrder": 7,
+      "data": {
+        "title": {
+          "ar": "مجموعاتنا",
+          "en": "Our collections"
+        }
+      }
+    },
+    {
+      "id": "s8",
+      "type": "video",
+      "isActive": false,
+      "sortOrder": 8,
+      "data": {
+        "title": {
+          "ar": "من ورشتنا",
+          "en": "From our workshop"
+        },
+        "video": {
+          "provider": "youtube",
+          "url": "https://www.youtube.com/embed/VIDEO_ID"
+        }
+      }
+    }
+  ]
+}

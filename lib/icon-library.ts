@@ -1,0 +1,197 @@
+/**
+ * ICON LIBRARY — the icons a client can choose for the header and the footer.
+ * ------------------------------------------------------------------
+ * The SAME file exists in the dashboard (lib/icon-library.ts) — keep both identical.
+ * Chosen in the dashboard → Header → Icons and Footer → Contact details. Only the icon's ID is saved
+ * (e.g. "bag-line"); this file turns the ID into the drawing, on the website and in the dashboard's picker.
+ *
+ *   ICON_LIBRARY[slot][id]  -> the icon (null = "no icon, show the text", used by the language switch)
+ *   ICON_THEMES             -> ready-made sets: one click chooses a matching icon for every slot
+ *   iconFor(slot, id)       -> the icon, or the slot's default when the id is unknown (never breaks the page)
+ *
+ * TO ADD AN ICON: import it (https://lucide.dev/icons or https://react-icons.github.io/react-icons → "Font Awesome 5")
+ * and add one line to its slot below, with a new id. Nothing else to change.
+ * IDs ending in "-solid" are filled icons, "-line" are outline icons.
+ */
+import { createElement, type ComponentType, type SVGProps } from "react";
+import {
+  AlignJustify,
+  AtSign,
+  CircleUserRound,
+  Clock,
+  Equal,
+  Globe,
+  Handbag,
+  Headset,
+  Languages,
+  LayoutGrid,
+  Mail,
+  Map as MapIcon,
+  MapPin,
+  Menu,
+  MessageCircle,
+  Navigation,
+  Phone,
+  PhoneCall,
+  Search,
+  Send,
+  ShoppingBag,
+  ShoppingBasket,
+  ShoppingCart,
+  Smartphone,
+  Timer,
+  User,
+  UserRound,
+} from "lucide-react";
+import {
+  FaBars,
+  FaClock,
+  FaEnvelope,
+  FaGlobe,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaRegClock,
+  FaRegEnvelope,
+  FaRegUser,
+  FaRegUserCircle,
+  FaSearch,
+  FaShoppingBag,
+  FaShoppingBasket,
+  FaShoppingCart,
+  FaUser,
+  FaUserCircle,
+  FaWhatsapp,
+} from "react-icons/fa";
+
+export type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
+const as = (c: unknown) => c as IconComponent;
+/** Thicker version of an outline icon */
+const bold = (icon: unknown): IconComponent => {
+  const Bold = (props: SVGProps<SVGSVGElement>) => createElement(as(icon), { ...props, strokeWidth: 3 });
+  return Bold;
+};
+
+/** Header slots, then footer-contact slots */
+export const ICON_SLOTS = ["search", "account", "cart", "menu", "language", "phone", "whatsapp", "email", "address", "hours"] as const;
+export type IconSlot = (typeof ICON_SLOTS)[number];
+
+export const ICON_LIBRARY: Record<IconSlot, Record<string, IconComponent | null>> = {
+  search: {
+    "search-line": as(Search),
+    "search-bold": bold(Search),
+    "search-solid": as(FaSearch),
+  },
+  account: {
+    "user-solid": as(FaUser),
+    "user-line": as(User),
+    "user-round-line": as(UserRound),
+    "user-regular": as(FaRegUser),
+    "user-circle-solid": as(FaUserCircle),
+    "user-circle-line": as(CircleUserRound),
+    "user-circle-regular": as(FaRegUserCircle),
+  },
+  cart: {
+    "cart-solid": as(FaShoppingCart),
+    "cart-line": as(ShoppingCart),
+    "bag-solid": as(FaShoppingBag),
+    "bag-line": as(ShoppingBag),
+    "handbag-line": as(Handbag),
+    "basket-solid": as(FaShoppingBasket),
+    "basket-line": as(ShoppingBasket),
+  },
+  /** The ☰ button on phones */
+  menu: {
+    "menu-line": as(Menu),
+    "menu-solid": as(FaBars),
+    "menu-wide": as(AlignJustify),
+    "menu-two": as(Equal),
+    "menu-grid": as(LayoutGrid),
+  },
+  /** "text" = the other language's name ("English" / "العربية") instead of an icon */
+  language: {
+    text: null,
+    "globe-line": as(Globe),
+    "globe-solid": as(FaGlobe),
+    "languages-line": as(Languages),
+  },
+  phone: {
+    "phone-line": as(Phone),
+    "phone-solid": as(FaPhoneAlt),
+    "phone-call-line": as(PhoneCall),
+    "mobile-line": as(Smartphone),
+    "headset-line": as(Headset),
+  },
+  whatsapp: {
+    "whatsapp-solid": as(FaWhatsapp),
+    "chat-line": as(MessageCircle),
+  },
+  email: {
+    "mail-line": as(Mail),
+    "mail-solid": as(FaEnvelope),
+    "mail-regular": as(FaRegEnvelope),
+    "at-line": as(AtSign),
+    "send-line": as(Send),
+  },
+  address: {
+    "pin-line": as(MapPin),
+    "pin-solid": as(FaMapMarkerAlt),
+    "navigation-line": as(Navigation),
+    "map-line": as(MapIcon),
+  },
+  hours: {
+    "clock-line": as(Clock),
+    "clock-solid": as(FaClock),
+    "clock-regular": as(FaRegClock),
+    "timer-line": as(Timer),
+  },
+};
+
+export type IconChoice = Record<IconSlot, string>;
+
+/** Ready-made sets ("icon themes"). The first one is the website's original look. */
+export const ICON_THEMES: Record<"solid" | "line" | "soft", IconChoice> = {
+  solid: {
+    search: "search-solid",
+    account: "user-solid",
+    cart: "cart-solid",
+    menu: "menu-line",
+    language: "text",
+    phone: "phone-solid",
+    whatsapp: "whatsapp-solid",
+    email: "mail-solid",
+    address: "pin-solid",
+    hours: "clock-solid",
+  },
+  line: {
+    search: "search-line",
+    account: "user-line",
+    cart: "bag-line",
+    menu: "menu-line",
+    language: "globe-line",
+    phone: "phone-line",
+    whatsapp: "chat-line",
+    email: "mail-line",
+    address: "pin-line",
+    hours: "clock-line",
+  },
+  soft: {
+    search: "search-line",
+    account: "user-circle-line",
+    cart: "handbag-line",
+    menu: "menu-two",
+    language: "languages-line",
+    phone: "headset-line",
+    whatsapp: "whatsapp-solid",
+    email: "at-line",
+    address: "navigation-line",
+    hours: "timer-line",
+  },
+};
+
+export const DEFAULT_ICONS: IconChoice = ICON_THEMES.solid;
+
+/** true when `id` is an icon of this slot */
+export const isIcon = (slot: IconSlot, id: unknown): id is string => typeof id === "string" && Object.prototype.hasOwnProperty.call(ICON_LIBRARY[slot], id);
+
+/** The icon for a slot (unknown id → the slot's default). null only for the language slot's "text" */
+export const iconFor = (slot: IconSlot, id: string): IconComponent | null => ICON_LIBRARY[slot][isIcon(slot, id) ? id : DEFAULT_ICONS[slot]];

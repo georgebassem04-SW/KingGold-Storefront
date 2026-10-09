@@ -1,0 +1,232 @@
+/*
+ * GLOBAL STYLES
+ * ------------------------------------------------------------------
+ * 1) :root         -> fallback colours (the real ones come from the client config)
+ * 2) @theme inline -> connects the colours to Tailwind class names (bg-primary, text-muted-foreground...)
+ * 3) @layer base   -> page-wide rules: default text colour, Arabic/English fonts for body and headings
+ *
+ * To change a client's colours, DON'T edit this file — edit config/clients/demo.ts.
+ * Edit here only to change rules that apply to every client (e.g. heading fonts, link styles).
+ */
+@import "tailwindcss";
+@import "tw-animate-css";
+/* Styles for rich text from the dashboard editor ("prose" classes, see components/common/RichText.tsx) */
+@plugin "@tailwindcss/typography";
+
+/*
+ * 1) FALLBACK COLOURS. The real values are injected per client from
+ * config/clients/<client>.ts by app/[locale]/layout.tsx (see lib/theme.ts).
+ */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #b8860b;
+  --primary-foreground: #ffffff;
+  --secondary: #f5efe6;
+  --secondary-foreground: #171717;
+  --accent: #d4af37;
+  --accent-foreground: #171717;
+  --muted: #f6f6f4;
+  --muted-foreground: #6b6b6b;
+  --border: #e7e2da;
+  --input: #e7e2da;
+  --ring: #b8860b;
+  --card: #ffffff;
+  --card-foreground: #171717;
+  --popover: #ffffff;
+  --popover-foreground: #171717;
+  --destructive: #dc2626;
+  --header-bg: #000000;
+  --header-fg: #ffffff;
+  --footer-bg: #111827;
+  --footer-fg: #ffffff;
+  --radius: 0.5rem;
+}
+
+/* 2) TAILWIND NAMES: "--color-primary" here is what makes the class "bg-primary" work */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-destructive: var(--destructive);
+  --color-header: var(--header-bg);
+  --color-header-foreground: var(--header-fg);
+  --color-footer: var(--footer-bg);
+  --color-footer-foreground: var(--footer-fg);
+
+  /* Corner sizes, all based on the client's theme.radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Arabic pages use the Arabic font first; English pages use the Latin font first */
+  --font-sans: var(--font-latin), var(--font-arabic), system-ui, sans-serif;
+  --font-heading: var(--font-display), var(--font-latin), serif;
+}
+
+/* 3) PAGE-WIDE RULES
+ * The values (--base-size, --heading-weight, --grid-cols …) come from the dashboard theme
+ * (lib/theme.ts). The numbers after the comma are fallbacks if no theme is loaded. */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  /* Base text size: every rem-based size on the site scales with it */
+  html {
+    font-size: var(--base-size, 16px);
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    line-height: var(--line-height, 1.6);
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: var(--heading-weight, 700);
+  }
+  /* Arabic pages: Arabic font first; Arabic headings use the Arabic heading font */
+  html[lang="ar"] body {
+    font-family: var(--font-arabic), var(--font-latin), system-ui, sans-serif;
+  }
+  html[lang="ar"] h1,
+  html[lang="ar"] h2,
+  html[lang="ar"] h3 {
+    font-family: var(--font-arabic-display), var(--font-arabic), system-ui, sans-serif;
+  }
+  /* English headings use the heading font (e.g. Playfair) */
+  html[lang="en"] h1,
+  html[lang="en"] h2,
+  html[lang="en"] h3 {
+    font-family: var(--font-display), var(--font-latin), serif;
+    letter-spacing: var(--heading-tracking, 0);
+  }
+}
+
+/* 4) THEME SWITCHES from the dashboard (set as data-* on <html> by app/[locale]/layout.tsx) */
+@layer components {
+  /* Products per row on desktop: 3, 4 or 5 */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1rem;
+    row-gap: 2rem;
+  }
+  @media (min-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 1.5rem;
+    }
+  }
+  @media (min-width: 1280px) {
+    .product-grid {
+      grid-template-columns: repeat(var(--grid-cols, 4), minmax(0, 1fr));
+    }
+  }
+  /* Product image shape: square or portrait */
+  .product-image {
+    aspect-ratio: var(--product-ratio, 1 / 1);
+  }
+  /* "Minimal" product cards hide the karat + weight line */
+  html[data-product-card="minimal"] .product-card-details {
+    display: none;
+  }
+}
+
+/*
+ * 5) HEADER RULES — written OUTSIDE the layers above on purpose: rules outside a layer always win over
+ *    Tailwind's utility classes (bg-header, sticky…), which is needed to switch the header's colour / position.
+ */
+/* Header links & icons on hover: the colour chosen in the dashboard (Header → Hover colour), else a soft fade */
+.site-header .nav-link {
+  transition: color 0.15s, opacity 0.15s;
+}
+.site-header .nav-link:hover {
+  color: var(--header-hover, currentColor);
+  opacity: var(--header-hover-opacity, 0.7);
+}
+.site-header[style*="--header-hover"] .nav-link:hover {
+  opacity: 1;
+}
+/*
+ * ACTIVE LINK — the menu link of the page that is open now (aria-current="page", set by components/layout/NavLink.tsx).
+ * The look is chosen in the dashboard → Header → Menu style → "Open page's link" (data-active on the header).
+ * Colour: --header-active (dashboard), else the hover colour, else the header's text colour.
+ */
+.site-header[data-active] .nav-link[aria-current="page"] {
+  --active: var(--header-active, var(--header-hover, var(--header-fg)));
+  opacity: 1;
+}
+.site-header[data-active="color"] .nav-link[aria-current="page"] {
+  color: var(--active);
+}
+.site-header[data-active="underline"] .nav-link[aria-current="page"] {
+  color: var(--active);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.5em;
+}
+.site-header[data-active="bold"] .nav-link[aria-current="page"] {
+  font-weight: 700;
+}
+.site-header[data-active="pill"] .nav-link[aria-current="page"] {
+  background-color: var(--active);
+  /* words on the shape: dashboard → "Text colour on the shape", else a readable colour picked in Header.tsx */
+  color: var(--header-active-text, var(--header-bg));
+  border-radius: 999px;
+  padding: 0.3em 0.95em;
+}
+.site-header[data-active="pill"] .nav-link[aria-current="page"]:hover {
+  color: var(--header-active-text, var(--header-bg));
+  opacity: 0.85;
+}
+/*
+ * SEE-THROUGH HEADER over the first big picture (dashboard → Header → Colours → "See-through over the first picture").
+ * Works only on pages whose FIRST block is a picture banner (marked data-overlay-hero: homepage slider,
+ * page title banner with a picture). The picture slides up under the header; after scrolling, or on any
+ * other page, the header keeps its normal colours.
+ */
+.site-header {
+  transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
+}
+body:has(main > [data-overlay-hero]:first-child) .site-header[data-overlay="true"]:not([data-scrolled="true"]) {
+  background-color: var(--header-overlay-bg, transparent);
+  color: var(--header-overlay-fg, var(--header-fg));
+  box-shadow: none;
+  border-bottom-color: transparent !important;
+}
+body:has(main > [data-overlay-hero]:first-child) .site-header[data-overlay="true"][data-blur="true"]:not([data-scrolled="true"]) {
+  backdrop-filter: blur(10px);
+}
+body:has(.site-header[data-overlay="true"]) main > [data-overlay-hero]:first-child {
+  margin-top: calc(-1 * var(--header-h, 0px));
+}
+/* Title banners keep their text clear of the header */
+body:has(.site-header[data-overlay="true"]) main > [data-overlay-hero="pad"]:first-child {
+  padding-top: var(--header-h, 0px);
+}
+/*
+ * PAGE PATH ("Home / Categories / Rings") hidden on the whole website: dashboard → Theme & design → Layout → "Show the page path".
+ * Every path line is a <nav aria-label="breadcrumb"> (category page, product page, page title banner).
+ */
+html[data-breadcrumbs="false"] nav[aria-label="breadcrumb"] {
+  display: none;
+}
+/* Header scrolls away instead of staying on top */
+html[data-sticky-header="false"] .site-header {
+  position: relative;
+}

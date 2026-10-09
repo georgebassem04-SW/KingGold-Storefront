@@ -1,0 +1,120 @@
+{
+  "slug": "contact",
+  "status": "published",
+  "menu": "header",
+  "updatedAt": "2026-09-29T12:00:00Z",
+  "title": {
+    "ar": "تواصل معنا",
+    "en": "Contact Us"
+  },
+  "seo": {
+    "title": {
+      "ar": "تواصل معنا",
+      "en": "Contact Us"
+    },
+    "description": {
+      "ar": "اتصل بنا أو راسلنا على واتساب أو زر أقرب فرع.",
+      "en": "Call us, message us on WhatsApp, or visit your nearest branch."
+    }
+  },
+  "sections": [
+    {
+      "id": "c1",
+      "type": "page_hero",
+      "isActive": true,
+      "sortOrder": 1,
+      "data": {
+        "title": {
+          "ar": "تواصل معنا",
+          "en": "Contact Us"
+        },
+        "subtitle": {
+          "ar": "فريقنا جاهز لمساعدتك في اختيار قطعتك، أو متابعة طلبك، أو أي استفسار",
+          "en": "Our team is here to help you choose a piece, follow up on an order, or answer any question"
+        }
+      }
+    },
+    {
+      "id": "c2",
+      "type": "contact",
+      "isActive": true,
+      "sortOrder": 2,
+      "data": {
+        "title": {
+          "ar": "أرسل لنا رسالة",
+          "en": "Send us a message"
+        },
+        "subtitle": {
+          "ar": "نرد عادة خلال ساعات العمل في نفس اليوم",
+          "en": "We usually reply the same day during working hours"
+        },
+        "showContactInfo": true,
+        "showBranchSelect": true,
+        "successMessage": {
+          "ar": "شكراً لتواصلك معنا! سيرد عليك أحد أفراد فريقنا قريباً.",
+          "en": "Thank you for contacting us! A member of our team will get back to you soon."
+        },
+        "subjects": [
+          {
+            "value": "general",
+            "label": {
+              "ar": "استفسار عام",
+              "en": "General inquiry"
+            }
+          },
+          {
+            "value": "order",
+            "label": {
+              "ar": "متابعة طلب",
+              "en": "Order follow-up"
+            }
+          },
+          {
+            "value": "custom_design",
+            "label": {
+              "ar": "تصميم خاص",
+              "en": "Custom design"
+            }
+          },
+          {
+            "value": "repair",
+            "label": {
+              "ar": "صيانة وتلميع",
+              "en": "Repair & polishing"
+            }
+          },
+          {
+            "value": "gold_price",
+            "label": {
+              "ar": "أسعار الذهب والسبائك",
+              "en": "Gold prices & bars"
+            }
+          },
+          {
+            "value": "complaint",
+            "label": {
+              "ar": "شكوى أو اقتراح",
+              "en": "Complaint or suggestion"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "c3",
+      "type": "branches",
+      "isActive": true,
+      "sortOrder": 3,
+      "data": {
+        "title": {
+          "ar": "فروعنا",
+          "en": "Our branches"
+        },
+        "subtitle": {
+          "ar": "زورونا في أقرب فرع إليكم",
+          "en": "Visit the branch nearest to you"
+        }
+      }
+    }
+  ]
+}

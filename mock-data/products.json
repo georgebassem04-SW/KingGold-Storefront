@@ -1,0 +1,1485 @@
+[
+  {
+    "id": "p1",
+    "sku": "SKU-001",
+    "slug": "classic-solitaire-ring",
+    "name": {
+      "ar": "خاتم سوليتير كلاسيك",
+      "en": "Classic Solitaire Ring"
+    },
+    "description": {
+      "ar": "خاتم سوليتير كلاسيك عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Classic Solitaire Ring in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-rings",
+    "brandId": "brand-0",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 350
+    },
+    "stones": [
+      {
+        "type": "diamond",
+        "count": 1,
+        "caratWeight": 0.3,
+        "color": "G",
+        "clarity": "VS1",
+        "price": 18000
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p1-v1",
+        "sku": "SKU-001-1",
+        "size": "52",
+        "weightGrams": 3.1,
+        "stockQty": 5,
+        "stockStatus": "in_stock"
+      },
+      {
+        "id": "p1-v2",
+        "sku": "SKU-001-2",
+        "size": "54",
+        "weightGrams": 3.3,
+        "stockQty": 1,
+        "stockStatus": "low_stock"
+      },
+      {
+        "id": "p1-v3",
+        "sku": "SKU-001-3",
+        "size": "56",
+        "weightGrams": 3.5,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": false,
+    "createdAt": "2026-09-01T10:00:00Z"
+  },
+  {
+    "id": "p2",
+    "sku": "SKU-002",
+    "slug": "twisted-band-ring",
+    "name": {
+      "ar": "دبلة مجدولة",
+      "en": "Twisted Band Ring"
+    },
+    "description": {
+      "ar": "دبلة مجدولة عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Twisted Band Ring in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-rings",
+    "brandId": "brand-1",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 220
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p2-v1",
+        "sku": "SKU-002-1",
+        "size": "54",
+        "weightGrams": 4.2,
+        "stockQty": 1,
+        "stockStatus": "low_stock"
+      },
+      {
+        "id": "p2-v2",
+        "sku": "SKU-002-2",
+        "size": "56",
+        "weightGrams": 4.5,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": true,
+    "createdAt": "2026-09-02T10:00:00Z"
+  },
+  {
+    "id": "p3",
+    "sku": "SKU-003",
+    "slug": "cuban-chain-necklace",
+    "name": {
+      "ar": "سلسلة كوبي",
+      "en": "Cuban Chain Necklace"
+    },
+    "description": {
+      "ar": "سلسلة كوبي عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Cuban Chain Necklace in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-necklaces",
+    "brandId": "brand-2",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 180
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p3-v1",
+        "sku": "SKU-003-1",
+        "size": "45cm",
+        "weightGrams": 12.4,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock"
+      },
+      {
+        "id": "p3-v2",
+        "sku": "SKU-003-2",
+        "size": "50cm",
+        "weightGrams": 13.8,
+        "stockQty": 8,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": false,
+    "createdAt": "2026-09-03T10:00:00Z"
+  },
+  {
+    "id": "p4",
+    "sku": "SKU-004",
+    "slug": "heart-pendant",
+    "name": {
+      "ar": "قلادة قلب",
+      "en": "Heart Pendant"
+    },
+    "description": {
+      "ar": "قلادة قلب عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Heart Pendant in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-necklaces",
+    "brandId": "brand-3",
+    "metal": "rose_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 300
+    },
+    "stones": [
+      {
+        "type": "zircon",
+        "count": 12,
+        "price": 0
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p4-v1",
+        "sku": "SKU-004-1",
+        "size": "42cm",
+        "weightGrams": 3.8,
+        "stockQty": 8,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-04T10:00:00Z"
+  },
+  {
+    "id": "p5",
+    "sku": "SKU-005",
+    "slug": "tennis-bracelet",
+    "name": {
+      "ar": "إسورة تنس",
+      "en": "Tennis Bracelet"
+    },
+    "description": {
+      "ar": "إسورة تنس عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Tennis Bracelet in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-bracelets",
+    "brandId": "brand-0",
+    "metal": "white_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "percent",
+      "value": 18
+    },
+    "stones": [
+      {
+        "type": "diamond",
+        "count": 40,
+        "caratWeight": 2.0,
+        "color": "H",
+        "clarity": "SI1",
+        "price": 95000
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p5-v1",
+        "sku": "SKU-005-1",
+        "size": "17cm",
+        "weightGrams": 8.6,
+        "stockQty": 5,
+        "stockStatus": "in_stock"
+      },
+      {
+        "id": "p5-v2",
+        "sku": "SKU-005-2",
+        "size": "18cm",
+        "weightGrams": 9.1,
+        "stockQty": 1,
+        "stockStatus": "low_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": false,
+    "createdAt": "2026-09-05T10:00:00Z"
+  },
+  {
+    "id": "p6",
+    "sku": "SKU-006",
+    "slug": "bangle-classic",
+    "name": {
+      "ar": "غويشة كلاسيك",
+      "en": "Classic Bangle"
+    },
+    "description": {
+      "ar": "غويشة كلاسيك عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Classic Bangle in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-bracelets",
+    "brandId": "brand-1",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 150
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p6-v1",
+        "sku": "SKU-006-1",
+        "size": "60mm",
+        "weightGrams": 18.5,
+        "stockQty": 1,
+        "stockStatus": "low_stock"
+      },
+      {
+        "id": "p6-v2",
+        "sku": "SKU-006-2",
+        "size": "65mm",
+        "weightGrams": 19.9,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": false,
+    "createdAt": "2026-09-06T10:00:00Z"
+  },
+  {
+    "id": "p7",
+    "sku": "SKU-007",
+    "slug": "pearl-drop-earrings",
+    "name": {
+      "ar": "حلق لؤلؤ",
+      "en": "Pearl Drop Earrings"
+    },
+    "description": {
+      "ar": "حلق لؤلؤ عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Pearl Drop Earrings in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-earrings",
+    "brandId": "brand-2",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "fixed",
+      "value": 1200
+    },
+    "stones": [
+      {
+        "type": "pearl",
+        "count": 2,
+        "price": 3000
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p7-v1",
+        "sku": "SKU-007-1",
+        "size": "one",
+        "weightGrams": 4.4,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 24500,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-07T10:00:00Z"
+  },
+  {
+    "id": "p8",
+    "sku": "SKU-008",
+    "slug": "gold-bar-10g",
+    "name": {
+      "ar": "سبيكة ذهب ١٠ جرام",
+      "en": "Gold Bar 10g"
+    },
+    "description": {
+      "ar": "سبيكة ذهب ١٠ جرام عيار 24 بتشطيب يدوي عالي الجودة.",
+      "en": "Gold Bar 10g in 24K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-coins-bars",
+    "brandId": "brand-3",
+    "metal": "yellow_gold",
+    "karat": 24,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 90
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p8-v1",
+        "sku": "SKU-008-1",
+        "size": "10g",
+        "weightGrams": 10.0,
+        "stockQty": 8,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": false,
+    "createdAt": "2026-09-08T10:00:00Z"
+  },
+  {
+    "id": "p9",
+    "sku": "SKU-009",
+    "slug": "bridal-set",
+    "name": {
+      "ar": "طقم عروسة",
+      "en": "Bridal Set"
+    },
+    "description": {
+      "ar": "طقم عروسة عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Bridal Set in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-sets",
+    "brandId": "brand-0",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 260
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p9-v1",
+        "sku": "SKU-009-1",
+        "size": "one",
+        "weightGrams": 42.0,
+        "stockQty": 5,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": true,
+    "createdAt": "2026-09-09T10:00:00Z"
+  },
+  {
+    "id": "p10",
+    "sku": "SKU-010",
+    "slug": "minimal-band",
+    "name": {
+      "ar": "دبلة ناعمة",
+      "en": "Minimal Band"
+    },
+    "description": {
+      "ar": "دبلة ناعمة عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Minimal Band in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-rings",
+    "brandId": "brand-1",
+    "metal": "white_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 250
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p10-v1",
+        "sku": "SKU-010-1",
+        "size": "50",
+        "weightGrams": 2.1,
+        "stockQty": 8,
+        "stockStatus": "in_stock"
+      },
+      {
+        "id": "p10-v2",
+        "sku": "SKU-010-2",
+        "size": "52",
+        "weightGrams": 2.3,
+        "stockQty": 1,
+        "stockStatus": "low_stock"
+      },
+      {
+        "id": "p10-v3",
+        "sku": "SKU-010-3",
+        "size": "54",
+        "weightGrams": 2.5,
+        "stockQty": 6,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": true,
+    "createdAt": "2026-08-01T10:00:00Z"
+  },
+  {
+    "id": "p11",
+    "sku": "SKU-011",
+    "slug": "emerald-cocktail-ring",
+    "name": {
+      "ar": "خاتم زمرد",
+      "en": "Emerald Cocktail Ring"
+    },
+    "description": {
+      "ar": "خاتم زمرد عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Emerald Cocktail Ring in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-rings",
+    "brandId": "brand-2",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 400
+    },
+    "stones": [
+      {
+        "type": "emerald",
+        "count": 1,
+        "caratWeight": 1.2,
+        "price": 22000
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p11-v1",
+        "sku": "SKU-011-1",
+        "size": "54",
+        "weightGrams": 5.6,
+        "stockQty": 1,
+        "stockStatus": "low_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-02T10:00:00Z"
+  },
+  {
+    "id": "p12",
+    "sku": "SKU-012",
+    "slug": "rose-heart-ring",
+    "name": {
+      "ar": "خاتم قلب وردي",
+      "en": "Rose Heart Ring"
+    },
+    "description": {
+      "ar": "خاتم قلب وردي عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Rose Heart Ring in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-rings",
+    "brandId": "brand-3",
+    "metal": "rose_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 300
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p12-v1",
+        "sku": "SKU-012-1",
+        "size": "52",
+        "weightGrams": 2.9,
+        "stockQty": 6,
+        "stockStatus": "in_stock"
+      },
+      {
+        "id": "p12-v2",
+        "sku": "SKU-012-2",
+        "size": "56",
+        "weightGrams": 3.2,
+        "stockQty": 5,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-03T10:00:00Z"
+  },
+  {
+    "id": "p13",
+    "sku": "SKU-013",
+    "slug": "signet-ring",
+    "name": {
+      "ar": "خاتم منقوش",
+      "en": "Signet Ring"
+    },
+    "description": {
+      "ar": "خاتم منقوش عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Signet Ring in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-rings",
+    "brandId": "brand-0",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 160
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p13-v1",
+        "sku": "SKU-013-1",
+        "size": "58",
+        "weightGrams": 7.4,
+        "stockQty": 5,
+        "stockStatus": "in_stock"
+      },
+      {
+        "id": "p13-v2",
+        "sku": "SKU-013-2",
+        "size": "60",
+        "weightGrams": 7.9,
+        "stockQty": 3,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-08-04T10:00:00Z"
+  },
+  {
+    "id": "p14",
+    "sku": "SKU-014",
+    "slug": "figaro-chain",
+    "name": {
+      "ar": "سلسلة فيجارو",
+      "en": "Figaro Chain"
+    },
+    "description": {
+      "ar": "سلسلة فيجارو عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Figaro Chain in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-necklaces",
+    "brandId": "brand-1",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 150
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p14-v1",
+        "sku": "SKU-014-1",
+        "size": "45cm",
+        "weightGrams": 9.2,
+        "stockQty": 3,
+        "stockStatus": "in_stock"
+      },
+      {
+        "id": "p14-v2",
+        "sku": "SKU-014-2",
+        "size": "50cm",
+        "weightGrams": 10.1,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": false,
+    "createdAt": "2026-08-05T10:00:00Z"
+  },
+  {
+    "id": "p15",
+    "sku": "SKU-015",
+    "slug": "initial-pendant",
+    "name": {
+      "ar": "قلادة حرف",
+      "en": "Initial Pendant"
+    },
+    "description": {
+      "ar": "قلادة حرف عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Initial Pendant in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-necklaces",
+    "brandId": "brand-2",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 320
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p15-v1",
+        "sku": "SKU-015-1",
+        "size": "42cm",
+        "weightGrams": 2.6,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-06T10:00:00Z"
+  },
+  {
+    "id": "p16",
+    "sku": "SKU-016",
+    "slug": "white-gold-choker",
+    "name": {
+      "ar": "كوليه ذهب أبيض",
+      "en": "White Gold Choker"
+    },
+    "description": {
+      "ar": "كوليه ذهب أبيض عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "White Gold Choker in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-necklaces",
+    "brandId": "brand-3",
+    "metal": "white_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "percent",
+      "value": 20
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p16-v1",
+        "sku": "SKU-016-1",
+        "size": "38cm",
+        "weightGrams": 11.5,
+        "stockQty": 8,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-08-07T10:00:00Z"
+  },
+  {
+    "id": "p17",
+    "sku": "SKU-017",
+    "slug": "link-bracelet",
+    "name": {
+      "ar": "إسورة سلسلة",
+      "en": "Link Bracelet"
+    },
+    "description": {
+      "ar": "إسورة سلسلة عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Link Bracelet in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-bracelets",
+    "brandId": "brand-0",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 150
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p17-v1",
+        "sku": "SKU-017-1",
+        "size": "18cm",
+        "weightGrams": 7.8,
+        "stockQty": 1,
+        "stockStatus": "low_stock"
+      },
+      {
+        "id": "p17-v2",
+        "sku": "SKU-017-2",
+        "size": "19cm",
+        "weightGrams": 8.3,
+        "stockQty": 6,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-08T10:00:00Z"
+  },
+  {
+    "id": "p18",
+    "sku": "SKU-018",
+    "slug": "charm-bracelet",
+    "name": {
+      "ar": "إسورة دلايات",
+      "en": "Charm Bracelet"
+    },
+    "description": {
+      "ar": "إسورة دلايات عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Charm Bracelet in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-bracelets",
+    "brandId": "brand-1",
+    "metal": "rose_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 280
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p18-v1",
+        "sku": "SKU-018-1",
+        "size": "17cm",
+        "weightGrams": 5.4,
+        "stockQty": 6,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": false,
+    "createdAt": "2026-08-09T10:00:00Z"
+  },
+  {
+    "id": "p19",
+    "sku": "SKU-019",
+    "slug": "twisted-bangle",
+    "name": {
+      "ar": "غويشة مجدولة",
+      "en": "Twisted Bangle"
+    },
+    "description": {
+      "ar": "غويشة مجدولة عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Twisted Bangle in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-bracelets",
+    "brandId": "brand-2",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 140
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p19-v1",
+        "sku": "SKU-019-1",
+        "size": "60mm",
+        "weightGrams": 14.2,
+        "stockQty": 5,
+        "stockStatus": "in_stock"
+      },
+      {
+        "id": "p19-v2",
+        "sku": "SKU-019-2",
+        "size": "65mm",
+        "weightGrams": 15.0,
+        "stockQty": 3,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-08-10T10:00:00Z"
+  },
+  {
+    "id": "p20",
+    "sku": "SKU-020",
+    "slug": "hoop-earrings",
+    "name": {
+      "ar": "حلق دائري",
+      "en": "Hoop Earrings"
+    },
+    "description": {
+      "ar": "حلق دائري عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Hoop Earrings in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-earrings",
+    "brandId": "brand-3",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 260
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p20-v1",
+        "sku": "SKU-020-1",
+        "size": "one",
+        "weightGrams": 3.4,
+        "stockQty": 3,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-11T10:00:00Z"
+  },
+  {
+    "id": "p21",
+    "sku": "SKU-021",
+    "slug": "diamond-studs",
+    "name": {
+      "ar": "حلق ألماس",
+      "en": "Diamond Studs"
+    },
+    "description": {
+      "ar": "حلق ألماس عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Diamond Studs in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-earrings",
+    "brandId": "brand-0",
+    "metal": "white_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 450
+    },
+    "stones": [
+      {
+        "type": "diamond",
+        "count": 2,
+        "caratWeight": 0.4,
+        "color": "G",
+        "clarity": "VS2",
+        "price": 26000
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p21-v1",
+        "sku": "SKU-021-1",
+        "size": "one",
+        "weightGrams": 1.8,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-12T10:00:00Z"
+  },
+  {
+    "id": "p22",
+    "sku": "SKU-022",
+    "slug": "chandelier-earrings",
+    "name": {
+      "ar": "حلق شاندلير",
+      "en": "Chandelier Earrings"
+    },
+    "description": {
+      "ar": "حلق شاندلير عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Chandelier Earrings in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-earrings",
+    "brandId": "brand-1",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 220
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p22-v1",
+        "sku": "SKU-022-1",
+        "size": "one",
+        "weightGrams": 6.9,
+        "stockQty": 8,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": true,
+    "createdAt": "2026-08-13T10:00:00Z"
+  },
+  {
+    "id": "p23",
+    "sku": "SKU-023",
+    "slug": "engagement-set",
+    "name": {
+      "ar": "طقم خطوبة",
+      "en": "Engagement Set"
+    },
+    "description": {
+      "ar": "طقم خطوبة عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Engagement Set in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-sets",
+    "brandId": "brand-2",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 240
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p23-v1",
+        "sku": "SKU-023-1",
+        "size": "one",
+        "weightGrams": 28.0,
+        "stockQty": 1,
+        "stockStatus": "low_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-14T10:00:00Z"
+  },
+  {
+    "id": "p24",
+    "sku": "SKU-024",
+    "slug": "pearl-set",
+    "name": {
+      "ar": "طقم لؤلؤ",
+      "en": "Pearl Set"
+    },
+    "description": {
+      "ar": "طقم لؤلؤ عيار 18 بتشطيب يدوي عالي الجودة.",
+      "en": "Pearl Set in 18K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-sets",
+    "brandId": "brand-3",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 300
+    },
+    "stones": [
+      {
+        "type": "pearl",
+        "count": 5,
+        "price": 6500
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p24-v1",
+        "sku": "SKU-024-1",
+        "size": "one",
+        "weightGrams": 16.4,
+        "stockQty": 6,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-15T10:00:00Z"
+  },
+  {
+    "id": "p25",
+    "sku": "SKU-025",
+    "slug": "gold-bar-5g",
+    "name": {
+      "ar": "سبيكة ذهب ٥ جرام",
+      "en": "Gold Bar 5g"
+    },
+    "description": {
+      "ar": "سبيكة ذهب ٥ جرام عيار 24 بتشطيب يدوي عالي الجودة.",
+      "en": "Gold Bar 5g in 24K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-coins-bars",
+    "brandId": "brand-0",
+    "metal": "yellow_gold",
+    "karat": 24,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 100
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p25-v1",
+        "sku": "SKU-025-1",
+        "size": "5g",
+        "weightGrams": 5.0,
+        "stockQty": 5,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-08-16T10:00:00Z"
+  },
+  {
+    "id": "p26",
+    "sku": "SKU-026",
+    "slug": "gold-bar-20g",
+    "name": {
+      "ar": "سبيكة ذهب ٢٠ جرام",
+      "en": "Gold Bar 20g"
+    },
+    "description": {
+      "ar": "سبيكة ذهب ٢٠ جرام عيار 24 بتشطيب يدوي عالي الجودة.",
+      "en": "Gold Bar 20g in 24K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-coins-bars",
+    "brandId": "brand-1",
+    "metal": "yellow_gold",
+    "karat": 24,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 80
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p26-v1",
+        "sku": "SKU-026-1",
+        "size": "20g",
+        "weightGrams": 20.0,
+        "stockQty": 3,
+        "stockStatus": "in_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": false,
+    "createdAt": "2026-08-17T10:00:00Z"
+  },
+  {
+    "id": "p27",
+    "sku": "SKU-027",
+    "slug": "gold-pound",
+    "name": {
+      "ar": "جنيه ذهب",
+      "en": "Gold Pound"
+    },
+    "description": {
+      "ar": "جنيه ذهب عيار 21 بتشطيب يدوي عالي الجودة.",
+      "en": "Gold Pound in 21K gold with a hand-finished polish."
+    },
+    "categoryId": "cat-coins-bars",
+    "brandId": "brand-2",
+    "metal": "yellow_gold",
+    "karat": 21,
+    "pricingMode": "weight_based",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 60
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "variants": [
+      {
+        "id": "p27-v1",
+        "sku": "SKU-027-1",
+        "size": "8g",
+        "weightGrams": 8.0,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock"
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-18T10:00:00Z"
+  }
+]

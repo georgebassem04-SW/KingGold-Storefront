@@ -1,0 +1,128 @@
+[
+  {
+    "id": "cat-rings",
+    "slug": "rings",
+    "name": {
+      "ar": "خواتم",
+      "en": "Rings"
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+      "width": 800,
+      "height": 800
+    },
+    "sortOrder": 0,
+    "description": {
+      "ar": "خواتم ودبل ذهب بعيارات ١٨ و٢١ — من السوليتير الكلاسيكي إلى الدبل اليومية.",
+      "en": "Gold rings and bands in 18K and 21K — from classic solitaires to everyday bands."
+    },
+    "banner": {
+      "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600&q=80"
+    }
+  },
+  {
+    "id": "cat-necklaces",
+    "slug": "necklaces",
+    "name": {
+      "ar": "سلاسل وقلائد",
+      "en": "Necklaces"
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+      "width": 800,
+      "height": 800
+    },
+    "sortOrder": 1,
+    "description": {
+      "ar": "سلاسل وقلائد بأطوال وتصميمات مختلفة.",
+      "en": "Chains and pendants in every length and style."
+    },
+    "banner": {
+      "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1600&q=80"
+    }
+  },
+  {
+    "id": "cat-bracelets",
+    "slug": "bracelets",
+    "name": {
+      "ar": "أساور",
+      "en": "Bracelets"
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+      "width": 800,
+      "height": 800
+    },
+    "sortOrder": 2,
+    "description": {
+      "ar": "أساور وغوايش ذهب للإطلالة اليومية والمناسبات.",
+      "en": "Bracelets and bangles for every day and every occasion."
+    },
+    "banner": {
+      "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=1600&q=80"
+    }
+  },
+  {
+    "id": "cat-earrings",
+    "slug": "earrings",
+    "name": {
+      "ar": "حلقان",
+      "en": "Earrings"
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+      "width": 800,
+      "height": 800
+    },
+    "sortOrder": 3,
+    "description": {
+      "ar": "حلقان بتصميمات ناعمة وأخرى مرصعة بالأحجار.",
+      "en": "Delicate and stone-set earrings."
+    },
+    "banner": {
+      "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1600&q=80"
+    }
+  },
+  {
+    "id": "cat-sets",
+    "slug": "sets",
+    "name": {
+      "ar": "أطقم",
+      "en": "Sets"
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+      "width": 800,
+      "height": 800
+    },
+    "sortOrder": 4,
+    "description": {
+      "ar": "أطقم كاملة للعرائس والمناسبات.",
+      "en": "Complete sets for brides and special occasions."
+    },
+    "banner": {
+      "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1600&q=80"
+    }
+  },
+  {
+    "id": "cat-coins-bars",
+    "slug": "coins-bars",
+    "name": {
+      "ar": "سبائك وجنيهات",
+      "en": "Coins & Bars"
+    },
+    "image": {
+      "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+      "width": 800,
+      "height": 800
+    },
+    "sortOrder": 5,
+    "description": {
+      "ar": "سبائك وجنيهات ذهب عيار ٢٤ و٢١ للادخار.",
+      "en": "24K and 21K gold bars and coins for saving."
+    },
+    "banner": {
+      "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=1600&q=80"
+    }
+  }
+]

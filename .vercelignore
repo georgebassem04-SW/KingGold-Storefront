@@ -1,0 +1,9 @@
+# Files Vercel must NOT receive when deploying from this folder (npx vercel)
+# Private settings: put them in Vercel → Settings → Environment Variables instead
+.env*.local
+# Sample data and test files from this computer
+.mock-db
+.email-previews
+# Rebuilt by Vercel itself
+node_modules
+.next

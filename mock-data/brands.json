@@ -1,0 +1,34 @@
+[
+  {
+    "id": "brand-0",
+    "slug": "classic",
+    "name": {
+      "ar": "كلاسيك",
+      "en": "Classic"
+    }
+  },
+  {
+    "id": "brand-1",
+    "slug": "bridal",
+    "name": {
+      "ar": "عرائس",
+      "en": "Bridal"
+    }
+  },
+  {
+    "id": "brand-2",
+    "slug": "italiano",
+    "name": {
+      "ar": "إيطالي",
+      "en": "Italiano"
+    }
+  },
+  {
+    "id": "brand-3",
+    "slug": "kids",
+    "name": {
+      "ar": "أطفال",
+      "en": "Kids"
+    }
+  }
+]
