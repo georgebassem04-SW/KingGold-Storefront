@@ -19,7 +19,8 @@
     "language": "اللغة",
     "customOrder": "صمّم قطعتك",
     "darkMode": "الوضع الداكن",
-    "lightMode": "الوضع الفاتح"
+    "lightMode": "الوضع الفاتح",
+    "shopAll": "كل المنتجات"
   },
   "footer": {
     "quickLinks": "روابط سريعة",
@@ -91,7 +92,10 @@
     "none": "لا يوجد",
     "pieces": "قطع",
     "offer": "عرض خاص",
-    "offerDiscount": "خصم العرض"
+    "offerDiscount": "خصم العرض",
+    "soldOut": "نفدت الكمية",
+    "from": "يبدأ من",
+    "chooseOption": "اختاري"
   },
   "gold": {
     "todayPrices": "أسعار الذهب اليوم",
@@ -488,7 +492,9 @@
     "shopNow": "تسوق الآن",
     "otherCategories": "أقسام أخرى",
     "offers": "عروض خاصة",
-    "offersOnly": "العروض فقط"
+    "offersOnly": "العروض فقط",
+    "viewGrid": "شبكة",
+    "viewLarge": "كروت كبيرة"
   },
   "customOrder": {
     "intro": "عندك صورة لقطعة تحبها أو فكرة تريد تنفيذها؟ ارفع الصورة واكتب التفاصيل، وسيتواصل معك فريقنا بعرض سعر ومدة التنفيذ.",

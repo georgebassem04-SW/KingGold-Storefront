@@ -66,6 +66,8 @@ export type HeroStyleInput = Partial<Omit<HeroStyle, "button1" | "button2">> & {
 export interface HeroSection extends BaseSection {
   type: "hero";
   data: {
+    /** How tall the slider is: "md" = the original (wide picture), "lg" = taller, "full" = the whole screen. Missing = "md" */
+    height?: "md" | "lg" | "full";
     slides: {
       image: MediaImage;
       mobileImage?: MediaImage;
@@ -104,7 +106,18 @@ export interface CategoriesSection extends BaseSection {
    * align      = where the circles sit when they don't fill the row: start (default), center or end
    * titleAlign = where the title sits, on its own. Missing = the same side as the circles
    */
-  data: { title: LocalizedText; categoryIds?: string[]; align?: "start" | "center" | "end"; titleAlign?: "start" | "center" | "end" };
+  data: {
+    title: LocalizedText;
+    /** Small line above the title */
+    eyebrow?: LocalizedText;
+    categoryIds?: string[];
+    align?: "start" | "center" | "end";
+    titleAlign?: "start" | "center" | "end";
+    /** "circles" = round pictures with the name under them (original) · "tiles" = square pictures with the name on them */
+    style?: "circles" | "tiles";
+    /** Tiles only: stretch edge to edge with no gaps */
+    fullWidth?: boolean;
+  };
 }
 
 export interface BrandsSection extends BaseSection {
@@ -179,6 +192,8 @@ export interface ImageTextSection extends BaseSection {
     /** "start" = image on the reading-start side (left in English, right in Arabic) */
     imagePosition: "start" | "end";
     cta?: CtaLink;
+    /** "card" = picture and text with a gap (original) · "split" = picture and a framed text panel side by side, text centred */
+    layout?: "card" | "split";
   };
 }
 
@@ -237,8 +252,32 @@ export interface CtaSection extends BaseSection {
     text?: LocalizedText;
     primary?: CtaLink;
     secondary?: CtaLink;
-    background: "primary" | "secondary" | "image";
+    background: "primary" | "secondary" | "image" | "video";
     image?: MediaImage;
+    /** background "video": a video file playing silently behind the words (mp4 link) */
+    video?: MediaVideo;
+    /** Small line above the title */
+    eyebrow?: LocalizedText;
+    /** Where the words sit. Missing = "center" */
+    align?: "start" | "center";
+    /** How tall the strip is. Missing = "md" */
+    height?: "sm" | "md" | "lg";
+  };
+}
+
+/** "Follow us" strip: tall pictures (Instagram / TikTok posts) with the account name, each opening its post */
+export interface SocialFeedSection extends BaseSection {
+  type: "social_feed";
+  data: {
+    title: LocalizedText;
+    subtitle?: LocalizedText;
+    /** Account name shown on each picture, e.g. "kinggoldeg" */
+    handle: string;
+    /** The account's page (opened by the button and by pictures that have no own link) */
+    profileUrl: string;
+    items: { image: MediaImage; href?: string }[];
+    /** Button under the pictures, e.g. "Follow us" */
+    button?: CtaLink;
   };
 }
 
@@ -307,7 +346,8 @@ export type HomeSection =
   | CtaSection
   | ContactSection
   | CustomOrderSection
-  | FaqSection;
+  | FaqSection
+  | SocialFeedSection;
 
 /** Same thing, clearer name when used outside the homepage */
 export type CmsSection = HomeSection;

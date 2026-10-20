@@ -5,6 +5,8 @@
  *                        [ product grid ]
  *                        [ pagination ]
  * On phones the sidebar becomes a "Filters" button (MobileFilters.tsx).
+ * Dashboard → Product filter → "Where & how it shows": sidebar on the start / end side, or a "Filter" button
+ * (icon / word / both, at the start or end of the bar) that opens a panel from the chosen side.
  *
  * All filtering/sorting is done by the API (mock: lib/api/mock.ts -> applyFilters),
  * using the filters in the page address (lib/catalog/filters.ts).
@@ -25,6 +27,7 @@ import { ProductCard } from "@/components/product/ProductCard";
 import { FilterPanel } from "./FilterPanel";
 import { MobileFilters } from "./MobileFilters";
 import { SortSelect } from "./SortSelect";
+import { ViewSwitch } from "./ViewSwitch";
 
 interface Props {
   locale: Locale;
@@ -109,25 +112,53 @@ export async function ProductListing({ locale, dict, query, basePath, fixedCateg
 
   const cleared: CatalogQuery = { sort: query.sort };
 
+  // Where & how the filter shows (dashboard → Product filter)
+  const fs = filterSettings;
+  const sidebar = fs.display === "sidebar";
+  const filterButton = (
+    <MobileFilters labels={L} activeCount={activeCount} total={result.total} onDesktop={!sidebar} side={fs.side} look={fs.buttonLook} iconId={fs.icon}>
+      {panel}
+    </MobileFilters>
+  );
+  // Grid / big cards buttons (dashboard → Product filter)
+  const viewSwitch = fs.viewSwitch ? <ViewSwitch gridId="product-grid" labels={{ grid: L.viewGrid, large: L.viewLarge }} /> : null;
+  const count = fs.showCount ? (
+    <p className="text-sm text-muted-foreground" aria-live="polite">
+      {result.total === 1 ? L.resultsOne : fill(L.results, { count: result.total })}
+    </p>
+  ) : null;
+
   return (
-    <div className="grid gap-8 lg:grid-cols-[250px_minmax(0,1fr)]">
-      {/* ===== DESKTOP SIDEBAR ===== */}
-      <aside className="hidden lg:block">
-        {panel}
-      </aside>
+    <div className={cn("grid gap-8", sidebar && (fs.side === "end" ? "lg:grid-cols-[minmax(0,1fr)_250px]" : "lg:grid-cols-[250px_minmax(0,1fr)]"))}>
+      {/* ===== DESKTOP SIDEBAR ===== (start or end side) */}
+      {sidebar && <aside className={cn("hidden lg:block", fs.side === "end" && "lg:order-last")}>{panel}</aside>}
 
       <div className="min-w-0">
-        {/* ===== TOOLBAR ===== */}
+        {/* ===== TOOLBAR ===== [Filter] … [Sort by · count], or the other way round */}
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-          <p className="text-sm text-muted-foreground" aria-live="polite">
-            {result.total === 1 ? L.resultsOne : fill(L.results, { count: result.total })}
-          </p>
-          <div className="flex items-center gap-2">
-            <MobileFilters labels={L} activeCount={activeCount} total={result.total}>
-              {panel}
-            </MobileFilters>
-            <SortSelect query={query} labels={L} />
-          </div>
+          {fs.buttonPosition === "start" ? (
+            <>
+              <div className="flex items-center gap-3">
+                {filterButton}
+                {viewSwitch}
+              </div>
+              <div className="flex items-center gap-4">
+                <SortSelect query={query} labels={L} />
+                {count}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="flex items-center gap-4">
+                {viewSwitch}
+                {count}
+              </div>
+              <div className="flex items-center gap-2">
+                {filterButton}
+                <SortSelect query={query} labels={L} />
+              </div>
+            </>
+          )}
         </div>
 
         {chips.length > 0 && (
@@ -151,7 +182,7 @@ export async function ProductListing({ locale, dict, query, basePath, fixedCateg
 
         {/* ===== GRID ===== */}
         {result.items.length ? (
-          <div className="product-grid">
+          <div id="product-grid" className="product-grid">
             {result.items.map((p) => (
               <ProductCard key={p.id} product={p} goldPrices={goldPrices} locale={locale} dict={dict} />
             ))}

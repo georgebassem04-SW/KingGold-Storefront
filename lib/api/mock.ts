@@ -48,6 +48,7 @@ import termsPage from "@/mock-data/pages/terms.json";
 import returnsPage from "@/mock-data/pages/returns.json";
 import privacyPage from "@/mock-data/pages/privacy.json";
 import customizePage from "@/mock-data/pages/customize.json";
+import b2bPage from "@/mock-data/pages/b2b.json"; // King Gold: wholesale page
 
 const localProducts = productsJson as unknown as Product[];
 const localCategories = categoriesJson as Category[];
@@ -68,6 +69,8 @@ const pages: Record<string, ContentPage> = {
   privacy: privacyPage as unknown as ContentPage,
   // "Design your piece" (custom orders) — /pages/customize
   customize: customizePage as unknown as ContentPage,
+  // King Gold wholesale (B2B) page — /pages/b2b
+  b2b: b2bPage as unknown as ContentPage,
 };
 
 /**

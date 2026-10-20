@@ -18,7 +18,7 @@ import type { ArabicFont, LatinFont, SiteTheme } from "@/types";
 import { ARABIC_FONTS, LATIN_FONTS } from "@/types";
 import { clientConfig } from "@/config/clients";
 import { api } from "@/lib/api";
-import { DEFAULT_FILTERS, DEFAULT_FOOTER, DEFAULT_HEADER, DEFAULT_PRODUCT_PAGE, parseFilters, parseDarkMode, parseFooter, parseHeader, parseProductPage, suggestedDarkColors } from "@/lib/theme-chrome";
+import { DEFAULT_FILTERS, DEFAULT_FOOTER, DEFAULT_HEADER, DEFAULT_PRODUCT_CARD, DEFAULT_PRODUCT_PAGE, parseFilters, parseProductCard, parseDarkMode, parseFooter, parseHeader, parseProductPage, suggestedDarkColors } from "@/lib/theme-chrome";
 
 /** The client's own settings, in theme form — used whenever the dashboard hasn't set something */
 export function defaultSiteTheme(): SiteTheme {
@@ -56,6 +56,7 @@ export function defaultSiteTheme(): SiteTheme {
       productCard: clientConfig.layout.productCard,
       productImageRatio: "square",
       gridColumns: clientConfig.layout.gridColumns,
+      card: { ...DEFAULT_PRODUCT_CARD },
     },
     // Top bar and footer options (dashboard → Header / Footer). Defaults = the original design
     header: structuredClone(DEFAULT_HEADER),
@@ -111,7 +112,7 @@ export function mergeTheme(base: SiteTheme, incoming: Partial<SiteTheme> | null 
       latinFont: oneOf<LatinFont>(ty.latinFont, LATIN_FONTS, base.typography.latinFont),
       latinHeadingFont: oneOf<LatinFont>(ty.latinHeadingFont, LATIN_FONTS, base.typography.latinHeadingFont),
       baseSize: num(ty.baseSize, 14, 18, base.typography.baseSize),
-      headingWeight: oneOf(ty.headingWeight, [500, 600, 700, 800] as const, base.typography.headingWeight),
+      headingWeight: oneOf(ty.headingWeight, [400, 500, 600, 700, 800] as const, base.typography.headingWeight),
       lineHeight: num(ty.lineHeight, 1.2, 2, base.typography.lineHeight),
       headingLetterSpacing: num(ty.headingLetterSpacing, -0.02, 0.1, base.typography.headingLetterSpacing),
     },
@@ -123,6 +124,8 @@ export function mergeTheme(base: SiteTheme, incoming: Partial<SiteTheme> | null 
       productCard: oneOf(l.productCard, ["minimal", "detailed"] as const, base.layout.productCard),
       productImageRatio: oneOf(l.productImageRatio, ["square", "portrait"] as const, base.layout.productImageRatio),
       gridColumns: oneOf(l.gridColumns, [3, 4, 5] as const, base.layout.gridColumns),
+      // Product cards (Theme & design → Layout → Product cards). Missing in older themes → defaults
+      card: l.card ? parseProductCard(l.card) : base.layout.card,
     },
     // Missing (theme saved before these existed) → defaults; every value is checked in lib/theme-chrome.ts
     header: incoming.header ? parseHeader(incoming.header) : base.header,

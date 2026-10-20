@@ -35,6 +35,7 @@ import { CtaSection } from "./CtaSection";
 import { ContactSection } from "./ContactSection";
 import { FaqSection } from "./FaqSection";
 import { CustomOrderSection } from "./CustomOrderSection";
+import { SocialFeedSection } from "./SocialFeedSection";
 
 /**
  * The CMS engine. The dashboard sends a list of sections; this renders them in sortOrder,
@@ -62,6 +63,8 @@ const registry: Record<HomeSectionType, ComponentType<SectionProps<any>>> = {
   contact: ContactSection,
   custom_order: CustomOrderSection,
   faq: FaqSection,
+  // "Stay connected" pictures from Instagram / TikTok
+  social_feed: SocialFeedSection,
 };
 
 export function SectionRenderer({ sections, ...rest }: { sections: HomeSection[] } & Omit<SectionProps, "section">) {

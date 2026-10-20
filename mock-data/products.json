@@ -1,420 +1,340 @@
 [
   {
-    "id": "p1",
-    "sku": "SKU-001",
-    "slug": "classic-solitaire-ring",
+    "id": "kg1",
+    "sku": "171000017",
+    "slug": "18k-gold-linked-double-ring",
     "name": {
-      "ar": "خاتم سوليتير كلاسيك",
-      "en": "Classic Solitaire Ring"
+      "ar": "خاتم دبل متصل ذهب عيار 18",
+      "en": "18K Gold Linked Double Ring"
     },
     "description": {
-      "ar": "خاتم سوليتير كلاسيك عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Classic Solitaire Ring in 18K gold with a hand-finished polish."
+      "ar": "ارتقِ بإطلالتك مع هذا الخاتم المزدوج الأنيق المصنوع من الذهب الخالص عيار 18. مصمم بحلقتين متميزتين—إحداهما مرصعة بأحجار الزيركون المتلألئة، والأخرى تتميز بتصميم كرات ناعم ومتقن. مقاس خاتم1: 17 مقاس خاتم2: 7 طول البريسليت: 2.8سم",
+      "en": "Elevate your style with this chic 18K solid gold double ring. Designed with two distinct bands—one paved with shimmering cubic zirconia and the other featuring a delicate beaded design. Ring Size1 : 17 Ring Size2 : 7 Bracelet Length: 2.8CM"
     },
     "categoryId": "cat-rings",
-    "brandId": "brand-0",
-    "metal": "yellow_gold",
-    "karat": 18,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 350
-    },
-    "stones": [
-      {
-        "type": "diamond",
-        "count": 1,
-        "caratWeight": 0.3,
-        "color": "G",
-        "clarity": "VS1",
-        "price": 18000
-      }
-    ],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p1-v1",
-        "sku": "SKU-001-1",
-        "size": "52",
-        "weightGrams": 3.1,
-        "stockQty": 5,
-        "stockStatus": "in_stock"
-      },
-      {
-        "id": "p1-v2",
-        "sku": "SKU-001-2",
-        "size": "54",
-        "weightGrams": 3.3,
-        "stockQty": 1,
-        "stockStatus": "low_stock"
-      },
-      {
-        "id": "p1-v3",
-        "sku": "SKU-001-3",
-        "size": "56",
-        "weightGrams": 3.5,
-        "stockQty": 0,
-        "stockStatus": "out_of_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": true,
-    "isNew": false,
-    "createdAt": "2026-09-01T10:00:00Z"
-  },
-  {
-    "id": "p2",
-    "sku": "SKU-002",
-    "slug": "twisted-band-ring",
-    "name": {
-      "ar": "دبلة مجدولة",
-      "en": "Twisted Band Ring"
-    },
-    "description": {
-      "ar": "دبلة مجدولة عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Twisted Band Ring in 21K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-rings",
-    "brandId": "brand-1",
-    "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 220
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p2-v1",
-        "sku": "SKU-002-1",
-        "size": "54",
-        "weightGrams": 4.2,
-        "stockQty": 1,
-        "stockStatus": "low_stock"
-      },
-      {
-        "id": "p2-v2",
-        "sku": "SKU-002-2",
-        "size": "56",
-        "weightGrams": 4.5,
-        "stockQty": 0,
-        "stockStatus": "out_of_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": true,
-    "isNew": true,
-    "createdAt": "2026-09-02T10:00:00Z"
-  },
-  {
-    "id": "p3",
-    "sku": "SKU-003",
-    "slug": "cuban-chain-necklace",
-    "name": {
-      "ar": "سلسلة كوبي",
-      "en": "Cuban Chain Necklace"
-    },
-    "description": {
-      "ar": "سلسلة كوبي عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Cuban Chain Necklace in 21K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-necklaces",
-    "brandId": "brand-2",
-    "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 180
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p3-v1",
-        "sku": "SKU-003-1",
-        "size": "45cm",
-        "weightGrams": 12.4,
-        "stockQty": 0,
-        "stockStatus": "out_of_stock"
-      },
-      {
-        "id": "p3-v2",
-        "sku": "SKU-003-2",
-        "size": "50cm",
-        "weightGrams": 13.8,
-        "stockQty": 8,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": true,
-    "isNew": false,
-    "createdAt": "2026-09-03T10:00:00Z"
-  },
-  {
-    "id": "p4",
-    "sku": "SKU-004",
-    "slug": "heart-pendant",
-    "name": {
-      "ar": "قلادة قلب",
-      "en": "Heart Pendant"
-    },
-    "description": {
-      "ar": "قلادة قلب عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Heart Pendant in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-necklaces",
-    "brandId": "brand-3",
-    "metal": "rose_gold",
-    "karat": 18,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 300
-    },
-    "stones": [
-      {
-        "type": "zircon",
-        "count": 12,
-        "price": 0
-      }
-    ],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p4-v1",
-        "sku": "SKU-004-1",
-        "size": "42cm",
-        "weightGrams": 3.8,
-        "stockQty": 8,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": false,
-    "isNew": true,
-    "createdAt": "2026-09-04T10:00:00Z"
-  },
-  {
-    "id": "p5",
-    "sku": "SKU-005",
-    "slug": "tennis-bracelet",
-    "name": {
-      "ar": "إسورة تنس",
-      "en": "Tennis Bracelet"
-    },
-    "description": {
-      "ar": "إسورة تنس عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Tennis Bracelet in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-bracelets",
-    "brandId": "brand-0",
-    "metal": "white_gold",
-    "karat": 18,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "percent",
-      "value": 18
-    },
-    "stones": [
-      {
-        "type": "diamond",
-        "count": 40,
-        "caratWeight": 2.0,
-        "color": "H",
-        "clarity": "SI1",
-        "price": 95000
-      }
-    ],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p5-v1",
-        "sku": "SKU-005-1",
-        "size": "17cm",
-        "weightGrams": 8.6,
-        "stockQty": 5,
-        "stockStatus": "in_stock"
-      },
-      {
-        "id": "p5-v2",
-        "sku": "SKU-005-2",
-        "size": "18cm",
-        "weightGrams": 9.1,
-        "stockQty": 1,
-        "stockStatus": "low_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": true,
-    "isNew": false,
-    "createdAt": "2026-09-05T10:00:00Z"
-  },
-  {
-    "id": "p6",
-    "sku": "SKU-006",
-    "slug": "bangle-classic",
-    "name": {
-      "ar": "غويشة كلاسيك",
-      "en": "Classic Bangle"
-    },
-    "description": {
-      "ar": "غويشة كلاسيك عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Classic Bangle in 21K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-bracelets",
-    "brandId": "brand-1",
-    "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 150
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p6-v1",
-        "sku": "SKU-006-1",
-        "size": "60mm",
-        "weightGrams": 18.5,
-        "stockQty": 1,
-        "stockStatus": "low_stock"
-      },
-      {
-        "id": "p6-v2",
-        "sku": "SKU-006-2",
-        "size": "65mm",
-        "weightGrams": 19.9,
-        "stockQty": 0,
-        "stockStatus": "out_of_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": true,
-    "isNew": false,
-    "createdAt": "2026-09-06T10:00:00Z"
-  },
-  {
-    "id": "p7",
-    "sku": "SKU-007",
-    "slug": "pearl-drop-earrings",
-    "name": {
-      "ar": "حلق لؤلؤ",
-      "en": "Pearl Drop Earrings"
-    },
-    "description": {
-      "ar": "حلق لؤلؤ عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Pearl Drop Earrings in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-earrings",
-    "brandId": "brand-2",
     "metal": "yellow_gold",
     "karat": 18,
     "pricingMode": "fixed",
     "makingCharge": {
-      "type": "fixed",
-      "value": 1200
+      "type": "per_gram",
+      "value": 0
     },
-    "stones": [
-      {
-        "type": "pearl",
-        "count": 2,
-        "price": 3000
-      }
-    ],
+    "stones": [],
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/3.20_318a1fd2-5ab4-440b-a3c1-af669c8eaaaf.jpg",
+        "width": 1000,
+        "height": 1000
       },
       {
-        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsApp_Image_2026-10-07_at_10.37.47_AM.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/3.20..jpg",
+        "width": 1000,
+        "height": 1000
       }
     ],
     "variants": [
       {
-        "id": "p7-v1",
-        "sku": "SKU-007-1",
-        "size": "one",
-        "weightGrams": 4.4,
+        "id": "kg1-v1",
+        "sku": "171000017",
+        "weightGrams": 3.2,
         "stockQty": 0,
         "stockStatus": "out_of_stock",
         "fixedPrice": {
-          "amount": 24500,
+          "amount": 18715,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": true,
+    "createdAt": "2026-10-07T07:35:44.000Z"
+  },
+  {
+    "id": "kg2",
+    "sku": "2000224",
+    "slug": "18k-gold-mini-ribbed-band-2",
+    "name": {
+      "ar": "دبلة ميني مضلعة ذهب عيار 18",
+      "en": "18K Gold Mini Ribbed Band"
+    },
+    "description": {
+      "ar": "تألقي بقطعة استثنائية مع خاتم كينج جولد . صُمم من الذهب الخالص عيار 18 بتصميم مضلع أنيق مزين بالزيركون المربع. قطعة تجمع بين الفخامة والعملية لتناسب ذوقكِ الرفيع في كل مناسبة",
+      "en": "Elevate your style with this sophisticated 18K gold mini ring, showcasing a detailed ribbed texture and a brilliant square zircon cluster. A perfectly balanced piece that blends architectural design with timeless sparkle."
+    },
+    "categoryId": "cat-rings",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/1.72_1d8624fd-4fc6-4e5b-878e-9bb335a8a99d.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg2-v1",
+        "sku": "2000224",
+        "weightGrams": 1.27,
+        "size": "6",
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 7330,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg2-v2",
+        "sku": "2000223",
+        "weightGrams": 1.37,
+        "size": "6",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 7910,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": true,
+    "createdAt": "2026-10-03T11:05:56.000Z"
+  },
+  {
+    "id": "kg3",
+    "sku": "2000325",
+    "slug": "18k-gold-dainty-heart-accent-pinky-ring-1",
+    "name": {
+      "ar": "خاتم خنصر بقلب رقيق ذهب عيار 18",
+      "en": "18K Gold Dainty Heart-Accent Pinky Ring"
+    },
+    "description": {
+      "ar": "قطعة استثنائية تجسد جمال البساطة، صُنعت من الذهب عيار 18 بتصميم قلب أنيق يتلألأ بأحجار الزيركون البراقة، لتمنحك إطلالة راقية تنبض بالأنوثة والجاذبية.",
+      "en": "Elevate your look with this charming gold pinky ring, featuring a delicate heart motif adorned with sparkling stones. A sophisticated, minimalist statement piece designed to add a touch of romance and refined elegance to your everyday style."
+    },
+    "categoryId": "cat-rings",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/1.87_1_24f507f7-5fab-4977-8d5a-344975b0a3b3.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg3-v1",
+        "sku": "2000325",
+        "weightGrams": 1.6,
+        "size": "8",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 9235,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg3-v2",
+        "sku": "2000303",
+        "weightGrams": 1.67,
+        "size": "10",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 9640,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg3-v3",
+        "sku": "2000305",
+        "weightGrams": 1.8,
+        "size": "12",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 10390,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": true,
+    "createdAt": "2026-09-28T13:50:10.000Z"
+  },
+  {
+    "id": "kg4",
+    "sku": "2000234",
+    "slug": "18k-gold-celestial-north-star-pinky-ring-1",
+    "name": {
+      "ar": "خاتم خنصر نجمة الشمال ذهب عيار 18",
+      "en": "18K Gold Celestial North Star Pinky Ring"
+    },
+    "description": {
+      "ar": "خاتم خنصر أنيق من الذهب عيار 18 يتميز بتصميم مستوحى من سحر النجوم، يتوسطه حجر زيركون لامع بتصميم نجمي، مع إطار من التفاصيل الخرزية الدقيقة التي تعكس جمال الحرفية والرقي. قطعة تجمع بين المتانة والأناقة لتناسب مختلف الإطلالات.",
+      "en": "Capture the magic of the stars with this exquisite pinky ring, meticulously detailed in premium 18K gold. Adorned with a delicate beaded border and a shimmering central star-cut zirconia, this durable and refined design is the perfect timeless accent for your jewelry collection."
+    },
+    "categoryId": "cat-rings",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/1.62_37b12ba4-5bce-47f2-a910-f2923dfdb200.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/20260823_105152000_iOS.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg4-v1",
+        "sku": "2000234",
+        "weightGrams": 1.72,
+        "size": "5",
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 9930,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg4-v2",
+        "sku": "2000294",
+        "weightGrams": 1.82,
+        "size": "8",
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 10505,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg4-v3",
+        "sku": "2000240",
+        "weightGrams": 1.62,
+        "size": "5",
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 9355,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg4-v4",
+        "sku": "2000241",
+        "weightGrams": 1.63,
+        "size": "5",
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 9410,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg4-v5",
+        "sku": "2000238",
+        "weightGrams": 1.66,
+        "size": "6",
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 9585,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg4-v6",
+        "sku": "2000233",
+        "weightGrams": 2.21,
+        "size": "14",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 12760,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": true,
+    "isNew": false,
+    "createdAt": "2026-08-01T11:51:50.000Z"
+  },
+  {
+    "id": "kg5",
+    "sku": "137000033",
+    "slug": "18k-gold-initial-letter-pendant-26",
+    "name": {
+      "ar": "دلاية حرف ذهب عيار 18",
+      "en": "18K Gold Initial Letter Pendant"
+    },
+    "description": {
+      "ar": "ضف لمستك الشخصية على إطلالتك مع هذه القلادة الأنيقة المصنوعة ببراعة من الذهب عيار 18 على شكل حرف شخصي. طول الدلايه: 1.8سم",
+      "en": "Personalize your look with this elegant initial pendant, beautifully crafted in 18K yellow gold. Pendent Length: 1.8CM"
+    },
+    "categoryId": "cat-necklaces",
+    "brandId": "brand-letters",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsAppImage2026-10-15at11.45.24AM_2.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg5-v1",
+        "sku": "137000033",
+        "weightGrams": 0.77,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 4330,
           "currency": "EGP"
         }
       }
@@ -422,1064 +342,2343 @@
     "tags": [],
     "isFeatured": false,
     "isNew": true,
-    "createdAt": "2026-09-07T10:00:00Z"
+    "createdAt": "2026-10-15T08:51:40.000Z"
   },
   {
-    "id": "p8",
-    "sku": "SKU-008",
-    "slug": "gold-bar-10g",
+    "id": "kg6",
+    "sku": "137000021",
+    "slug": "18k-gold-initial-letter-pendant-25",
     "name": {
-      "ar": "سبيكة ذهب ١٠ جرام",
-      "en": "Gold Bar 10g"
+      "ar": "دلاية حرف ذهب عيار 18",
+      "en": "18K Gold Initial Letter Pendant"
     },
     "description": {
-      "ar": "سبيكة ذهب ١٠ جرام عيار 24 بتشطيب يدوي عالي الجودة.",
-      "en": "Gold Bar 10g in 24K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-coins-bars",
-    "brandId": "brand-3",
-    "metal": "yellow_gold",
-    "karat": 24,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 90
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p8-v1",
-        "sku": "SKU-008-1",
-        "size": "10g",
-        "weightGrams": 10.0,
-        "stockQty": 8,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": true,
-    "isNew": false,
-    "createdAt": "2026-09-08T10:00:00Z"
-  },
-  {
-    "id": "p9",
-    "sku": "SKU-009",
-    "slug": "bridal-set",
-    "name": {
-      "ar": "طقم عروسة",
-      "en": "Bridal Set"
-    },
-    "description": {
-      "ar": "طقم عروسة عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Bridal Set in 21K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-sets",
-    "brandId": "brand-0",
-    "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 260
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p9-v1",
-        "sku": "SKU-009-1",
-        "size": "one",
-        "weightGrams": 42.0,
-        "stockQty": 5,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": true,
-    "isNew": true,
-    "createdAt": "2026-09-09T10:00:00Z"
-  },
-  {
-    "id": "p10",
-    "sku": "SKU-010",
-    "slug": "minimal-band",
-    "name": {
-      "ar": "دبلة ناعمة",
-      "en": "Minimal Band"
-    },
-    "description": {
-      "ar": "دبلة ناعمة عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Minimal Band in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-rings",
-    "brandId": "brand-1",
-    "metal": "white_gold",
-    "karat": 18,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 250
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p10-v1",
-        "sku": "SKU-010-1",
-        "size": "50",
-        "weightGrams": 2.1,
-        "stockQty": 8,
-        "stockStatus": "in_stock"
-      },
-      {
-        "id": "p10-v2",
-        "sku": "SKU-010-2",
-        "size": "52",
-        "weightGrams": 2.3,
-        "stockQty": 1,
-        "stockStatus": "low_stock"
-      },
-      {
-        "id": "p10-v3",
-        "sku": "SKU-010-3",
-        "size": "54",
-        "weightGrams": 2.5,
-        "stockQty": 6,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": true,
-    "isNew": true,
-    "createdAt": "2026-08-01T10:00:00Z"
-  },
-  {
-    "id": "p11",
-    "sku": "SKU-011",
-    "slug": "emerald-cocktail-ring",
-    "name": {
-      "ar": "خاتم زمرد",
-      "en": "Emerald Cocktail Ring"
-    },
-    "description": {
-      "ar": "خاتم زمرد عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Emerald Cocktail Ring in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-rings",
-    "brandId": "brand-2",
-    "metal": "yellow_gold",
-    "karat": 18,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 400
-    },
-    "stones": [
-      {
-        "type": "emerald",
-        "count": 1,
-        "caratWeight": 1.2,
-        "price": 22000
-      }
-    ],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p11-v1",
-        "sku": "SKU-011-1",
-        "size": "54",
-        "weightGrams": 5.6,
-        "stockQty": 1,
-        "stockStatus": "low_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": false,
-    "isNew": false,
-    "createdAt": "2026-08-02T10:00:00Z"
-  },
-  {
-    "id": "p12",
-    "sku": "SKU-012",
-    "slug": "rose-heart-ring",
-    "name": {
-      "ar": "خاتم قلب وردي",
-      "en": "Rose Heart Ring"
-    },
-    "description": {
-      "ar": "خاتم قلب وردي عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Rose Heart Ring in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-rings",
-    "brandId": "brand-3",
-    "metal": "rose_gold",
-    "karat": 18,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 300
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p12-v1",
-        "sku": "SKU-012-1",
-        "size": "52",
-        "weightGrams": 2.9,
-        "stockQty": 6,
-        "stockStatus": "in_stock"
-      },
-      {
-        "id": "p12-v2",
-        "sku": "SKU-012-2",
-        "size": "56",
-        "weightGrams": 3.2,
-        "stockQty": 5,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": false,
-    "isNew": false,
-    "createdAt": "2026-08-03T10:00:00Z"
-  },
-  {
-    "id": "p13",
-    "sku": "SKU-013",
-    "slug": "signet-ring",
-    "name": {
-      "ar": "خاتم منقوش",
-      "en": "Signet Ring"
-    },
-    "description": {
-      "ar": "خاتم منقوش عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Signet Ring in 21K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-rings",
-    "brandId": "brand-0",
-    "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 160
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p13-v1",
-        "sku": "SKU-013-1",
-        "size": "58",
-        "weightGrams": 7.4,
-        "stockQty": 5,
-        "stockStatus": "in_stock"
-      },
-      {
-        "id": "p13-v2",
-        "sku": "SKU-013-2",
-        "size": "60",
-        "weightGrams": 7.9,
-        "stockQty": 3,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": false,
-    "isNew": true,
-    "createdAt": "2026-08-04T10:00:00Z"
-  },
-  {
-    "id": "p14",
-    "sku": "SKU-014",
-    "slug": "figaro-chain",
-    "name": {
-      "ar": "سلسلة فيجارو",
-      "en": "Figaro Chain"
-    },
-    "description": {
-      "ar": "سلسلة فيجارو عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Figaro Chain in 21K gold with a hand-finished polish."
+      "ar": "ضف لمستك الشخصية على إطلالتك مع هذه القلادة الأنيقة المصنوعة ببراعة من الذهب عيار 18 على شكل حرف شخصي. طول الدلايه: 1.8سم",
+      "en": "Personalize your look with this elegant initial pendant, beautifully crafted in 18K yellow gold. Pendent Length: 1.8CM"
     },
     "categoryId": "cat-necklaces",
-    "brandId": "brand-1",
+    "brandId": "brand-letters",
     "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
+    "karat": 18,
+    "pricingMode": "fixed",
     "makingCharge": {
       "type": "per_gram",
-      "value": 150
+      "value": 0
     },
     "stones": [],
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsAppImage2026-10-15at11.45.24AM_1.jpg",
+        "width": 1000,
+        "height": 1000
       }
     ],
     "variants": [
       {
-        "id": "p14-v1",
-        "sku": "SKU-014-1",
-        "size": "45cm",
-        "weightGrams": 9.2,
+        "id": "kg6-v1",
+        "sku": "137000021",
+        "weightGrams": 0.89,
         "stockQty": 3,
-        "stockStatus": "in_stock"
-      },
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 5005,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-15T08:49:17.000Z"
+  },
+  {
+    "id": "kg7",
+    "sku": "137000058",
+    "slug": "18k-gold-initial-letter-pendant-24",
+    "name": {
+      "ar": "دلاية حرف ذهب عيار 18",
+      "en": "18K Gold Initial Letter Pendant"
+    },
+    "description": {
+      "ar": "ضف لمستك الشخصية على إطلالتك مع هذه القلادة الأنيقة المصنوعة ببراعة من الذهب عيار 18 على شكل حرف شخصي. طول الدلايه: 1.8سم",
+      "en": "Personalize your look with this elegant initial pendant, beautifully crafted in 18K yellow gold. Pendent Length: 1.8CM"
+    },
+    "categoryId": "cat-necklaces",
+    "brandId": "brand-letters",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
       {
-        "id": "p14-v2",
-        "sku": "SKU-014-2",
-        "size": "50cm",
-        "weightGrams": 10.1,
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsAppImage2026-10-15at11.45.24AM.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg7-v1",
+        "sku": "137000058",
+        "weightGrams": 0.88,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 4950,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-15T08:46:39.000Z"
+  },
+  {
+    "id": "kg8",
+    "sku": "137000017",
+    "slug": "18k-gold-initial-letter-pendant-23",
+    "name": {
+      "ar": "دلاية حرف ذهب عيار 18",
+      "en": "18K Gold Initial Letter Pendant"
+    },
+    "description": {
+      "ar": "ضف لمستك الشخصية على إطلالتك مع هذه القلادة الأنيقة المصنوعة ببراعة من الذهب عيار 18 على شكل حرف شخصي. طول الدلايه: 1.8سم",
+      "en": "Personalize your look with this elegant initial pendant, beautifully crafted in 18K yellow gold. Pendent Length: 1.8CM"
+    },
+    "categoryId": "cat-necklaces",
+    "brandId": "brand-letters",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsAppImage2026-10-15at10.10.48AM_0cc41c67-ac31-4cf2-abc9-3a71ce8a3fd1.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg8-v1",
+        "sku": "137000017",
+        "weightGrams": 0.65,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 3655,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-15T08:37:44.000Z"
+  },
+  {
+    "id": "kg9",
+    "sku": "137000029",
+    "slug": "18k-gold-initial-letter-pendant-22",
+    "name": {
+      "ar": "دلاية حرف ذهب عيار 18",
+      "en": "18K Gold Initial Letter Pendant"
+    },
+    "description": {
+      "ar": "ضف لمستك الشخصية على إطلالتك مع هذه القلادة الأنيقة المصنوعة ببراعة من الذهب عيار 18 على شكل حرف شخصي. طول الدلايه: 1.6سم",
+      "en": "Personalize your look with this elegant initial pendant, beautifully crafted in 18K yellow gold. Pendent Length: 1.6CM"
+    },
+    "categoryId": "cat-necklaces",
+    "brandId": "brand-letters",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsAppImage2026-10-15at10.10.47AM.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg9-v1",
+        "sku": "137000029",
+        "weightGrams": 0.52,
         "stockQty": 0,
-        "stockStatus": "out_of_stock"
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 2925,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg9-v2",
+        "sku": "137000023",
+        "weightGrams": 0.54,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 3035,
+          "currency": "EGP"
+        }
       }
     ],
     "tags": [],
-    "isFeatured": true,
-    "isNew": false,
-    "createdAt": "2026-08-05T10:00:00Z"
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-15T08:35:14.000Z"
   },
   {
-    "id": "p15",
-    "sku": "SKU-015",
-    "slug": "initial-pendant",
+    "id": "kg10",
+    "sku": "137000008",
+    "slug": "18k-gold-initial-letter-pendant-21",
     "name": {
-      "ar": "قلادة حرف",
-      "en": "Initial Pendant"
+      "ar": "دلاية حرف ذهب عيار 18",
+      "en": "18K Gold Initial Letter Pendant"
     },
     "description": {
-      "ar": "قلادة حرف عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Initial Pendant in 18K gold with a hand-finished polish."
+      "ar": "ضف لمستك الشخصية على إطلالتك مع هذه القلادة الأنيقة المصنوعة ببراعة من الذهب عيار 18 على شكل حرف شخصي. طول الدلايه: 1.6سم",
+      "en": "Personalize your look with this elegant initial pendant, beautifully crafted in 18K yellow gold. Pendent Length: 1.6CM"
     },
     "categoryId": "cat-necklaces",
-    "brandId": "brand-2",
+    "brandId": "brand-letters",
     "metal": "yellow_gold",
     "karat": 18,
-    "pricingMode": "weight_based",
+    "pricingMode": "fixed",
     "makingCharge": {
       "type": "per_gram",
-      "value": 320
+      "value": 0
     },
     "stones": [],
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsAppImage2026-10-15at10.10.47AM_3.jpg",
+        "width": 1000,
+        "height": 1000
       }
     ],
     "variants": [
       {
-        "id": "p15-v1",
-        "sku": "SKU-015-1",
-        "size": "42cm",
+        "id": "kg10-v1",
+        "sku": "137000008",
+        "weightGrams": 0.57,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 3205,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-15T08:31:23.000Z"
+  },
+  {
+    "id": "kg11",
+    "sku": "86000101",
+    "slug": "18k-gold-disc-charm-hand-chain",
+    "name": {
+      "ar": "هاند تشين بدلايات دائرية ذهب عيار 18",
+      "en": "18K Gold Disc Charm Hand Chain"
+    },
+    "description": {
+      "ar": "هاند تشين من الذهب عيار 18. تتميز بدلايات دائرية مصقولة ولمسة زريكون رقيقة، وتلتف هذه القطعة الأنيقة حول معصمك ويدك بكل سلاسة.",
+      "en": "18K gold hand chain. Featuring polished disc charms and a delicate zircon highlight, this elegant piece effortlessly wraps around your wrist and hand for a luxurious finish."
+    },
+    "categoryId": "cat-hand-chains",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Screenshot2026-10-13140950.png",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg11-v1",
+        "sku": "86000101",
+        "weightGrams": 3.33,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 19360,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg11-v2",
+        "sku": "86000100",
+        "weightGrams": 3.36,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 19535,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-13T11:11:42.000Z"
+  },
+  {
+    "id": "kg12",
+    "sku": "86000097",
+    "slug": "18k-gold-double-loop-hand-chain",
+    "name": {
+      "ar": "هاند تشين بحلقتين ذهب عيار 18",
+      "en": "18K Gold Double-Loop Hand Chain"
+    },
+    "description": {
+      "ar": "هاند تشين من الذهب عيار 18. مصممة باتصال فريد متعدد الخيوط مع تفاصيل رقيقة من الزريكون اللامع",
+      "en": "18K gold hand chain. Designed with a unique multi-strand connection and delicate sparkling zircon details."
+    },
+    "categoryId": "cat-hand-chains",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Screenshot2026-10-13133802.png",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg12-v1",
+        "sku": "86000097",
+        "weightGrams": 3.96,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 23020,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-13T11:03:13.000Z"
+  },
+  {
+    "id": "kg13",
+    "sku": "86000103",
+    "slug": "18k-gold-linked-hand-chain",
+    "name": {
+      "ar": "هاند تشين متصلة ذهب عيار 18",
+      "en": "18K Gold Linked Hand Chain"
+    },
+    "description": {
+      "ar": "هاند تشين من الذهب عيار 18. تتميز بتصميم رقيق ومتصل مزين بفصوص زريكون لامعة وناعمة.",
+      "en": "18K gold hand chain. Featuring a delicate interconnected design adorned with subtle sparkling zircons."
+    },
+    "categoryId": "cat-hand-chains",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Screenshot2026-10-13133741.png",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg13-v1",
+        "sku": "86000103",
+        "weightGrams": 3.8,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 22090,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg13-v2",
+        "sku": "86000102",
+        "weightGrams": 3.89,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 22615,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-13T10:52:20.000Z"
+  },
+  {
+    "id": "kg14",
+    "sku": "61000028",
+    "slug": "18k-two-tone-gold-baguette-necklace-1",
+    "name": {
+      "ar": "كوليه باجيت ذهب لونين عيار 18",
+      "en": "18K Two-Tone Gold Baguette Necklace"
+    },
+    "description": {
+      "ar": "ارفعي مستوى أناقتك مع هذا العقد المصنوع من الذهب الخالص عيار 18 ، والذي صُمم ببراعة ليعكس الثقة المطلقة والفخامة الخالدة. طول الكوليه:43سم",
+      "en": "Elevate your elegance with this striking 18K solid gold necklace, masterfully designed to project absolute confidence and timeless luxury. Necklace Length:43CM."
+    },
+    "categoryId": "cat-necklaces",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Necklace17.7.2026.13.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg14-v1",
+        "sku": "61000028",
+        "weightGrams": 9.14,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 53160,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg14-v2",
+        "sku": "61000026",
+        "weightGrams": 9.17,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 54320,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg14-v3",
+        "sku": "61000027",
+        "weightGrams": 9.43,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 55860,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-07-29T07:54:38.000Z"
+  },
+  {
+    "id": "kg15",
+    "sku": "61000053",
+    "slug": "18k-two-tone-gold-square-necklace-1",
+    "name": {
+      "ar": "كوليه مربعات ذهب لونين عيار 18",
+      "en": "18K Two-Tone Gold Square Necklace"
+    },
+    "description": {
+      "ar": "ارفعي مستوى أناقتك مع هذا العقد المصنوع من الذهب الخالص عيار 18 ، والذي صُمم ببراعة ليعكس الثقة المطلقة والفخامة الخالدة. طول الكوليه:43سم",
+      "en": "Elevate your elegance with this striking 18K solid gold necklace, masterfully designed to project absolute confidence and timeless luxury. Necklace Length:43CM."
+    },
+    "categoryId": "cat-necklaces",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Necklace17.7.2026.6.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg15-v1",
+        "sku": "61000053",
+        "weightGrams": 8.72,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 51650,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg15-v2",
+        "sku": "61000051",
+        "weightGrams": 8.74,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 51770,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg15-v3",
+        "sku": "61000052",
+        "weightGrams": 8.93,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 52895,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-07-29T10:04:32.000Z"
+  },
+  {
+    "id": "kg16",
+    "sku": "61000042",
+    "slug": "18k-two-tone-gold-rectangular-necklace",
+    "name": {
+      "ar": "كوليه مستطيلات ذهب لونين عيار 18",
+      "en": "18K Two-Tone Gold Rectangular Necklace"
+    },
+    "description": {
+      "ar": "ارفعي مستوى أناقتك مع هذا العقد المصنوع من الذهب الخالص عيار 18 ، والذي صُمم ببراعة ليعكس الثقة المطلقة والفخامة الخالدة. طول الكوليه:43سم",
+      "en": "Elevate your elegance with this striking 18K solid gold necklace, masterfully designed to project absolute confidence and timeless luxury. Necklace Length:43CM."
+    },
+    "categoryId": "cat-necklaces",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Necklace17.7.2026.1.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg16-v1",
+        "sku": "61000042",
+        "weightGrams": 7.43,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 44010,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg16-v2",
+        "sku": "61000044",
+        "weightGrams": 7.51,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 43680,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg16-v3",
+        "sku": "61000043",
+        "weightGrams": 7.58,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 44900,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-07-29T07:40:41.000Z"
+  },
+  {
+    "id": "kg17",
+    "sku": "72000165",
+    "slug": "18k-gold-geometric-textured-band-ring",
+    "name": {
+      "ar": "دبلة هندسية منقوشة ذهب عيار 18",
+      "en": "18K Gold Geometric Textured Band Ring"
+    },
+    "description": {
+      "ar": "خاتم من الذهب الأصفر عيار 18. صُمم بمركز مزين بتقطيعات هندسية متداخلة ونقوش ملموسة، ويحيطه بإطار أنيق صفّان من الزريكون البراق.",
+      "en": "18K yellow gold band ring. Designed with an intricate geometric faceting and textured center, it is elegantly framed by two rows of zircons."
+    },
+    "categoryId": "cat-rings",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsAppImage2026-10-09at1.17.17PM.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg17-v1",
+        "sku": "72000165",
+        "weightGrams": 3.69,
+        "size": "11",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 21025,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg17-v2",
+        "sku": "72000166",
+        "weightGrams": 3.91,
+        "size": "14",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 22280,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg17-v3",
+        "sku": "72000162",
+        "weightGrams": 3.95,
+        "size": "13",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 22510,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-09T10:20:19.000Z"
+  },
+  {
+    "id": "kg18",
+    "sku": "161000002",
+    "slug": "18k-gold-bold-gauge-link-chain-bracelet",
+    "name": {
+      "ar": "انسيال حلقات عريضة ذهب عيار 18",
+      "en": "18K Gold Bold Gauge Link Chain Bracelet"
+    },
+    "description": {
+      "ar": "أنسيال من الذهب عيار 18. تتميز بحلقات متصلة بتصميم عصري جريء ومزينة بتفاصيل كروية مصقولة، مما يجمع بين الأسلوب الصناعي الحديث والفخامة الكلاسيكية. صُممت بلمسة نهائية فائقة اللمعان. طول الانسيال: 20.5سم",
+      "en": "18K yellow gold bracelet. Featuring interconnected U-shaped gauge links accented with sleek sphere details, this piece combines modern industrial style with timeless luxury. Crafted with a high-polish finish. Bracelet Length: 20.5CM"
+    },
+    "categoryId": "cat-bracelets",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/DSC_0217.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg18-v1",
+        "sku": "161000002",
+        "weightGrams": 7.55,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 44720,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-09T09:27:38.000Z"
+  },
+  {
+    "id": "kg19",
+    "sku": "72000137",
+    "slug": "18k-gold-crisscross-zircon-ring",
+    "name": {
+      "ar": "خاتم متقاطع بالزيركون ذهب عيار 18",
+      "en": "18K Gold Crisscross Zircon Ring"
+    },
+    "description": {
+      "ar": "مصنوع من ذهب عيار 18، يتميز هذا الخاتم الأنيق بتصميم متصالب لافت يجمع بين شريط مجدول ذي ملمس بارز وشريط مرصّع بصف من الزريكون البراق.",
+      "en": "18K gold, this elegant ring features a striking crisscross design combining a textured twisted band with a line of glowing pave-set zircons."
+    },
+    "categoryId": "cat-rings",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Ring3-9-2026_17.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg19-v1",
+        "sku": "72000137",
+        "weightGrams": 3.33,
+        "size": "19",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 18975,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-08T10:33:16.000Z"
+  },
+  {
+    "id": "kg20",
+    "sku": "217000004",
+    "slug": "18k-gold-key-pendant-link-chain-necklace",
+    "name": {
+      "ar": "سلسلة بدلاية مفتاح ذهب عيار 18",
+      "en": "18K Gold Key Pendant Link Chain Necklace"
+    },
+    "description": {
+      "ar": "قلادة من الذهب عيار18 وتتميز بجمع ساحر بين سلسلة ناعمة تتحول إلى حلقات بيضاوية بارزة، وتتدلى منها دلاية على شكل مفتاح لافت للأنظار. طول السلسله: 51سم طول الدلايه: 3سم",
+      "en": "18K Gold Necklace. Featuring a combination of a fine chain transitioning into bold oval links, it holds a captivating key pendant. Necklace Length: 51CM Pendent Length: 3CM"
+    },
+    "categoryId": "cat-necklaces",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Necklace21-9-2026_43.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg20-v1",
+        "sku": "217000004",
+        "weightGrams": 9.76,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 55615,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-03T10:23:17.000Z"
+  },
+  {
+    "id": "kg21",
+    "sku": "185000001",
+    "slug": "18k-gold-toggle-circle-pendant-necklace",
+    "name": {
+      "ar": "سلسلة بدلاية دائرية وقفل توجل ذهب عيار 18",
+      "en": "18K Gold Toggle Circle Pendant Necklace"
+    },
+    "description": {
+      "ar": "عقد متألق من الذهب عيار 18، يتميز بلسلسلة ذات تصميم مجدول أنيق مع قفل توجل عصري في الأمام. يتزين العقد بدلاية دائرية براقة مرصعة بفصوص الزركون المتلألئة، ليضفي لمسة من الفخامة العصرية والأناقة التي تدوم في كل أوقاتك. طول السلسله: 42سم طول الدلايه: 2سم",
+      "en": "18K yellow gold necklace. Featuring a refined woven-style chain with a modern front toggle clasp, this piece showcases a sparkling circular pendant adorned with brilliant zircon stones. Necklace Length: 42CM. Pendent Length: 2CM."
+    },
+    "categoryId": "cat-necklaces",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Necklace21-9-2026_36.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg21-v1",
+        "sku": "185000001",
+        "weightGrams": 4.48,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 26200,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-03T11:29:02.000Z"
+  },
+  {
+    "id": "kg22",
+    "sku": "217000006",
+    "slug": "18k-gold-starfish-charm-paperclip-necklace",
+    "name": {
+      "ar": "سلسلة بيبر كليب بدلاية نجمة ذهب عيار 18",
+      "en": "18K Gold Starfish Charm Paperclip Necklace"
+    },
+    "description": {
+      "ar": "قلادة ذهب عيار 18. تتألق بتصميم عصري ينساب بسلاسة من سلسلة رقيقة إلى حلقات \"بيبر كليب\" عصرية، تتدلى منها نجمة مشعة مرصعة بالفصوص البراقة تضفي لمسة من الجاذبية والأناقة. طول السلسله: 49سم طول الدلايه: 1.8سم",
+      "en": "18K Gold Necklace. Crafted with a delicate chain that smoothly transitions into bold paperclip-style links, it holds a stunning star pendant adorned with brilliant paved stones. Necklace Length: 49CM. Pendent Length: 1.8CM"
+    },
+    "categoryId": "cat-necklaces",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Necklace21-9-2026_42.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg22-v1",
+        "sku": "217000006",
+        "weightGrams": 5.06,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 28835,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-03T10:29:26.000Z"
+  },
+  {
+    "id": "kg23",
+    "sku": "208000032",
+    "slug": "18k-gold-wide-textured-huggie-earrings",
+    "name": {
+      "ar": "حلق هاجي عريض منقوش ذهب عيار 18",
+      "en": "18K Gold Wide Textured Huggie Earrings"
+    },
+    "description": {
+      "ar": "ارتقِي بإطلالتك اليومية مع هذه الأقراط الناعمة الفاخرة من الذهب عيار 18. تتميز بتصميم عريض وجريء مع لمسة محببة براقة تخطف الأضواء وتتألق من كل الزوايا.",
+      "en": "Elevate your everyday look with these sophisticated 18K gold huggie hoop earrings. Featuring a wide, chunky silhouette with a striking glitter-textured finish that catches the light from every angle."
+    },
+    "categoryId": "cat-earrings",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Earrings21-9-2026_1.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg23-v1",
+        "sku": "208000032",
         "weightGrams": 2.6,
-        "stockQty": 0,
-        "stockStatus": "out_of_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": false,
-    "isNew": false,
-    "createdAt": "2026-08-06T10:00:00Z"
-  },
-  {
-    "id": "p16",
-    "sku": "SKU-016",
-    "slug": "white-gold-choker",
-    "name": {
-      "ar": "كوليه ذهب أبيض",
-      "en": "White Gold Choker"
-    },
-    "description": {
-      "ar": "كوليه ذهب أبيض عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "White Gold Choker in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-necklaces",
-    "brandId": "brand-3",
-    "metal": "white_gold",
-    "karat": 18,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "percent",
-      "value": 20
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p16-v1",
-        "sku": "SKU-016-1",
-        "size": "38cm",
-        "weightGrams": 11.5,
-        "stockQty": 8,
-        "stockStatus": "in_stock"
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 15010,
+          "currency": "EGP"
+        }
       }
     ],
     "tags": [],
     "isFeatured": false,
     "isNew": true,
-    "createdAt": "2026-08-07T10:00:00Z"
+    "createdAt": "2026-10-01T12:38:58.000Z"
   },
   {
-    "id": "p17",
-    "sku": "SKU-017",
-    "slug": "link-bracelet",
+    "id": "kg24",
+    "sku": "213000015",
+    "slug": "18k-gold-mens-quad-cluster-zircon-ring",
     "name": {
-      "ar": "إسورة سلسلة",
-      "en": "Link Bracelet"
+      "ar": "خاتم رجالي رباعي بالزيركون ذهب عيار 18",
+      "en": "18K Gold Men's Quad-Cluster Zircon Ring"
     },
     "description": {
-      "ar": "إسورة سلسلة عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Link Bracelet in 21K gold with a hand-finished polish."
+      "ar": "عكّس معاني الرقي والأناقة والعظمة العصرية مع هذا الخاتم الرجالي الفاخر من الذهب عيار 18. يتميز بوجه مربع ناعم الحواف تتوسطه نقشة رباعية الأوراق مرصعة بأحجار الزيركون البراقة، ومحاطة بهالة من فصوص الزيركون الدقيقة.",
+      "en": "Exude sophisticated elegance and modern prestige with this refined 18K gold men's signet ring. Featuring a cushion face centered with a brilliant four-leaf cluster motif surrounded by a halo of micro-paved cubic zirconia."
+    },
+    "categoryId": "cat-men",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/RingFormen21-9-2026_16.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg24-v1",
+        "sku": "213000015",
+        "weightGrams": 6.15,
+        "size": "27",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 35755,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-01T12:00:49.000Z"
+  },
+  {
+    "id": "kg25",
+    "sku": "213000019",
+    "slug": "18k-gold-mens-scorpion-zodiac-signet-ring",
+    "name": {
+      "ar": "خاتم رجالي برج العقرب ذهب عيار 18",
+      "en": "18K Gold Men's Scorpion Zodiac Signet Ring"
+    },
+    "description": {
+      "ar": "جسّد معاني القوة، الصلابة، والحضور الطاغي مع هذا الخاتم الرجالي الجريء من الذهب عيار 18. يتميز بتصميم مجسم ثلاثي الأبعاد لعقرب يزين الوجّه ثماني الأضلاع المحاط بإطار ناعم من المينا السوداء.",
+      "en": "Embrace power, resilience, and intense presence with this bold 18K gold men's signet ring. Featuring a striking 3D sculpted scorpion motif set within an octagonal face lined with black enamel."
+    },
+    "categoryId": "cat-men",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/RingFormen21-9-2026_15.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg25-v1",
+        "sku": "213000019",
+        "weightGrams": 5.92,
+        "size": "25",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 34415,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-01T11:56:53.000Z"
+  },
+  {
+    "id": "kg26",
+    "sku": "213000002",
+    "slug": "18k-gold-mens-sculpted-lion-head-greek-key-signet-ring",
+    "name": {
+      "ar": "خاتم رجالي رأس أسد ذهب عيار 18",
+      "en": "18K Gold Men's Sculpted Lion Head Greek Key Signet Ring"
+    },
+    "description": {
+      "ar": "عكّس معاني القوة المطلقة والقيادة والهيبة مع هذا الخاتم الرجالي الجريء من الذهب عيار 18. يتميز بتصميم مجسم ثلاثي الأبعاد لرأس الأسد موضوع على وجّه مربع محبب، ومحاط بأحجار الزيركون المكعبة البراقة.",
+      "en": "Exude raw power, leadership, and prestige with this bold 18K gold men's signet ring. Featuring a striking 3D sculpted lion head set upon a textured square face, framed by sparkling cubic zirconia stones."
+    },
+    "categoryId": "cat-men",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/RingFormen21-9-2026_14.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg26-v1",
+        "sku": "213000002",
+        "weightGrams": 6.78,
+        "size": "22",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 39415,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-01T11:50:22.000Z"
+  },
+  {
+    "id": "kg27",
+    "sku": "213000016",
+    "slug": "18k-gold-mens-saint-george-signet-ring",
+    "name": {
+      "ar": "خاتم رجالي مارجرجس ذهب عيار 18",
+      "en": "18K Gold Men's Saint George Signet Ring"
+    },
+    "description": {
+      "ar": "عكّس معاني الإيمان والشجاعة والنصر مع هذا الخاتم الرجالي من الذهب عيار 18، والذي يحمل تصميماً مجسماً ثلاثي الأبعاد للقديس مارجرجس يمتطي جواده.",
+      "en": "Honor faith, strength, and victory with this 18K gold men's signet ring, featuring a detailed 3D sculpted portrait of Saint George on horseback."
+    },
+    "categoryId": "cat-men",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/RingFormen21-9-2026_13.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg27-v1",
+        "sku": "213000016",
+        "weightGrams": 10.56,
+        "size": "26",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 61390,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-10-01T11:45:28.000Z"
+  },
+  {
+    "id": "kg28",
+    "sku": "217000007",
+    "slug": "18k-gold-pear-halo-link-bracelet",
+    "name": {
+      "ar": "انسيال أقفال بدمعة ذهب عيار 18",
+      "en": "18K Gold Pear Halo Link Bracelet"
+    },
+    "description": {
+      "ar": "إسورة أقفال من الذهب عيار 18. تتميز بقطعة مركزية مذهلة على شكل كمثرى (دمعة) مرصعة بأحجار باجيت وأحجار براقة مستديرة. طول الانسيال: 20.5سم",
+      "en": "18K solid gold link bracelet. Featuring a stunning pear-shaped centerpiece set with baguette-cut and round sparkling stones. Bracelet Length: 20.5CM"
     },
     "categoryId": "cat-bracelets",
-    "brandId": "brand-0",
     "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
+    "karat": 18,
+    "pricingMode": "fixed",
     "makingCharge": {
       "type": "per_gram",
-      "value": 150
+      "value": 0
     },
     "stones": [],
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Bracelet21-9-2026.jpg",
+        "width": 1000,
+        "height": 1000
       }
     ],
     "variants": [
       {
-        "id": "p17-v1",
-        "sku": "SKU-017-1",
-        "size": "18cm",
-        "weightGrams": 7.8,
-        "stockQty": 1,
-        "stockStatus": "low_stock"
-      },
-      {
-        "id": "p17-v2",
-        "sku": "SKU-017-2",
-        "size": "19cm",
-        "weightGrams": 8.3,
-        "stockQty": 6,
-        "stockStatus": "in_stock"
+        "id": "kg28-v1",
+        "sku": "217000007",
+        "weightGrams": 6.55,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 37325,
+          "currency": "EGP"
+        }
       }
     ],
     "tags": [],
     "isFeatured": false,
-    "isNew": false,
-    "createdAt": "2026-08-08T10:00:00Z"
+    "isNew": true,
+    "createdAt": "2026-09-26T11:31:22.000Z"
   },
   {
-    "id": "p18",
-    "sku": "SKU-018",
-    "slug": "charm-bracelet",
+    "id": "kg29",
+    "sku": "178000004",
+    "slug": "18k-gold-lattice-cutout-cuff-bangle",
     "name": {
-      "ar": "إسورة دلايات",
-      "en": "Charm Bracelet"
+      "ar": "غويشة كف مفرغة ذهب عيار 18",
+      "en": "18K Gold Lattice Cutout Cuff Bangle"
     },
     "description": {
-      "ar": "إسورة دلايات عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Charm Bracelet in 18K gold with a hand-finished polish."
+      "ar": "إسورة كف مفتوحة من الذهب عيار 18. صُممت بشكل عصري مفتوح من الأمام، حيث يستعرض كلا الطرفين شبكة معدنية مفرغة بتفاصيل دقيقة، محاطة بإطارات هندسية مصقولة بلانعان ممتاز. مقاس مفتوح.",
+      "en": "18K solid gold open cuff bangle. Designed with a modern split-front silhouette, both ends showcase intricate filigree lattice metalwork enclosed in high-polish geometric frames. Free Size."
+    },
+    "categoryId": "cat-bangles",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/2Bangle8-7-2026.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg29-v1",
+        "sku": "178000004",
+        "weightGrams": 17.12,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 101410,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg29-v2",
+        "sku": "178000005",
+        "weightGrams": 17.31,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 102535,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-26T11:21:46.000Z"
+  },
+  {
+    "id": "kg30",
+    "sku": "178000007",
+    "slug": "18k-gold-open-cuff-bangle-with-multicolor-stones",
+    "name": {
+      "ar": "غويشة كف بأحجار ملونة ذهب عيار 18",
+      "en": "18K Gold Open Cuff Bangle with Multicolor Stones"
+    },
+    "description": {
+      "ar": "إسورة كف مفتوحة من الذهب عيار 18. تتميز بتصميم فريد مفتوح من الأمام يجمع بين شبكة معدنية مفرغة بتفاصيل دقيقة في جهة، وشريط متألق من الأحجار الملونة الجذابة في الجهة الأخرى. مقاس مفتوح.",
+      "en": "18K solid gold open cuff bangle. Featuring a unique split-front design with delicate lattice metalwork on one side and a stunning bar of colorful accent stones on the other. Free Size."
+    },
+    "categoryId": "cat-bangles",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/3Bangle8-7-2026.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg30-v1",
+        "sku": "178000007",
+        "weightGrams": 17.2,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 101885,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg30-v2",
+        "sku": "178000009",
+        "weightGrams": 17.65,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 104550,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-26T11:18:10.000Z"
+  },
+  {
+    "id": "kg31",
+    "sku": "222000005",
+    "slug": "18k-luxury-gold-tone-chain-bracelet-1",
+    "name": {
+      "ar": "انسيال سلسلة فاخر ذهب عيار 18",
+      "en": "18K Luxury Gold-Tone Chain Bracelet"
+    },
+    "description": {
+      "ar": "أدلي ببيان جريء مع هذا السوار الذهبي الرائع، حيث تلتقي الهندسة العصرية بالأناقة الكلاسيكية.",
+      "en": "Make a bold statement with this exquisite gold-tone bracelet, where modern geometry meets classic elegance."
     },
     "categoryId": "cat-bracelets",
-    "brandId": "brand-1",
-    "metal": "rose_gold",
+    "metal": "yellow_gold",
     "karat": 18,
-    "pricingMode": "weight_based",
+    "pricingMode": "fixed",
     "makingCharge": {
       "type": "per_gram",
-      "value": 280
+      "value": 0
     },
     "stones": [],
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/6.54.jpg",
+        "width": 1000,
+        "height": 1000
       }
     ],
     "variants": [
       {
-        "id": "p18-v1",
-        "sku": "SKU-018-1",
-        "size": "17cm",
-        "weightGrams": 5.4,
-        "stockQty": 6,
-        "stockStatus": "in_stock"
+        "id": "kg31-v1",
+        "sku": "222000005",
+        "length": "16CM",
+        "weightGrams": 6.16,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 38985,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg31-v2",
+        "sku": "222000013",
+        "length": "16.5CM",
+        "weightGrams": 6.3,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 39870,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg31-v3",
+        "sku": "222000002",
+        "length": "17.5CM",
+        "weightGrams": 6.55,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 41450,
+          "currency": "EGP"
+        }
       }
     ],
     "tags": [],
-    "isFeatured": true,
-    "isNew": false,
-    "createdAt": "2026-08-09T10:00:00Z"
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-26T10:58:44.000Z"
   },
   {
-    "id": "p19",
-    "sku": "SKU-019",
-    "slug": "twisted-bangle",
+    "id": "kg32",
+    "sku": "222000007",
+    "slug": "18k-elegant-gold-tone-link-bracelet-1",
     "name": {
-      "ar": "غويشة مجدولة",
-      "en": "Twisted Bangle"
+      "ar": "انسيال حلقات أنيق ذهب عيار 18",
+      "en": "18K Elegant Gold-Tone Link Bracelet"
     },
     "description": {
-      "ar": "غويشة مجدولة عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Twisted Bangle in 21K gold with a hand-finished polish."
+      "ar": "ارتقِ بإطلالتك مع هذا السوار ذي الحلقات الأنيق، والمصمم ليضفي لمسة من الفخامة الخالدة على أي مظهر.",
+      "en": "Elevate your style with this sophisticated link bracelet, designed to add a touch of timeless luxury to any ensemble."
     },
     "categoryId": "cat-bracelets",
-    "brandId": "brand-2",
     "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
+    "karat": 18,
+    "pricingMode": "fixed",
     "makingCharge": {
       "type": "per_gram",
-      "value": 140
+      "value": 0
     },
     "stones": [],
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/6.26.jpg",
+        "width": 1000,
+        "height": 1000
       }
     ],
     "variants": [
       {
-        "id": "p19-v1",
-        "sku": "SKU-019-1",
-        "size": "60mm",
-        "weightGrams": 14.2,
-        "stockQty": 5,
-        "stockStatus": "in_stock"
-      },
-      {
-        "id": "p19-v2",
-        "sku": "SKU-019-2",
-        "size": "65mm",
-        "weightGrams": 15.0,
-        "stockQty": 3,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": false,
-    "isNew": true,
-    "createdAt": "2026-08-10T10:00:00Z"
-  },
-  {
-    "id": "p20",
-    "sku": "SKU-020",
-    "slug": "hoop-earrings",
-    "name": {
-      "ar": "حلق دائري",
-      "en": "Hoop Earrings"
-    },
-    "description": {
-      "ar": "حلق دائري عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Hoop Earrings in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-earrings",
-    "brandId": "brand-3",
-    "metal": "yellow_gold",
-    "karat": 18,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 260
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p20-v1",
-        "sku": "SKU-020-1",
-        "size": "one",
-        "weightGrams": 3.4,
-        "stockQty": 3,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": false,
-    "isNew": false,
-    "createdAt": "2026-08-11T10:00:00Z"
-  },
-  {
-    "id": "p21",
-    "sku": "SKU-021",
-    "slug": "diamond-studs",
-    "name": {
-      "ar": "حلق ألماس",
-      "en": "Diamond Studs"
-    },
-    "description": {
-      "ar": "حلق ألماس عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Diamond Studs in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-earrings",
-    "brandId": "brand-0",
-    "metal": "white_gold",
-    "karat": 18,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 450
-    },
-    "stones": [
-      {
-        "type": "diamond",
-        "count": 2,
-        "caratWeight": 0.4,
-        "color": "G",
-        "clarity": "VS2",
-        "price": 26000
-      }
-    ],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p21-v1",
-        "sku": "SKU-021-1",
-        "size": "one",
-        "weightGrams": 1.8,
+        "id": "kg32-v1",
+        "sku": "222000007",
+        "length": "16.5CM",
+        "weightGrams": 5.92,
         "stockQty": 0,
-        "stockStatus": "out_of_stock"
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 37465,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg32-v2",
+        "sku": "222000004",
+        "length": "16CM",
+        "weightGrams": 5.95,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 37655,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg32-v3",
+        "sku": "222000011",
+        "length": "16CM",
+        "weightGrams": 6.35,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 40185,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg32-v4",
+        "sku": "222000012",
+        "length": "17.5CM",
+        "weightGrams": 6.26,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 39615,
+          "currency": "EGP"
+        }
       }
     ],
     "tags": [],
     "isFeatured": false,
-    "isNew": false,
-    "createdAt": "2026-08-12T10:00:00Z"
+    "isNew": true,
+    "createdAt": "2026-09-26T10:45:01.000Z"
   },
   {
-    "id": "p22",
-    "sku": "SKU-022",
-    "slug": "chandelier-earrings",
+    "id": "kg33",
+    "sku": "140000002",
+    "slug": "18k-solid-gold-paved-star-hoop-earrings",
     "name": {
-      "ar": "حلق شاندلير",
-      "en": "Chandelier Earrings"
+      "ar": "حلق هوب بنجمة ذهب عيار 18",
+      "en": "18K Solid Gold Paved Star Hoop Earrings"
     },
     "description": {
-      "ar": "حلق شاندلير عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Chandelier Earrings in 21K gold with a hand-finished polish."
+      "ar": "ضيفي لمسة كلاسيكية لستايلك مع حلق النجمة من الدهب عيار 18. بيتميز بدلاية نجمة خماسية بتلمع نازلة من حلق هوب مزين بالفصوص، عشان يديكي لمسة أنيقة ولمعان مناسب لكل يوم. طول الحلق: 4.2سم",
+      "en": "Add a classic touch to your style with our 18K Gold Star Dangle Earrings. Featuring a polished five-pointed star charm hanging from pave-set cz huggie hoops, these earrings bring everyday sparkle and timeless elegance. Earrings Length: 4.2CM."
     },
     "categoryId": "cat-earrings",
-    "brandId": "brand-1",
-    "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 220
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p22-v1",
-        "sku": "SKU-022-1",
-        "size": "one",
-        "weightGrams": 6.9,
-        "stockQty": 8,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": true,
-    "isNew": true,
-    "createdAt": "2026-08-13T10:00:00Z"
-  },
-  {
-    "id": "p23",
-    "sku": "SKU-023",
-    "slug": "engagement-set",
-    "name": {
-      "ar": "طقم خطوبة",
-      "en": "Engagement Set"
-    },
-    "description": {
-      "ar": "طقم خطوبة عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Engagement Set in 21K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-sets",
-    "brandId": "brand-2",
-    "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 240
-    },
-    "stones": [],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p23-v1",
-        "sku": "SKU-023-1",
-        "size": "one",
-        "weightGrams": 28.0,
-        "stockQty": 1,
-        "stockStatus": "low_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": false,
-    "isNew": false,
-    "createdAt": "2026-08-14T10:00:00Z"
-  },
-  {
-    "id": "p24",
-    "sku": "SKU-024",
-    "slug": "pearl-set",
-    "name": {
-      "ar": "طقم لؤلؤ",
-      "en": "Pearl Set"
-    },
-    "description": {
-      "ar": "طقم لؤلؤ عيار 18 بتشطيب يدوي عالي الجودة.",
-      "en": "Pearl Set in 18K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-sets",
-    "brandId": "brand-3",
     "metal": "yellow_gold",
     "karat": 18,
-    "pricingMode": "weight_based",
+    "pricingMode": "fixed",
     "makingCharge": {
       "type": "per_gram",
-      "value": 300
-    },
-    "stones": [
-      {
-        "type": "pearl",
-        "count": 5,
-        "price": 6500
-      }
-    ],
-    "images": [
-      {
-        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
-        "width": 800,
-        "height": 800
-      }
-    ],
-    "variants": [
-      {
-        "id": "p24-v1",
-        "sku": "SKU-024-1",
-        "size": "one",
-        "weightGrams": 16.4,
-        "stockQty": 6,
-        "stockStatus": "in_stock"
-      }
-    ],
-    "tags": [],
-    "isFeatured": false,
-    "isNew": false,
-    "createdAt": "2026-08-15T10:00:00Z"
-  },
-  {
-    "id": "p25",
-    "sku": "SKU-025",
-    "slug": "gold-bar-5g",
-    "name": {
-      "ar": "سبيكة ذهب ٥ جرام",
-      "en": "Gold Bar 5g"
-    },
-    "description": {
-      "ar": "سبيكة ذهب ٥ جرام عيار 24 بتشطيب يدوي عالي الجودة.",
-      "en": "Gold Bar 5g in 24K gold with a hand-finished polish."
-    },
-    "categoryId": "cat-coins-bars",
-    "brandId": "brand-0",
-    "metal": "yellow_gold",
-    "karat": 24,
-    "pricingMode": "weight_based",
-    "makingCharge": {
-      "type": "per_gram",
-      "value": 100
+      "value": 0
     },
     "stones": [],
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/6.15_2f78c48b-2a8a-40a1-85b7-c34681775fae.jpg",
+        "width": 1000,
+        "height": 1000
       }
     ],
     "variants": [
       {
-        "id": "p25-v1",
-        "sku": "SKU-025-1",
-        "size": "5g",
-        "weightGrams": 5.0,
-        "stockQty": 5,
-        "stockStatus": "in_stock"
+        "id": "kg33-v1",
+        "sku": "140000002",
+        "weightGrams": 6.15,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 35505,
+          "currency": "EGP"
+        }
       }
     ],
     "tags": [],
     "isFeatured": false,
     "isNew": true,
-    "createdAt": "2026-08-16T10:00:00Z"
+    "createdAt": "2026-09-18T12:48:32.000Z"
   },
   {
-    "id": "p26",
-    "sku": "SKU-026",
-    "slug": "gold-bar-20g",
+    "id": "kg34",
+    "sku": "140000018",
+    "slug": "18k-gold-celestial-sparkle-star-earrings",
     "name": {
-      "ar": "سبيكة ذهب ٢٠ جرام",
-      "en": "Gold Bar 20g"
+      "ar": "حلق النجمة السماوية ذهب عيار 18",
+      "en": "18K Gold Celestial Sparkle Star Earrings"
     },
     "description": {
-      "ar": "سبيكة ذهب ٢٠ جرام عيار 24 بتشطيب يدوي عالي الجودة.",
-      "en": "Gold Bar 20g in 24K gold with a hand-finished polish."
+      "ar": "اتألّقي مع حلق النجمة السماوية من الدهب عيار 18. بيتميز بدلاية نجمة ثمانية لافتة مرصعة بفيص براق، نازلة من حلق هوب مزين بالفصوص. طول الحلق: 5سم",
+      "en": "Shine bright with our 18K Gold Celestial Star Earrings. Featuring an eye-catching eight-pointed star pendant studded with a brilliant sparkling stone, suspended from paved huggie hoops. Earrings Length: 5CM."
     },
-    "categoryId": "cat-coins-bars",
-    "brandId": "brand-1",
+    "categoryId": "cat-earrings",
     "metal": "yellow_gold",
-    "karat": 24,
-    "pricingMode": "weight_based",
+    "karat": 18,
+    "pricingMode": "fixed",
     "makingCharge": {
       "type": "per_gram",
-      "value": 80
+      "value": 0
     },
     "stones": [],
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/7.00.jpg",
+        "width": 1000,
+        "height": 1000
       }
     ],
     "variants": [
       {
-        "id": "p26-v1",
-        "sku": "SKU-026-1",
-        "size": "20g",
-        "weightGrams": 20.0,
+        "id": "kg34-v1",
+        "sku": "140000018",
+        "weightGrams": 7,
         "stockQty": 3,
-        "stockStatus": "in_stock"
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 40415,
+          "currency": "EGP"
+        }
       }
     ],
     "tags": [],
-    "isFeatured": true,
-    "isNew": false,
-    "createdAt": "2026-08-17T10:00:00Z"
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-18T12:26:45.000Z"
   },
   {
-    "id": "p27",
-    "sku": "SKU-027",
-    "slug": "gold-pound",
+    "id": "kg35",
+    "sku": "209000009",
+    "slug": "18k-solid-gold-pharaonic-bracelet-2",
     "name": {
-      "ar": "جنيه ذهب",
-      "en": "Gold Pound"
+      "ar": "انسيال فرعوني زهرة اللوتس ذهب عيار 18",
+      "en": "18K Solid Gold Pharaonic Bracelet"
     },
     "description": {
-      "ar": "جنيه ذهب عيار 21 بتشطيب يدوي عالي الجودة.",
-      "en": "Gold Pound in 21K gold with a hand-finished polish."
+      "ar": "تألقي بلمسة من الرقي التاريخي مع هذا السوار الفاخر المصنوع من ذهب خالص عيار 18. يتميز السوار بتصميم مرن من المشبك المنسوج، يتوسطه ويزينه من الجانبين نقوش زهرة اللوتس الفرعونية التقليدية. قطعة تجمع بين الفخامة العريقة والتصميم المبتكر طول الانسيال: 17سم",
+      "en": "Embrace ancient sophistication with this exquisite bracelet crafted from pure 18K solid gold, featuring a flexible woven mesh band beautifully centered and flanked by traditional Pharaonic lotus flower motifs. Bracelet Length: 17CM."
     },
-    "categoryId": "cat-coins-bars",
-    "brandId": "brand-2",
+    "categoryId": "cat-bracelets",
+    "brandId": "brand-pharaoh",
     "metal": "yellow_gold",
-    "karat": 21,
-    "pricingMode": "weight_based",
+    "karat": 18,
+    "pricingMode": "fixed",
     "makingCharge": {
       "type": "per_gram",
-      "value": 60
+      "value": 0
     },
     "stones": [],
     "images": [
       {
-        "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
-        "width": 800,
-        "height": 800
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
-        "width": 800,
-        "height": 800
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/16.55.jpg",
+        "width": 1000,
+        "height": 1000
       }
     ],
     "variants": [
       {
-        "id": "p27-v1",
-        "sku": "SKU-027-1",
-        "size": "8g",
-        "weightGrams": 8.0,
+        "id": "kg35-v1",
+        "sku": "209000009",
+        "weightGrams": 16.55,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 96790,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-15T12:40:07.000Z"
+  },
+  {
+    "id": "kg36",
+    "sku": "209000002",
+    "slug": "18k-solid-gold-pharaonic-bracelet-1",
+    "name": {
+      "ar": "انسيال فرعوني جعران ذهب عيار 18",
+      "en": "18K Solid Gold Pharaonic Bracelet"
+    },
+    "description": {
+      "ar": "تألقي بجمال التراث العريق مع هذا السوار الفخم المصنوع من ذهب خالص عيار 18. يتميز بتصميم مرن ومنسوج بدقة، يتوسطه رمز الجعران الفرعوني الكلاسيكي. قطعة تجمع بين أصالة التاريخ وفخامة الذهب، لتكون إضافة مميزة لإطلالتك. طول الانسيال: 17.5سم.",
+      "en": "Embrace timeless heritage with this striking bracelet crafted from pure 18K solid gold, featuring an intricately woven flexible mesh band centered by a classic Pharaonic scarab motif. Bracelet Length: 17.5CM."
+    },
+    "categoryId": "cat-bracelets",
+    "brandId": "brand-pharaoh",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/14.18_b71bdeaa-d34c-403f-bf81-3d3f0f5cf556.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg36-v1",
+        "sku": "209000002",
+        "weightGrams": 14.15,
         "stockQty": 0,
-        "stockStatus": "out_of_stock"
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 82755,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-15T12:37:31.000Z"
+  },
+  {
+    "id": "kg37",
+    "sku": "154000089",
+    "slug": "18k-gold-ribbed-hoop-earrings",
+    "name": {
+      "ar": "حلق هوب مضلع ذهب عيار 18",
+      "en": "18K Gold Ribbed Hoop Earrings"
+    },
+    "description": {
+      "ar": "ارتقِ بأناقتك اليومية مع هذه الأقراط الحلقية الرائعة المصنوعة من الذهب عيار 18، والتي تتميز بتصميم مميز ذو تموجات بارزة ولامعة.",
+      "en": "Elevate your everyday elegance with these stunning 18K yellow gold hoop earrings, featuring a distinct textured swirl design and polished finish."
+    },
+    "categoryId": "cat-earrings",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Earrings_26.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg37-v1",
+        "sku": "154000089",
+        "weightGrams": 1.28,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 7580,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg37-v2",
+        "sku": "154000091",
+        "weightGrams": 1.29,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 7640,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg37-v3",
+        "sku": "154000088",
+        "weightGrams": 1.3,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 7700,
+          "currency": "EGP"
+        }
       }
     ],
     "tags": [],
     "isFeatured": false,
     "isNew": false,
-    "createdAt": "2026-08-18T10:00:00Z"
+    "createdAt": "2026-08-15T13:19:32.000Z"
+  },
+  {
+    "id": "kg38",
+    "sku": "154000060",
+    "slug": "18k-gold-twisted-rope-hoop-earrings",
+    "name": {
+      "ar": "حلق هوب مجدول ذهب عيار 18",
+      "en": "18K Gold Twisted Rope Hoop Earrings"
+    },
+    "description": {
+      "ar": "ارتقِ بمجموعتك مع هذه الأقراط الحلقية المصنوعة من الذهب عيار 18، والتي تتميز بتصميم حبل مجدول متواصل ودقيق وبلمسة نهائية لامعة ومشرقة.",
+      "en": "Elevate your accessory collection with these exquisite 18K gold hoop earrings, featuring a detailed continuous twisted rope design and a radiant polished finish."
+    },
+    "categoryId": "cat-earrings",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Earrings_14.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg38-v1",
+        "sku": "154000060",
+        "weightGrams": 3.15,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 18660,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg38-v2",
+        "sku": "154000061",
+        "weightGrams": 3.25,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 19250,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-15T13:12:50.000Z"
+  },
+  {
+    "id": "kg39",
+    "sku": "154000067",
+    "slug": "18k-gold-twisted-chunky-hoop-earrings",
+    "name": {
+      "ar": "حلق هوب سميك مجدول ذهب عيار 18",
+      "en": "18K Gold Twisted Chunky Hoop Earrings"
+    },
+    "description": {
+      "ar": "أضيفي لمسة من الأناقة العصرية إلى مجموعتك مع هذه الأقراط الحلقية السميكة والمذهلة من الذهب عيار 18.",
+      "en": "Add a touch of modern sophistication to your collection with these stunning 18K gold chunky hoop earrings."
+    },
+    "categoryId": "cat-earrings",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Earrings_17.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg39-v1",
+        "sku": "154000067",
+        "weightGrams": 4.04,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 23930,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg39-v2",
+        "sku": "154000066",
+        "weightGrams": 4.12,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 24405,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg39-v3",
+        "sku": "154000065",
+        "weightGrams": 4.14,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 24525,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-08-15T13:06:15.000Z"
+  },
+  {
+    "id": "kg40",
+    "sku": "86000018",
+    "slug": "18k-delicate-layered-gold-hand-chain",
+    "name": {
+      "ar": "هاند تشين طبقات رقيقة ذهب عيار 18",
+      "en": "18K Delicate Layered Gold Hand Chain"
+    },
+    "description": {
+      "ar": "زودي رقتك وأناقتك بالهاند تشين ده، اللي بيتميز بتصميم رقيق من كذا سلسلة ذهبية. السوار في نصه فص لامع وراقي، بيدي إيديكي شكل مميز وجذاب. تصميمه بسيط وهادي، ينفع تلبسيه كل يوم عشان يكمل شياكتك، وكمان مناسب جداً للمناسبات الخاصة.",
+      "en": "Enhance your elegance with this delicate multi-chain hand bracelet. Featuring a brilliant Zircon stone at its center, this piece cascades into fine, shimmering gold-tone chains for a graceful look. Its minimalist design adds a sophisticated touch to your hands, making it the perfect accessory for both everyday chic and special occasions."
+    },
+    "categoryId": "cat-hand-chains",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/7.png",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg40-v1",
+        "sku": "86000018",
+        "weightGrams": 2.63,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 15290,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg40-v2",
+        "sku": "86000052",
+        "weightGrams": 2.86,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 16625,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-07-08T13:55:53.000Z"
+  },
+  {
+    "id": "kg41",
+    "sku": "86000051",
+    "slug": "18k-gold-shimmering-zircon-circle-hand-chain",
+    "name": {
+      "ar": "هاند تشين دائرة زيركون ذهب عيار 18",
+      "en": "18K Gold Shimmering Zircon Circle Hand Chain"
+    },
+    "description": {
+      "ar": "اعملي إطلالة مميزة بالهاند تشين دي. مصنوعة من دهب عيار 18 بأعلى جودة، ومرصعة بفصوص زيركون متثبتة بدقة، قطعة بتجمع بين الشياكة والتصميم الجذاب بشكل مثالي.",
+      "en": "Make a statement with this stunning Featuring high-quality 18K gold and meticulously set zircon, this hand chain is the perfect balance of style and charming design."
+    },
+    "categoryId": "cat-hand-chains",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsApp_Image_2026-08-18_at_6.37.00_PM.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsApp_Image_2026-08-18_at_6.37.01_PM.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg41-v1",
+        "sku": "86000051",
+        "weightGrams": 5.05,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 29360,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-06-20T13:45:32.000Z"
+  },
+  {
+    "id": "kg42",
+    "sku": "142000015",
+    "slug": "18k-gold-patterned-bangle-with-multi-color-stones",
+    "name": {
+      "ar": "غويشة منقوشة بأحجار ملونة ذهب عيار 18",
+      "en": "18K Gold Patterned Bangle with Multi-Color Stones"
+    },
+    "description": {
+      "ar": "أضفي لمسة من الأناقة الراقية إلى إطلالتك مع هذه الغويشة الفاخرة المصنوعة من الذهب الخالص عيار 18. مصممة بحرفية عالية بنقشة هندسية دقيقة، لتشع بالثقة والفخامة العصرية. مقاس مفتوح.",
+      "en": "Add a touch of refined elegance to your ensemble with this magnificent 18K solid gold bangle. Expertly crafted with a detailed geometric patterned texture, it radiates confidence and modern luxury. Free Size."
+    },
+    "categoryId": "cat-bangles",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/8.19.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg42-v1",
+        "sku": "142000015",
+        "weightGrams": 8.19,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 47285,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-07-27T10:08:39.000Z"
+  },
+  {
+    "id": "kg43",
+    "sku": "142000003",
+    "slug": "18k-gold-textured-bangle-with-multi-color-stones-1",
+    "name": {
+      "ar": "غويشة بارزة بأحجار ملونة ذهب عيار 18",
+      "en": "18K Gold Textured Bangle with Multi-Color Stones"
+    },
+    "description": {
+      "ar": "أضفي لمسة فنية إلى مجموعتك مع هذه الاسورة الفاخرة المصنوعة من الذهب الخالص عيار 18. مصممة بحرفية عالية بسطح فريد ذو ملمس بارز، لتلتقط الضوء وتعكس الأناقة العصرية. مقاس مفتوح.",
+      "en": "Introduce an artistic flair to your collection with this exquisite 18K solid gold bangle. Expertly designed with a unique textured surface, it captures the light and reflects modern sophistication. Free Size."
+    },
+    "categoryId": "cat-bangles",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/9.36.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg43-v1",
+        "sku": "142000003",
+        "weightGrams": 9.36,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 54040,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-07-27T10:02:13.000Z"
+  },
+  {
+    "id": "kg44",
+    "sku": "142000011",
+    "slug": "18k-gold-textured-bangle-with-multi-color-stones",
+    "name": {
+      "ar": "غويشة بارزة بأحجار ملونة ذهب عيار 18",
+      "en": "18K Gold Textured Bangle with Multi-Color Stones"
+    },
+    "description": {
+      "ar": "أضفي لمسة فنية إلى مجموعتك مع هذه الاسورة الفاخرة المصنوعة من الذهب الخالص عيار 18. مصممة بحرفية عالية بسطح فريد ذو ملمس بارز، لتلتقط الضوء وتعكس الأناقة العصرية. مقاس مفتوح.",
+      "en": "Introduce an artistic flair to your collection with this exquisite 18K solid gold bangle. Expertly designed with a unique textured surface, it captures the light and reflects modern sophistication. Free Size."
+    },
+    "categoryId": "cat-bangles",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/9.15.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg44-v1",
+        "sku": "142000011",
+        "weightGrams": 9.15,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 52825,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg44-v2",
+        "sku": "142000009",
+        "weightGrams": 9.65,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 55715,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-07-27T09:56:18.000Z"
+  },
+  {
+    "id": "kg45",
+    "sku": "142000010",
+    "slug": "18k-gold-bangle-with-floral-zircon-clusters-2",
+    "name": {
+      "ar": "غويشة بورود زيركون ذهب عيار 18",
+      "en": "18K Gold Bangle with Floral Zircon Clusters"
+    },
+    "description": {
+      "ar": "أناقة لا تضاهى من الذهب عيار 18. يجمع هذا السوار ذو الملمس المزخرف بين التصميم المستوحى من التراث واللمسات الملونة للأحجار الكريمة، ليصبح قطعة خالدة في مجموعتك. مقاس مفتوح.",
+      "en": "Make every moment memorable with this breathtaking 18K solid gold bangle. Masterfully textured and adorned floral zircon clusters, it is the ultimate gift for a loved one or a luxurious treat for yourself. Free Size."
+    },
+    "categoryId": "cat-bangles",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/7.88.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg45-v1",
+        "sku": "142000010",
+        "weightGrams": 7.88,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 45495,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-07-27T09:41:35.000Z"
+  },
+  {
+    "id": "kg46",
+    "sku": "86000016",
+    "slug": "18k-gold-delicate-sparkle-bloom-hand-chain",
+    "name": {
+      "ar": "هاند تشين ورود لامعة ذهب عيار 18",
+      "en": "18K Gold Delicate Sparkle Bloom Hand chain"
+    },
+    "description": {
+      "ar": "قطعة رقيقة وشيك لا غنى عنها. 'فلورال هاند تشين' بتصميمها الهادي، مزينة بوردات بتلمع ومتثبتة في سلسلة دهبي رقيقة. صممناها عشان تبرز جمال إيدك بلمعة خفيفة ومميزة، ومناسبة جداً تكمل أي طقم بتلبسيه.",
+      "en": "A dainty, elegant essential. Our Floral Hand Chain features shimmering floral accents set on a delicate gold-tone chain. Designed to highlight the hand with subtle sparkle, this versatile piece pairs perfectly with any outfit."
+    },
+    "categoryId": "cat-hand-chains",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/8_6efc5a16-be1c-4315-9ebe-6b7a1e05cc79.png",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg46-v1",
+        "sku": "86000016",
+        "weightGrams": 3.12,
+        "stockQty": 0,
+        "stockStatus": "out_of_stock",
+        "fixedPrice": {
+          "amount": 18140,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg46-v2",
+        "sku": "86000017",
+        "weightGrams": 3.18,
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 18485,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": false,
+    "createdAt": "2026-07-08T14:08:46.000Z"
+  },
+  {
+    "id": "kg47",
+    "sku": "18000007",
+    "slug": "18k-gold-royal-floral-half-set",
+    "name": {
+      "ar": "نص طقم الورد الملكي ذهب عيار 18",
+      "en": "18K Gold Royal Floral Half Set"
+    },
+    "description": {
+      "ar": "تأنّقي بفخامة استثنائية مع هذا الطقم المصغوغ من الذهب عيار 18. يتكون من إسورة وخاتم بتصميم محبب مزين بنقوش زهرية رقيقة ومطعم بفصوص الزيركون المتألقة. مقاس الاسوره: 22",
+      "en": "Adorn yourself with timeless sophistication with this exquisite 18K yellow gold jewelry set. Featuring a beautifully textured bangle and a matching ring, each piece is intricately crafted with delicate floral motifs encrusted with brilliant zircon stones. Bangel Size: 22."
+    },
+    "categoryId": "cat-half-sets",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/1_2_83b0e8ac-f4da-4bb4-b97d-7f75937a1d3f.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/1_3_5ae5bb36-0420-41d8-b671-6c75c68597db.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/1_1_26752296-9d9f-4cc4-a3eb-25e07979f8ed.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg47-v1",
+        "sku": "18000007",
+        "weightGrams": 20,
+        "size": "17",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 116970,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg47-v2",
+        "sku": "18000011",
+        "weightGrams": 20.32,
+        "size": "18",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 118840,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-30T08:06:17.000Z"
+  },
+  {
+    "id": "kg48",
+    "sku": "18000008",
+    "slug": "18k-gold-royal-floral-half-set-3",
+    "name": {
+      "ar": "نص طقم الورد الملكي ذهب عيار 18",
+      "en": "18K Gold Royal Floral Half Set"
+    },
+    "description": {
+      "ar": "تأنّقي بفخامة استثنائية مع هذا الطقم المصغوغ من الذهب عيار 18. يتكون من إسورة وخاتم بتصميم محبب مزين بنقوش زهرية رقيقة ومطعم بفصوص الزيركون المتألقة. مقاس الاسوره: 22",
+      "en": "Adorn yourself with timeless sophistication with this exquisite 18K yellow gold jewelry set. Featuring a beautifully textured bangle and a matching ring, each piece is intricately crafted with delicate floral motifs encrusted with brilliant zircon stones. Bangel Size: 22."
+    },
+    "categoryId": "cat-half-sets",
+    "metal": "yellow_gold",
+    "karat": 18,
+    "pricingMode": "fixed",
+    "makingCharge": {
+      "type": "per_gram",
+      "value": 0
+    },
+    "stones": [],
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/4_3_8e2b14ec-0df9-4a4e-b9a6-888c87a5ada0.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/4_2_737b6ff4-9bb2-439d-97e3-4a6521bd5cf2.jpg",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/4_1_37c0993a-5786-4d00-b859-bb67eab6ea8f.jpg",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "variants": [
+      {
+        "id": "kg48-v1",
+        "sku": "18000008",
+        "weightGrams": 20.63,
+        "size": "19",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 120655,
+          "currency": "EGP"
+        }
+      },
+      {
+        "id": "kg48-v2",
+        "sku": "18000010",
+        "weightGrams": 21.32,
+        "size": "17",
+        "stockQty": 3,
+        "stockStatus": "in_stock",
+        "fixedPrice": {
+          "amount": 124690,
+          "currency": "EGP"
+        }
+      }
+    ],
+    "tags": [],
+    "isFeatured": false,
+    "isNew": true,
+    "createdAt": "2026-09-30T08:19:53.000Z"
   }
 ]

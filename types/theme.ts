@@ -68,7 +68,7 @@ export interface ThemeTypography {
   /** Base text size in px (all sizes on the site scale from this). 14–18 */
   baseSize: number;
   /** Heading boldness: 500 medium … 800 extra bold */
-  headingWeight: 500 | 600 | 700 | 800;
+  headingWeight: 400 | 500 | 600 | 700 | 800;
   /** Space between lines of body text, e.g. 1.6 */
   lineHeight: number;
   /** Letter spacing for English headings in em, e.g. 0 or 0.02 */
@@ -90,6 +90,58 @@ export interface ThemeLayout {
   productImageRatio: "square" | "portrait";
   /** Products per row on desktop */
   gridColumns: 3 | 4 | 5;
+  /** How a product card looks (dashboard → Theme & design → Layout → Product cards). Defaults: lib/theme-chrome.ts → DEFAULT_PRODUCT_CARD */
+  card: ProductCardStyle;
+}
+
+/** PRODUCT CARD look — used by storefront/components/product/ProductCard.tsx */
+export interface ProductCardStyle {
+  /** Name and price: start = right in Arabic / left in English, or centred */
+  align: "start" | "center";
+  /** Show the "New" label on the picture */
+  newBadge: boolean;
+  /** Show the product's second picture when the mouse is over the card */
+  hoverImage: boolean;
+  /** Sold-out pieces: a small label in the corner, or a shade over the picture with "Sold out" in the middle */
+  soldOut: "badge" | "overlay";
+  /** Write "From" before the price when the sizes have different prices */
+  fromPrice: boolean;
+  /** Thin line around the picture */
+  frame: boolean;
+  /** Size of the product name */
+  nameSize: "sm" | "md" | "lg";
+  /** Size of the price */
+  priceSize: "sm" | "md" | "lg";
+  /** A full-width button that slides up over the bottom of the picture on mouse-over (opens the product). Empty text = "Choose option" */
+  hoverButton: { show: boolean; label: LocalizedText };
+  /** Own currency sign on the cards, e.g. "LE" / "ج.م". Empty = the normal one (EGP) */
+  priceSymbol: LocalizedText;
+  /** Show piastres: 96,065.00 instead of 96,065 */
+  priceDecimals: boolean;
+  /** Background behind product pictures. "" = the soft site colour */
+  imageBackground: string;
+  /** Look of the "Sold out" shade + label (soldOut = "overlay"). Dashboard → Layout → Product cards → Sold out look */
+  soldOutLook: SoldOutLook;
+}
+
+export interface SoldOutLook {
+  /** Shade colour over the picture. "" = the site's main colour */
+  shade: string;
+  /** How strong the shade is: 0 (none) … 80 (%) */
+  strength: number;
+  /** Show the picture in black & white */
+  grayscale: boolean;
+  /** Label colours. "" = white box / black words */
+  labelBackground: string;
+  labelText: string;
+  /** Own words. Empty = "Sold out" */
+  label: LocalizedText;
+  shape: "square" | "rounded" | "pill";
+  /** Where the label sits on the picture */
+  position: "center" | "top" | "bottom";
+  size: "sm" | "md" | "lg";
+  /** Thin line around the label */
+  border: boolean;
 }
 
 export interface ThemeBrand {
@@ -163,6 +215,34 @@ export interface ThemeHeader {
     order: string[];
     /** Extra links, shown after the others */
     extra: ChromeLink[];
+    /** "Categories" opens a drop-down list of the categories (+ "All products") instead of going to the categories page */
+    categoriesDropdown: boolean;
+    /** Own name for the "Categories" link (e.g. "Shop"). Empty = the normal name */
+    categoriesLabel: LocalizedText;
+    /** Put the chosen pages under one drop-down (e.g. "About ▾" → About us · B2B · Contact) */
+    pagesDropdown: { enabled: boolean; label: LocalizedText };
+    /** Which categories the "Categories" drop-down lists, in this order (ids). Empty = all main categories */
+    categoriesDropdownIds: string[];
+    /** Last line of the categories drop-down ("Shop all" → all products) */
+    shopAll: { show: boolean; label: LocalizedText };
+  };
+  /**
+   * FREE POSITIONS (dashboard → Header → "Positions"). When on, the computer header is built from up to 3 rows
+   * (top strip · main row · bottom row), each with a start / centre / end area, and every part is placed where the
+   * client chooses. Phones keep their own simple header ([☰] [logo] [search · cart]).
+   */
+  builder: HeaderBuilder;
+  /** Look of the drop-down lists of the top menu (Header → Menu links → "Drop-down look") */
+  dropdown: {
+    /** "" = the page background colour */
+    background: string;
+    /** "" = the header text colour */
+    foreground: string;
+    border: boolean;
+    shadow: boolean;
+    textSize: "sm" | "md" | "lg";
+    /** Space around each line */
+    spacing: "compact" | "normal" | "roomy";
   };
   menuSize: "sm" | "md" | "lg";
   menuWeight: "normal" | "bold";
@@ -187,6 +267,8 @@ export interface ThemeHeader {
     size: "sm" | "md" | "lg";
     /** Which drawing each icon uses — ids from the icon library (lib/icon-library.ts). "menu" = the ☰ button on phones */
     set: { search: string; account: string; cart: string; menu: string; language: string };
+    /** "icons" = pictures · "text" = words ("Search · Login · Cart (2)") on computers */
+    display: "icons" | "text";
   };
   /**
    * See-through header that sits ON TOP of the first big picture of a page (homepage slider, page title banner with a picture).
@@ -201,6 +283,8 @@ export interface ThemeHeader {
     /** Text / icon colour while it is see-through. "" = the normal header text colour */
     foreground: string;
   };
+  /** The search bar that opens under the header (dashboard → Header → Search bar) */
+  search: HeaderSearchStyle;
   /** Strip above the header ("Free delivery this week") */
   announcement: {
     enabled: boolean;
@@ -210,10 +294,73 @@ export interface ThemeHeader {
     /** "" = the site's main colour / its text colour */
     background: string;
     foreground: string;
+    /** Where the words sit in the strip */
+    align: "start" | "center" | "end";
+    /** A small phone icon before the words */
+    phoneIcon: boolean;
   };
 }
 
-export type FooterColumn = "about" | "links" | "contact" | "social";
+/** A part of the header that can be placed freely */
+/**
+ * Look of the search bar that opens when the magnifier in the header is clicked.
+ * Colours: "" = automatic from the site colours (field frame / button = main colour, button on hover = accent colour).
+ */
+export interface HeaderSearchStyle {
+  /** "simple" = rounded field with a small magnifier · "boxed" = framed field + coloured search button + close (✕) button */
+  look: "simple" | "boxed";
+  /** "narrow" = centred, medium width · "full" = the whole width of the page */
+  width: "narrow" | "full";
+  /** Words in the field. "" = the default ("Search products…") */
+  placeholder: LocalizedText;
+  /** Words as a small title in the top corner of the field (stays while typing) instead of inside it */
+  floatingLabel: boolean;
+  /** Word on the search button ("Search"). "" = magnifier only */
+  buttonText: LocalizedText;
+  /** When the word on the button shows: always, or only when the mouse is on the button */
+  buttonTextOn: "always" | "hover";
+  fieldBackground: string;
+  fieldBorder: string;
+  labelColor: string;
+  buttonColor: string;
+  buttonTextColor: string;
+  buttonHoverColor: string;
+  buttonHoverTextColor: string;
+  /** The ✕ button that closes the bar ("boxed" only) */
+  closeButton: boolean;
+  closeColor: string;
+}
+
+export type HeaderPart = "logo" | "menu" | "search" | "account" | "cart" | "language" | "text";
+export type HeaderRow = "top" | "main" | "bottom";
+export type HeaderZone = "start" | "center" | "end";
+export interface HeaderPlacement {
+  part: HeaderPart;
+  row: HeaderRow;
+  zone: HeaderZone;
+  /** false = not shown */
+  show: boolean;
+}
+export interface HeaderBuilder {
+  enabled: boolean;
+  /** The parts in their order: within the same row + area, the first one in this list comes first */
+  items: HeaderPlacement[];
+  /** Height of the top strip and of the bottom row */
+  topHeight: "compact" | "normal";
+  bottomHeight: "compact" | "normal";
+  /** Thin line between the rows */
+  rowLines: boolean;
+}
+
+export type FooterColumn = "about" | "links" | "contact" | "social" | "groups";
+
+/** A column the designer builds: a title + links and/or a short text (e.g. "Working hours") */
+export interface FooterGroup {
+  title: LocalizedText;
+  links: ChromeLink[];
+  /** Plain text under the links (opening hours, a short note). Empty = none */
+  text: LocalizedText;
+}
 
 /**
  * FOOTER — dashboard → "Footer". Defaults + checks: lib/theme-chrome.ts.
@@ -257,7 +404,15 @@ export interface ThemeFooter {
   /** No footer colour: the page background shows through (the footer text colour is still used) */
   transparent: boolean;
   /** Social icons: plain, or inside a circle */
-  socialStyle: "plain" | "circle";
+  socialStyle: "plain" | "circle" | "square";
+  /** Social icons: in their own column, or in a centred row above the last line */
+  socialPlacement: "column" | "row";
+  /** Own columns (dashboard → Footer → Own columns). They show where "groups" sits in `columns` */
+  groups: FooterGroup[];
+  /** Show the contact lines under the logo and tagline (instead of their own column) */
+  contactUnderAbout: boolean;
+  /** Size of the column titles */
+  headingSize: "sm" | "md" | "lg";
   /** The last line */
   bottom: {
     show: boolean;
@@ -268,6 +423,8 @@ export interface ThemeFooter {
     align: "start" | "center" | "between";
     /** "" = same as the footer */
     background: string;
+    /** Small links after the copyright (Privacy policy · Refund policy) */
+    links: ChromeLink[];
   };
   /** "Back to top" button in the last line */
   backToTop: boolean;
@@ -287,6 +444,23 @@ export interface ThemeFilters {
    * Empty = all main categories, in the order of the Categories page.
    */
   categoryIds: string[];
+  /**
+   * WHERE AND HOW the filter shows on computers (phones always use a "Filter" button that opens a panel):
+   *   "sidebar" = always open in a column next to the products · "drawer" = a "Filter" button that opens a side panel
+   */
+  display: "sidebar" | "drawer";
+  /** Side of the column / the side the panel slides in from: start = right in Arabic, left in English */
+  side: "start" | "end";
+  /** The "Filter" button: icon only · word only · icon + word */
+  buttonLook: "icon" | "text" | "both";
+  /** Where the button sits in the bar above the products (with "Sort by" and the product count on the other side) */
+  buttonPosition: "start" | "end";
+  /** Show the product count in that bar */
+  showCount: boolean;
+  /** Which drawing the "Filter" button uses — an id from the icon library (lib/icon-library.ts → filter) */
+  icon: string;
+  /** Two buttons in the bar to switch the products between the normal grid and big cards (2 per row) */
+  viewSwitch: boolean;
 }
 
 /** The parts of a product's page that can be switched off (dashboard → "Product page") */
@@ -327,6 +501,28 @@ export interface ThemeProductPage {
   buttonShape: "theme" | "square" | "pill";
   /** How many "You may also like" products */
   relatedCount: 4 | 8;
+  /** Size of the product name */
+  titleSize: "md" | "lg" | "xl";
+  /** Size of the price */
+  priceSize: "md" | "lg" | "xl";
+  /** Price with the product cards' own currency sign and piastres (Layout → Product cards → Price) */
+  cardPriceFormat: boolean;
+  /**
+   * How the choices look:
+   *   "pills"  = one row of filled size buttons (original)
+   *   "boxes"  = groups with a title ("Karat: 18K", "Size: 14", "Weight: 16.50") and outlined square boxes
+   */
+  optionsStyle: "pills" | "boxes";
+  /** Karat and weight as a framed line ("Weight: 16.50g") instead of the small facts row */
+  factsBox: boolean;
+  /** "Quantity" title with the − / + on its own line, above the buttons */
+  quantityOwnRow: boolean;
+  /** Photos: big photo + small photos under it, or all photos one under the other */
+  gallery: "thumbs" | "stack";
+  /** Line between the price and the choices */
+  divider: boolean;
+  /** Button icons after the text ("Add To Cart 👜") instead of before it */
+  iconEnd: boolean;
 }
 
 export interface SiteTheme {

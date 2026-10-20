@@ -13,6 +13,7 @@
  *                                  The SAME shapes are in the dashboard's config/image-frames.ts (heroSlide / heroSlideMobile),
  *                                  so the picture cropped there shows here exactly — change both together
  *   - Seconds per slide         -> SLIDE_SECONDS in HeroSlider.tsx
+ *   - Height (original / taller / whole screen) -> dashboard → the slider's "Height" (HEIGHT in HeroSlider.tsx)
  */
 import type { HeroSection as HeroSectionType } from "@/types";
 import { localePath } from "@/i18n/config";
@@ -39,5 +40,5 @@ export function HeroSection({ section, locale, dict }: SectionProps<HeroSectionT
       };
     });
   if (!slides.length) return null;
-  return <HeroSlider slides={slides} labels={{ previous: dict.common.previous, next: dict.common.next, slide: dict.common.slide }} />;
+  return <HeroSlider slides={slides} height={section.data.height ?? "md"} labels={{ previous: dict.common.previous, next: dict.common.next, slide: dict.common.slide }} />;
 }

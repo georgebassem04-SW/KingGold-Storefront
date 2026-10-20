@@ -16,6 +16,12 @@ import { cn } from "@/lib/utils";
 import { buttonsApart, newTab, HERO_ROW_CLASS, HERO_X_CLASS, HERO_Y_CLASS, TITLE_SIZE } from "./hero-layout";
 
 const SLIDE_SECONDS = 6;
+/** Slider height (dashboard → the slider → "Height"). "full" = the whole screen (also under a see-through header) */
+const HEIGHT = {
+  md: "aspect-[3/4] max-h-[80vh] min-h-[380px] md:aspect-[16/7]",
+  lg: "aspect-[3/4] max-h-[90vh] min-h-[440px] md:aspect-[16/9]",
+  full: "h-[100svh] min-h-[480px]",
+} as const;
 /** The area words / buttons are placed in: the whole slide, with room at the edges (and for the dots at the bottom) */
 const layer = "absolute inset-0 mx-auto flex max-w-7xl flex-col gap-4 px-6 pt-10 pb-14 md:px-16 md:pt-14";
 
@@ -31,7 +37,7 @@ export interface HeroSlide {
   style: HeroStyle;
 }
 
-export function HeroSlider({ slides, labels }: { slides: HeroSlide[]; labels: { previous: string; next: string; slide: string } }) {
+export function HeroSlider({ slides, labels, height = "md" }: { slides: HeroSlide[]; labels: { previous: string; next: string; slide: string }; height?: keyof typeof HEIGHT }) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const many = slides.length > 1;
@@ -47,7 +53,7 @@ export function HeroSlider({ slides, labels }: { slides: HeroSlide[]; labels: { 
     <section
       // data-overlay-hero: a see-through header (dashboard → Header) may sit on top of this picture — see app/globals.css
       data-overlay-hero=""
-      className="relative aspect-[3/4] max-h-[80vh] min-h-[380px] w-full overflow-hidden md:aspect-[16/7]"
+      className={cn("relative w-full overflow-hidden", HEIGHT[height])}
       aria-roledescription="carousel"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
@@ -96,8 +102,8 @@ export function HeroSlider({ slides, labels }: { slides: HeroSlide[]; labels: { 
 
             {/* WORDS (+ the buttons, unless they have their own place) */}
             <div className={cn(layer, HERO_X_CLASS[st.x], HERO_Y_CLASS[st.y])} style={{ color: st.textColor || "#ffffff" }}>
-              {s.title && <Title className={cn("max-w-2xl font-bold", TITLE_SIZE[st.titleSize])} style={{ color: st.titleColor || undefined }}>{s.title}</Title>}
-              {s.subtitle && <p className="max-w-xl text-lg opacity-90">{s.subtitle}</p>}
+              {s.title && <Title className={cn("max-w-3xl", TITLE_SIZE[st.titleSize])} style={{ color: st.titleColor || undefined }}>{s.title}</Title>}
+              {s.subtitle && <p className="max-w-2xl text-lg opacity-90">{s.subtitle}</p>}
               {!apart && buttons(st.x)}
             </div>
             {/* BUTTONS in their own place */}

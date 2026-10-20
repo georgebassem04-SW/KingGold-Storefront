@@ -1,34 +1,35 @@
 [
   {
-    "id": "brand-0",
-    "slug": "classic",
+    "id": "brand-pharaoh",
+    "slug": "pharaoh-collection",
     "name": {
-      "ar": "كلاسيك",
-      "en": "Classic"
+      "ar": "المجموعة الفرعونية",
+      "en": "Pharaoh Collection"
+    },
+    "logo": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/1_05fcb2f4-80a3-4401-a7e4-860a24a8b794.png"
     }
   },
   {
-    "id": "brand-1",
-    "slug": "bridal",
+    "id": "brand-letters",
+    "slug": "letters",
     "name": {
-      "ar": "عرائس",
-      "en": "Bridal"
+      "ar": "الحروف",
+      "en": "Letters"
+    },
+    "logo": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/WhatsAppImage2026-10-15at11.45.24AM_2.jpg"
     }
   },
   {
-    "id": "brand-2",
-    "slug": "italiano",
+    "id": "brand-summer",
+    "slug": "summer-collection",
     "name": {
-      "ar": "إيطالي",
-      "en": "Italiano"
-    }
-  },
-  {
-    "id": "brand-3",
-    "slug": "kids",
-    "name": {
-      "ar": "أطفال",
-      "en": "Kids"
+      "ar": "مجموعة الصيف",
+      "en": "Summer Collection"
+    },
+    "logo": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/4.46.jpg"
     }
   }
 ]

@@ -19,7 +19,8 @@
     "language": "Language",
     "customOrder": "Design your piece",
     "darkMode": "Dark mode",
-    "lightMode": "Light mode"
+    "lightMode": "Light mode",
+    "shopAll": "All products"
   },
   "footer": {
     "quickLinks": "Quick Links",
@@ -91,7 +92,10 @@
     "none": "None",
     "pieces": "pieces",
     "offer": "Special offer",
-    "offerDiscount": "Offer discount"
+    "offerDiscount": "Offer discount",
+    "soldOut": "Sold out",
+    "from": "From",
+    "chooseOption": "Choose option"
   },
   "gold": {
     "todayPrices": "Today's gold prices",
@@ -488,7 +492,9 @@
     "shopNow": "Shop now",
     "otherCategories": "Other categories",
     "offers": "Special offers",
-    "offersOnly": "Offers only"
+    "offersOnly": "Offers only",
+    "viewGrid": "Grid",
+    "viewLarge": "Big cards"
   },
   "customOrder": {
     "intro": "Have a photo of a piece you love, or an idea you'd like made? Upload the photo, tell us the details, and our team will get back to you with a price and timing.",

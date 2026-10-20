@@ -1,5 +1,26 @@
 [
   {
+    "id": "cat-necklaces",
+    "slug": "necklaces",
+    "name": {
+      "ar": "سلاسل ودلايات",
+      "en": "Necklaces & Pendants"
+    },
+    "image": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/hf_20260310_195546_6e36fbc2-04a7-448c-9478-003ae9216499.jpg",
+      "width": 800,
+      "height": 1000
+    },
+    "sortOrder": 0,
+    "description": {
+      "ar": "سلاسل وكوليهات ودلايات ذهب عيار 18.",
+      "en": "18K gold necklaces, chains and pendants."
+    },
+    "banner": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/hf_20260310_195546_6e36fbc2-04a7-448c-9478-003ae9216499.jpg"
+    }
+  },
+  {
     "id": "cat-rings",
     "slug": "rings",
     "name": {
@@ -7,59 +28,17 @@
       "en": "Rings"
     },
     "image": {
-      "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-335_c738c97a-bf75-4ce3-b737-8679e266a4e6.jpg",
       "width": 800,
-      "height": 800
-    },
-    "sortOrder": 0,
-    "description": {
-      "ar": "خواتم ودبل ذهب بعيارات ١٨ و٢١ — من السوليتير الكلاسيكي إلى الدبل اليومية.",
-      "en": "Gold rings and bands in 18K and 21K — from classic solitaires to everyday bands."
-    },
-    "banner": {
-      "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600&q=80"
-    }
-  },
-  {
-    "id": "cat-necklaces",
-    "slug": "necklaces",
-    "name": {
-      "ar": "سلاسل وقلائد",
-      "en": "Necklaces"
-    },
-    "image": {
-      "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
-      "width": 800,
-      "height": 800
+      "height": 1000
     },
     "sortOrder": 1,
     "description": {
-      "ar": "سلاسل وقلائد بأطوال وتصميمات مختلفة.",
-      "en": "Chains and pendants in every length and style."
+      "ar": "خواتم ودبل ذهب عيار 18 لكل يوم وكل مناسبة.",
+      "en": "18K gold rings and bands for every day and every occasion."
     },
     "banner": {
-      "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1600&q=80"
-    }
-  },
-  {
-    "id": "cat-bracelets",
-    "slug": "bracelets",
-    "name": {
-      "ar": "أساور",
-      "en": "Bracelets"
-    },
-    "image": {
-      "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
-      "width": 800,
-      "height": 800
-    },
-    "sortOrder": 2,
-    "description": {
-      "ar": "أساور وغوايش ذهب للإطلالة اليومية والمناسبات.",
-      "en": "Bracelets and bangles for every day and every occasion."
-    },
-    "banner": {
-      "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=1600&q=80"
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-335_c738c97a-bf75-4ce3-b737-8679e266a4e6.jpg"
     }
   },
   {
@@ -70,59 +49,122 @@
       "en": "Earrings"
     },
     "image": {
-      "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-366.jpg",
       "width": 800,
-      "height": 800
+      "height": 1000
+    },
+    "sortOrder": 2,
+    "description": {
+      "ar": "حلقان هوب وهاجي ودلايات ذهب عيار 18.",
+      "en": "18K gold hoops, huggies and drop earrings."
+    },
+    "banner": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-366.jpg"
+    }
+  },
+  {
+    "id": "cat-half-sets",
+    "slug": "half-sets",
+    "name": {
+      "ar": "أنصاف أطقم",
+      "en": "Half Sets"
+    },
+    "image": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-396.jpg",
+      "width": 800,
+      "height": 1000
     },
     "sortOrder": 3,
     "description": {
-      "ar": "حلقان بتصميمات ناعمة وأخرى مرصعة بالأحجار.",
-      "en": "Delicate and stone-set earrings."
+      "ar": "أنصاف أطقم ذهب عيار 18 متناسقة.",
+      "en": "Matching 18K gold half sets."
     },
     "banner": {
-      "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1600&q=80"
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-396.jpg"
     }
   },
   {
-    "id": "cat-sets",
-    "slug": "sets",
+    "id": "cat-bracelets",
+    "slug": "bracelets",
     "name": {
-      "ar": "أطقم",
-      "en": "Sets"
+      "ar": "انسيالات",
+      "en": "Bracelets"
     },
     "image": {
-      "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-328.jpg",
       "width": 800,
-      "height": 800
+      "height": 1000
     },
     "sortOrder": 4,
     "description": {
-      "ar": "أطقم كاملة للعرائس والمناسبات.",
-      "en": "Complete sets for brides and special occasions."
+      "ar": "انسيالات ذهب عيار 18 بتصميمات عصرية.",
+      "en": "Modern 18K gold bracelets."
     },
     "banner": {
-      "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1600&q=80"
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-328.jpg"
     }
   },
   {
-    "id": "cat-coins-bars",
-    "slug": "coins-bars",
+    "id": "cat-bangles",
+    "slug": "bangles",
     "name": {
-      "ar": "سبائك وجنيهات",
-      "en": "Coins & Bars"
+      "ar": "غوايش",
+      "en": "Bangles"
     },
     "image": {
-      "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-070.jpg",
       "width": 800,
-      "height": 800
+      "height": 1000
     },
     "sortOrder": 5,
     "description": {
-      "ar": "سبائك وجنيهات ذهب عيار ٢٤ و٢١ للادخار.",
-      "en": "24K and 21K gold bars and coins for saving."
+      "ar": "غوايش وأساور كف ذهب عيار 18.",
+      "en": "18K gold bangles and cuffs."
     },
     "banner": {
-      "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=1600&q=80"
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-070.jpg"
+    }
+  },
+  {
+    "id": "cat-hand-chains",
+    "slug": "hand-chains",
+    "name": {
+      "ar": "هاند تشين",
+      "en": "Hand Chains"
+    },
+    "image": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/IMGL1627copy.jpg",
+      "width": 800,
+      "height": 1000
+    },
+    "sortOrder": 6,
+    "description": {
+      "ar": "هاند تشين ذهب عيار 18 رقيقة ولامعة.",
+      "en": "Delicate 18K gold hand chains."
+    },
+    "banner": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/IMGL1627copy.jpg"
+    }
+  },
+  {
+    "id": "cat-men",
+    "slug": "men",
+    "name": {
+      "ar": "رجالي",
+      "en": "Men"
+    },
+    "image": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-335_c738c97a-bf75-4ce3-b737-8679e266a4e6.jpg",
+      "width": 800,
+      "height": 1000
+    },
+    "sortOrder": 7,
+    "description": {
+      "ar": "خواتم رجالي ذهب عيار 18.",
+      "en": "18K gold signet rings for men."
+    },
+    "banner": {
+      "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-335_c738c97a-bf75-4ce3-b737-8679e266a4e6.jpg"
     }
   }
 ]

@@ -16,7 +16,7 @@ interface Props {
 export function SectionTitle({ title, href, linkLabel, center }: Props) {
   return (
     <div className={cn("mb-6 flex items-end gap-4", center ? "justify-center text-center" : "justify-between")}>
-      <h2 className="text-2xl font-bold md:text-3xl">{title}</h2>
+      <h2 className="text-2xl md:text-3xl">{title}</h2>
       {href && linkLabel && (
         <Link href={href} className="text-sm text-primary hover:underline">
           {linkLabel}

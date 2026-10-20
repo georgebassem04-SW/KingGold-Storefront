@@ -1,7 +1,7 @@
 /**
  * SHOPPING CART (Zustand)
  * ------------------------------------------------------------------
- * Keeps the cart in the browser (localStorage, key "cart"), so it survives a page refresh
+ * Keeps the cart in the browser (localStorage, key "cart-<client id>"), so it survives a page refresh
  * and is shared by every page (header count, product page, cart page).
  *
  *   add(item)                 -> add a product size (or increase its quantity). Returns the quantity now in the cart.
@@ -76,7 +76,9 @@ export const useCartStore = create<CartState>()(
             }),
         })),
     }),
-    { name: "cart" },
+    // One cart per client (e.g. "cart-king-gold"), so two shops tested on the same localhost:3000
+    // never share a cart (an old shop's items had photos from 127.0.0.1:8000 and broke the cart page)
+    { name: `cart-${process.env.NEXT_PUBLIC_CLIENT_ID ?? "demo"}` },
   ),
 );
 

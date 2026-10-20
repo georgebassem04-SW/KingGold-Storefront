@@ -115,6 +115,13 @@
     font-family: var(--font-display), var(--font-latin), serif;
     letter-spacing: var(--heading-tracking, 0);
   }
+  /* "heading-font": any text that should use the heading font without being a heading (names on category tiles…) */
+  html[lang="ar"] .heading-font {
+    font-family: var(--font-arabic-display), var(--font-arabic), system-ui, sans-serif;
+  }
+  html[lang="en"] .heading-font {
+    font-family: var(--font-display), var(--font-latin), serif;
+  }
 }
 
 /* 4) THEME SWITCHES from the dashboard (set as data-* on <html> by app/[locale]/layout.tsx) */
@@ -137,6 +144,15 @@
       grid-template-columns: repeat(var(--grid-cols, 4), minmax(0, 1fr));
     }
   }
+  /* "Big cards" view (the grid / big-cards buttons above the products): 1 per row on phones, 2 from tablets up */
+  .product-grid[data-view="large"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 768px) {
+    .product-grid[data-view="large"] {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   /* Product image shape: square or portrait */
   .product-image {
     aspect-ratio: var(--product-ratio, 1 / 1);
@@ -152,6 +168,11 @@
  *    Tailwind's utility classes (bg-header, sticky…), which is needed to switch the header's colour / position.
  */
 /* Header links & icons on hover: the colour chosen in the dashboard (Header → Hover colour), else a soft fade */
+/* Lines of the menu's drop-down lists: the header's hover colour, else a soft fade */
+.site-header .dd-link:hover {
+  color: var(--header-hover, inherit);
+  opacity: 0.8;
+}
 .site-header .nav-link {
   transition: color 0.15s, opacity 0.15s;
 }

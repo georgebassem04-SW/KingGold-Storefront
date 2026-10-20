@@ -16,6 +16,8 @@
  *   - Buttons: order, colours, filled / outline, icon, size, corners, side by side, text position
  *                                     -> dashboard → Product page (prop `look`; colours: lib/theme-chrome.ts → productButtonCss)
  *   - Remove "Buy now" for good           -> delete the block marked BUY NOW below
+ *   - Price size, "LE 96,065.00" look, choices as boxes, weight box, quantity line, icon after text
+ *                                     -> dashboard → Product page → "Name, price & choices"
  *   - Hide weight                -> config/clients/demo.ts -> features.showWeight
  *   - WhatsApp number            -> config/clients/demo.ts -> contact.whatsapp
  */
@@ -31,7 +33,7 @@ import { DEFAULT_PRODUCT_PAGE, productButtonCss } from "@/lib/theme-chrome";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { PriceBreakdown } from "@/lib/pricing";
 import { useCartStore } from "@/stores/cart-store";
-import { fill, formatPrice, formatWeight } from "@/lib/format";
+import { fill, formatCardPrice, formatPrice, formatWeight } from "@/lib/format";
 import { cn } from "@/lib/utils";
 
 export interface PurchaseVariant {
@@ -61,7 +63,12 @@ interface Props {
   /** Parts that can be switched off in the dashboard → Product page (nothing passed = everything shown) */
   show?: { priceNote: boolean; stock: boolean; quantity: boolean; buyNow: boolean; priceBreakdown: boolean };
   /** Look and order of the buttons + text position (dashboard → Product page). Nothing passed = the original design */
-  look?: Pick<ThemeProductPage, "buttons" | "buttonOrder" | "buttonsLayout" | "buttonSize" | "buttonShape" | "align">;
+  look?: Pick<
+    ThemeProductPage,
+    "buttons" | "buttonOrder" | "buttonsLayout" | "buttonSize" | "buttonShape" | "align" | "priceSize" | "optionsStyle" | "factsBox" | "quantityOwnRow" | "divider" | "iconEnd"
+  >;
+  /** Price look shared with the product cards ("LE" + piastres). Nothing passed = normal currency format */
+  priceFormat?: { symbol: string; decimals: boolean };
 }
 
 /** Button height and text size (dashboard → Product page → Size) */
@@ -72,12 +79,15 @@ const SHAPE = { theme: "rounded-md", square: "rounded-none", pill: "rounded-full
 const JUSTIFY = { start: "justify-start", center: "justify-center", end: "justify-end" } as const;
 const TEXT = { start: "text-start", center: "text-center", end: "text-end" } as const;
 
+/** Price size (dashboard → Product page → Price size) */
+const PRICE_SIZE = { md: "text-3xl font-bold", lg: "text-3xl font-semibold md:text-4xl", xl: "text-4xl font-semibold md:text-5xl" } as const;
+
 const SHOW_ALL = { priceNote: true, stock: true, quantity: true, buyNow: true, priceBreakdown: true };
 
 // A size can be bought when it has stock or is made to order
 const canBuy = (v: PurchaseVariant) => v.stockQty > 0 || v.stockStatus === "made_to_order";
 
-export function ProductPurchase({ locale, labels, product, variants, currency, showWeight, goldRatePerGram, whatsapp, cartHref, checkoutHref, show = SHOW_ALL, look = DEFAULT_PRODUCT_PAGE }: Props) {
+export function ProductPurchase({ locale, labels, product, variants, currency, showWeight, goldRatePerGram, whatsapp, cartHref, checkoutHref, show = SHOW_ALL, look = DEFAULT_PRODUCT_PAGE, priceFormat }: Props) {
   const router = useRouter();
   // Start on the first size that can be bought
   const [variantId, setVariantId] = useState(() => (variants.find(canBuy) ?? variants[0])?.id);
@@ -89,6 +99,9 @@ export function ProductPurchase({ locale, labels, product, variants, currency, s
 
   const variant = useMemo(() => variants.find((v) => v.id === variantId) ?? variants[0], [variants, variantId]);
   const price = (n: number) => formatPrice(n, currency, locale);
+  // The big price: card look ("LE 96,065.00") when switched on in the dashboard
+  const bigPrice = (n: number) => (priceFormat ? formatCardPrice(n, currency, locale, priceFormat.symbol, priceFormat.decimals) : price(n));
+  const boxes = look.optionsStyle === "boxes";
 
   // Most pieces are limited by stock; made-to-order has no limit
   const maxQty = variant.stockStatus === "made_to_order" ? undefined : variant.stockQty;
@@ -151,7 +164,7 @@ export function ProductPurchase({ locale, labels, product, variants, currency, s
   const stacked = look.buttonsLayout === "stack";
   // The ones that show right now, in the dashboard's order
   const buttons = look.buttonOrder.filter((k) => (k === "cart" ? true : k === "buy" ? show.buyNow && canBuy(variant) : !!whatsapp));
-  const base = cn("inline-flex items-center justify-center gap-2 border font-semibold transition-opacity hover:opacity-85 disabled:pointer-events-none disabled:opacity-50 [&_svg]:size-4 [&_svg]:shrink-0", SIZE[look.buttonSize], SHAPE[look.buttonShape]);
+  const base = cn("inline-flex items-center justify-center gap-2 border font-semibold transition-opacity hover:opacity-85 disabled:pointer-events-none disabled:opacity-50 [&_svg]:size-4 [&_svg]:shrink-0", SIZE[look.buttonSize], SHAPE[look.buttonShape], look.iconEnd && "flex-row-reverse");
 
   function renderButton(k: ProductButton, width: string) {
     const b = look.buttons[k];
@@ -213,8 +226,8 @@ export function ProductPurchase({ locale, labels, product, variants, currency, s
           <>
             {/* On a special offer: new price, old price crossed out, and the offer's text */}
             <p className={cn("flex flex-wrap items-baseline gap-x-3 gap-y-1", JUSTIFY[look.align])}>
-              <span className="text-3xl font-bold text-primary">{price(variant.offer.total)}</span>
-              <s className="text-lg text-muted-foreground">{price(variant.price.total)}</s>
+              <span className={cn(PRICE_SIZE[look.priceSize], "text-primary")}>{bigPrice(variant.offer.total)}</span>
+              <s className="text-lg text-muted-foreground">{bigPrice(variant.price.total)}</s>
               {variant.offer.percent >= 1 && (
                 <span dir="ltr" className="rounded-full bg-destructive px-2 py-0.5 text-sm font-semibold text-white">
                   -{variant.offer.percent}%
@@ -224,13 +237,25 @@ export function ProductPurchase({ locale, labels, product, variants, currency, s
             <p className="mt-1 text-sm font-medium text-destructive">{variant.offer.label}</p>
           </>
         ) : (
-          <p className="text-3xl font-bold text-primary">{price(variant.price.total)}</p>
+          <p className={cn(PRICE_SIZE[look.priceSize], "text-primary")}>{bigPrice(variant.price.total)}</p>
         )}
         {!product.isFixedPrice && show.priceNote && <p className="mt-1 text-sm text-muted-foreground">{labels.priceNote}</p>}
+        {/* Line under the price (dashboard → Product page → Line under the price) */}
+        {look.divider && <div className="mt-6 border-t" />}
       </div>
 
-      {/* ===== KEY FACTS: karat · weight · stock ===== */}
-      <div className={cn("flex flex-wrap items-center gap-x-6 gap-y-2 text-sm", JUSTIFY[look.align])}>
+      {/* ===== WEIGHT BOX ("Weight: 16.50g" in a frame) — dashboard → Product page → Weight in a box ===== */}
+      {look.factsBox && showWeight && (
+        <div className={cn("flex", JUSTIFY[look.align])}>
+          <p className="rounded-md border px-4 py-2 text-sm">
+            {labels.weight}: {formatWeight(variant.weightGrams, locale)}
+            {labels.grams}
+          </p>
+        </div>
+      )}
+
+      {/* ===== KEY FACTS: karat · weight · stock ===== (with "boxes" these move into the choice groups below) */}
+      {!boxes && <div className={cn("flex flex-wrap items-center gap-x-6 gap-y-2 text-sm", JUSTIFY[look.align])}>
         <span>
           <span className="text-muted-foreground">{labels.karat}: </span>
           <strong>{product.karat}K</strong>
@@ -254,10 +279,37 @@ export function ProductPurchase({ locale, labels, product, variants, currency, s
         >
           {stockLabel[variant.stockStatus]}
         </span>}
-      </div>
+      </div>}
+
+      {/* ===== CHOICES AS BOXES: "Karat: 18K" · "Size: 14" · "Weight: 16.50" with outlined square boxes ===== */}
+      {boxes && (
+        <div className="space-y-4">
+          <OptionGroup label={labels.karat} value={`${product.karat}K`} align={look.align}>
+            <OptionBox active>{product.karat}K</OptionBox>
+          </OptionGroup>
+          {showSizes && (
+            <OptionGroup label={labels.size} value={variant.size ?? ""} align={look.align}>
+              {variants.map((v) => (
+                <OptionBox key={v.id} active={v.id === variant.id} disabled={!canBuy(v)} onClick={() => selectVariant(v.id)}>
+                  {v.size}
+                </OptionBox>
+              ))}
+            </OptionGroup>
+          )}
+          {showWeight && (
+            <OptionGroup label={labels.weight} value={`${formatWeight(variant.weightGrams, locale)}${labels.grams}`} align={look.align}>
+              <OptionBox active>{formatWeight(variant.weightGrams, locale)}</OptionBox>
+            </OptionGroup>
+          )}
+          {/* Low / out of stock still shows a short note */}
+          {variant.stockStatus !== "in_stock" && (show.stock || variant.stockStatus === "out_of_stock") && (
+            <p className={cn("text-sm", variant.stockStatus === "out_of_stock" ? "text-destructive" : "text-muted-foreground")}>{stockLabel[variant.stockStatus]}</p>
+          )}
+        </div>
+      )}
 
       {/* ===== SIZE PICKER ===== (hidden when the product has a single size) */}
-      {showSizes && (
+      {!boxes && showSizes && (
         <div>
           <p className="mb-2 text-sm font-medium">{labels.chooseSize}</p>
           <div className={cn("flex flex-wrap gap-2", JUSTIFY[look.align])}>
@@ -280,12 +332,20 @@ export function ProductPurchase({ locale, labels, product, variants, currency, s
         </div>
       )}
 
+      {/* ===== QUANTITY ON ITS OWN LINE ("Quantity" title, then − 1 +) — dashboard → Product page ===== */}
+      {look.quantityOwnRow && show.quantity && (
+        <div>
+          <p className="mb-2 text-sm">{labels.quantity}</p>
+          <div className={cn("flex", JUSTIFY[look.align])}>{quantity}</div>
+        </div>
+      )}
+
       {/* ===== QUANTITY + BUTTONS ===== order, look and layout: dashboard → Product page */}
       {stacked ? (
         <div className="space-y-3">
           {buttons.map((k) =>
             // One under the other: the quantity sits beside "Add to cart"
-            k === "cart" && show.quantity ? (
+            k === "cart" && show.quantity && !look.quantityOwnRow ? (
               <div key={k} className="flex flex-wrap items-stretch gap-3">
                 {quantity}
                 {renderButton(k, "flex-1")}
@@ -297,7 +357,7 @@ export function ProductPurchase({ locale, labels, product, variants, currency, s
         </div>
       ) : (
         <div className={cn("flex flex-wrap items-stretch gap-3", JUSTIFY[look.align])}>
-          {show.quantity && quantity}
+          {show.quantity && !look.quantityOwnRow && quantity}
           {buttons.map((k) => renderButton(k, "min-w-36 flex-1"))}
         </div>
       )}
@@ -339,6 +399,37 @@ export function ProductPurchase({ locale, labels, product, variants, currency, s
         </details>
       )}
     </div>
+  );
+}
+
+/** One choice group: "Size: 14" title + its boxes */
+function OptionGroup({ label, value, align, children }: { label: string; value: string; align: "start" | "center" | "end"; children: React.ReactNode }) {
+  return (
+    <div>
+      <p className="mb-2 text-sm">
+        {label}: <span className="font-medium">{value}</span>
+      </p>
+      <div className={cn("flex flex-wrap gap-2", JUSTIFY[align])}>{children}</div>
+    </div>
+  );
+}
+
+/** Outlined square box. Chosen = dark frame; not available = crossed out */
+function OptionBox({ active, disabled, onClick, children }: { active?: boolean; disabled?: boolean; onClick?: () => void; children: React.ReactNode }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={!!active}
+      className={cn(
+        "min-w-14 border px-4 py-2 text-sm transition-colors",
+        active ? "border-foreground" : "border-border hover:border-foreground",
+        disabled && "text-muted-foreground line-through opacity-60",
+        !onClick && "cursor-default",
+      )}
+    >
+      {children}
+    </button>
   );
 }
 

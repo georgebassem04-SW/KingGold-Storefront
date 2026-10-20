@@ -1,8 +1,8 @@
 /**
- * ICON LIBRARY — the icons a client can choose for the header and the footer.
+ * ICON LIBRARY — the icons a client can choose for the header, the footer and the product filter button.
  * ------------------------------------------------------------------
  * The SAME file exists in the dashboard (lib/icon-library.ts) — keep both identical.
- * Chosen in the dashboard → Header → Icons and Footer → Contact details. Only the icon's ID is saved
+ * Chosen in the dashboard → Header → Icons, Footer → Contact details and Product filter → "Button icon". Only the icon's ID is saved
  * (e.g. "bag-line"); this file turns the ID into the drawing, on the website and in the dashboard's picker.
  *
  *   ICON_LIBRARY[slot][id]  -> the icon (null = "no icon, show the text", used by the language switch)
@@ -20,6 +20,12 @@ import {
   CircleUserRound,
   Clock,
   Equal,
+  Funnel,
+  FunnelPlus,
+  ListFilter,
+  Settings2,
+  SlidersHorizontal,
+  SlidersVertical,
   Globe,
   Handbag,
   Headset,
@@ -47,6 +53,8 @@ import {
   FaBars,
   FaClock,
   FaEnvelope,
+  FaFilter,
+  FaSlidersH,
   FaGlobe,
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -62,6 +70,7 @@ import {
   FaUserCircle,
   FaWhatsapp,
 } from "react-icons/fa";
+import { BsFilterLeft, BsSliders } from "react-icons/bs";
 
 export type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
 const as = (c: unknown) => c as IconComponent;
@@ -71,8 +80,8 @@ const bold = (icon: unknown): IconComponent => {
   return Bold;
 };
 
-/** Header slots, then footer-contact slots */
-export const ICON_SLOTS = ["search", "account", "cart", "menu", "language", "phone", "whatsapp", "email", "address", "hours"] as const;
+/** Header slots, then footer-contact slots, then the product filter button */
+export const ICON_SLOTS = ["search", "account", "cart", "menu", "language", "phone", "whatsapp", "email", "address", "hours", "filter"] as const;
 export type IconSlot = (typeof ICON_SLOTS)[number];
 
 export const ICON_LIBRARY: Record<IconSlot, Record<string, IconComponent | null>> = {
@@ -144,6 +153,19 @@ export const ICON_LIBRARY: Record<IconSlot, Record<string, IconComponent | null>
     "clock-regular": as(FaRegClock),
     "timer-line": as(Timer),
   },
+  /** The "Filter" button above the products (dashboard → Product filter → Button icon) */
+  filter: {
+    "sliders-line": as(SlidersHorizontal),
+    "sliders-vertical-line": as(SlidersVertical),
+    "sliders-thin": as(BsSliders),
+    "sliders-solid": as(FaSlidersH),
+    "settings-line": as(Settings2),
+    "funnel-line": as(Funnel),
+    "funnel-plus-line": as(FunnelPlus),
+    "funnel-solid": as(FaFilter),
+    "list-filter-line": as(ListFilter),
+    "filter-left": as(BsFilterLeft),
+  },
 };
 
 export type IconChoice = Record<IconSlot, string>;
@@ -161,6 +183,7 @@ export const ICON_THEMES: Record<"solid" | "line" | "soft", IconChoice> = {
     email: "mail-solid",
     address: "pin-solid",
     hours: "clock-solid",
+    filter: "sliders-line",
   },
   line: {
     search: "search-line",
@@ -173,6 +196,7 @@ export const ICON_THEMES: Record<"solid" | "line" | "soft", IconChoice> = {
     email: "mail-line",
     address: "pin-line",
     hours: "clock-line",
+    filter: "sliders-line",
   },
   soft: {
     search: "search-line",
@@ -185,6 +209,7 @@ export const ICON_THEMES: Record<"solid" | "line" | "soft", IconChoice> = {
     email: "at-line",
     address: "navigation-line",
     hours: "timer-line",
+    filter: "settings-line",
   },
 };
 

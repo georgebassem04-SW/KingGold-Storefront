@@ -1,7 +1,7 @@
 {
   "sections": [
     {
-      "id": "s1",
+      "id": "kg-hero",
       "type": "hero",
       "isActive": true,
       "sortOrder": 1,
@@ -9,142 +9,217 @@
         "slides": [
           {
             "image": {
-              "url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600&q=80"
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Cover3.jpg"
+            },
+            "mobileImage": {
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/Mobile-Cover.jpg"
             },
             "title": {
-              "ar": "تشكيلة الخريف الجديدة",
-              "en": "The New Autumn Collection"
+              "ar": "ادخلي عالم الفخامة مع",
+              "en": "STEP INTO LUXURY WITH"
             },
             "subtitle": {
-              "ar": "ذهب عيار ١٨ و٢١ بتصميمات حصرية",
-              "en": "Exclusive 18K & 21K designs"
+              "ar": "مجوهرات ذهب عيار 18 صناعة مصرية، مصممة لتلفت الأنظار.",
+              "en": "EGYPTIAN-MADE 18k GOLD JEWELRY DESIGNED TO MAKE A STATEMENT."
             },
             "cta": {
               "label": {
-                "ar": "تسوق الآن",
-                "en": "Shop now"
+                "ar": "اكتشفي المزيد",
+                "en": "Discover More"
               },
               "href": "/products"
             },
-            "cta2": {
-              "label": {
-                "ar": "صمّم قطعتك",
-                "en": "Design your piece"
-              },
-              "href": "/pages/customize"
+            "style": {
+              "x": "center",
+              "y": "middle",
+              "titleSize": "sm",
+              "titleColor": "#5C2324",
+              "textColor": "#5C2324",
+              "overlay": 0,
+              "button1": {
+                "variant": "outline",
+                "color": "#5C2324",
+                "textColor": "#5C2324"
+              }
             }
           }
-        ]
+        ],
+        "height": "full"
       }
     },
     {
-      "id": "s2",
-      "type": "gold_prices",
+      "id": "kg-cats",
+      "type": "categories",
       "isActive": true,
       "sortOrder": 2,
       "data": {
         "title": {
-          "ar": "أسعار الذهب اليوم",
-          "en": "Today's gold prices"
+          "ar": "اكتشفي المجموعات",
+          "en": "Explore Collections"
         },
-        "karats": [
-          24,
-          21,
-          18
-        ]
+        "categoryIds": [
+          "cat-necklaces",
+          "cat-rings",
+          "cat-earrings",
+          "cat-half-sets"
+        ],
+        "align": "center",
+        "titleAlign": "center",
+        "eyebrow": {
+          "ar": "اختاري القطعة اللي تعبّر عنك",
+          "en": "Find Your Perfect Statement"
+        },
+        "style": "tiles",
+        "fullWidth": true
       }
     },
     {
-      "id": "s3",
-      "type": "categories",
+      "id": "kg-featured",
+      "type": "featured_products",
       "isActive": true,
       "sortOrder": 3,
       "data": {
         "title": {
-          "ar": "تسوق حسب القسم",
-          "en": "Shop by category"
-        }
-      }
-    },
-    {
-      "id": "s4",
-      "type": "featured_products",
-      "isActive": true,
-      "sortOrder": 4,
-      "data": {
-        "title": {
-          "ar": "منتجات مميزة",
-          "en": "Featured pieces"
+          "ar": "مختارات مميزة",
+          "en": "Featured Collection"
         },
         "source": "featured",
-        "limit": 8
-      }
-    },
-    {
-      "id": "s5",
-      "type": "promotion",
-      "isActive": true,
-      "sortOrder": 5,
-      "data": {
-        "title": {
-          "ar": "خصم ٥٠٪ على المصنعية",
-          "en": "50% off making charges"
-        },
-        "description": {
-          "ar": "على جميع الأطقم حتى نهاية الشهر",
-          "en": "On all sets until the end of the month"
-        },
-        "image": {
-          "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1200&q=80"
-        },
-        "cta": {
-          "label": {
-            "ar": "اكتشف العرض",
-            "en": "See the offer"
-          },
-          "href": "/categories/sets"
-        }
-      }
-    },
-    {
-      "id": "s6",
-      "type": "featured_products",
-      "isActive": true,
-      "sortOrder": 6,
-      "data": {
-        "title": {
-          "ar": "وصل حديثاً",
-          "en": "New arrivals"
-        },
-        "source": "new",
         "limit": 4
       }
     },
     {
-      "id": "s7",
-      "type": "brands",
+      "id": "kg-shine",
+      "type": "cta",
       "isActive": true,
-      "sortOrder": 7,
+      "sortOrder": 4,
       "data": {
         "title": {
-          "ar": "مجموعاتنا",
-          "en": "Our collections"
-        }
+          "ar": "مجوهرات ذهب خالدة",
+          "en": "Timeless Gold Jewellery"
+        },
+        "text": {
+          "ar": "اكتشفي قطع أنيقة مصممة للاحتفال بالجمال والفخامة وكل لحظة مميزة.",
+          "en": "Discover elegant pieces designed to celebrate beauty, luxury, and every special moment."
+        },
+        "primary": {
+          "label": {
+            "ar": "تسوقي الكل",
+            "en": "Shop All"
+          },
+          "href": "/products"
+        },
+        "background": "video",
+        "eyebrow": {
+          "ar": "مصنوعة لتلمع",
+          "en": "Crafted to Shine"
+        },
+        "video": {
+          "provider": "file",
+          "url": "https://cdn.shopify.com/videos/c/o/v/3ddcdf50e57b4db3b1f83225930c96a7.mp4"
+        },
+        "align": "start",
+        "height": "lg"
       }
     },
     {
-      "id": "s8",
-      "type": "video",
+      "id": "kg-story",
+      "type": "image_text",
+      "isActive": true,
+      "sortOrder": 5,
+      "data": {
+        "title": {
+          "ar": "حرفية متميزة منذ 1982",
+          "en": "Crafting Excellence Since 1982"
+        },
+        "body": {
+          "ar": "<p>بدأت من ورشة صغيرة لتصبح واحدة من أكبر مصانع مجوهرات الذهب في مصر. بمصنع كبير وموزعين معتمدين في أنحاء الجمهورية، يعمل في كينج جولد أكثر من 500 من الحرفيين والموظفين.</p>",
+          "en": "<p>Grown from a small workshop to become one of the largest gold jewelry manufacturers in Egypt. With a large factory and numerous authorized distributors across the country, King Gold employs over 500 skilled workers and staff members.</p>"
+        },
+        "image": {
+          "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/KG-0902.jpg"
+        },
+        "imagePosition": "start",
+        "layout": "split"
+      }
+    },
+    {
+      "id": "kg-new",
+      "type": "featured_products",
       "isActive": false,
       "sortOrder": 8,
       "data": {
         "title": {
-          "ar": "من ورشتنا",
-          "en": "From our workshop"
+          "ar": "وصل حديثاً",
+          "en": "New Arrivals"
         },
-        "video": {
-          "provider": "youtube",
-          "url": "https://www.youtube.com/embed/VIDEO_ID"
+        "source": "new",
+        "limit": 8
+      }
+    },
+    {
+      "id": "kg-social",
+      "type": "social_feed",
+      "isActive": true,
+      "sortOrder": 7,
+      "data": {
+        "title": {
+          "ar": "خليكي قريبة",
+          "en": "Stay Connected"
+        },
+        "subtitle": {
+          "ar": "تابعينا على إنستجرام لكل جديد",
+          "en": "Follow us on Instagram for exciting content"
+        },
+        "handle": "kinggoldeg",
+        "profileUrl": "https://www.instagram.com/kinggoldeg/",
+        "items": [
+          {
+            "image": {
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/hf_20260310_195546_6e36fbc2-04a7-448c-9478-003ae9216499.jpg"
+            }
+          },
+          {
+            "image": {
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-335_c738c97a-bf75-4ce3-b737-8679e266a4e6.jpg"
+            }
+          },
+          {
+            "image": {
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-366.jpg"
+            }
+          },
+          {
+            "image": {
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-396.jpg"
+            }
+          },
+          {
+            "image": {
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-328.jpg"
+            }
+          },
+          {
+            "image": {
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-070.jpg"
+            }
+          },
+          {
+            "image": {
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/IMGL1627copy.jpg"
+            }
+          },
+          {
+            "image": {
+              "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/collections/KG-442.jpg"
+            }
+          }
+        ],
+        "button": {
+          "label": {
+            "ar": "تابعينا",
+            "en": "Follow us"
+          },
+          "href": "https://www.instagram.com/kinggoldeg/"
         }
       }
     }

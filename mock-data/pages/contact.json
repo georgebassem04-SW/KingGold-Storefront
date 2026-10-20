@@ -2,7 +2,7 @@
   "slug": "contact",
   "status": "published",
   "menu": "header",
-  "updatedAt": "2026-09-29T12:00:00Z",
+  "updatedAt": "2026-10-16T09:00:00Z",
   "title": {
     "ar": "تواصل معنا",
     "en": "Contact Us"
@@ -11,48 +11,41 @@
     "title": {
       "ar": "تواصل معنا",
       "en": "Contact Us"
-    },
-    "description": {
-      "ar": "اتصل بنا أو راسلنا على واتساب أو زر أقرب فرع.",
-      "en": "Call us, message us on WhatsApp, or visit your nearest branch."
     }
   },
   "sections": [
     {
       "id": "c1",
       "type": "page_hero",
-      "isActive": true,
-      "sortOrder": 1,
       "data": {
         "title": {
-          "ar": "تواصل معنا",
-          "en": "Contact Us"
+          "ar": "كيف نقدر نساعدك؟",
+          "en": "How Can We Help You?"
         },
-        "subtitle": {
-          "ar": "فريقنا جاهز لمساعدتك في اختيار قطعتك، أو متابعة طلبك، أو أي استفسار",
-          "en": "Our team is here to help you choose a piece, follow up on an order, or answer any question"
+        "image": {
+          "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/The_hand_leads_the_gold_completes18K_GoldMake_it_yours_visit_our_esteemed_partners_across_Egypt.jpg"
         }
-      }
+      },
+      "isActive": true,
+      "sortOrder": 1
     },
     {
       "id": "c2",
       "type": "contact",
-      "isActive": true,
-      "sortOrder": 2,
       "data": {
         "title": {
-          "ar": "أرسل لنا رسالة",
+          "ar": "ابعتلنا رسالة",
           "en": "Send us a message"
         },
         "subtitle": {
-          "ar": "نرد عادة خلال ساعات العمل في نفس اليوم",
-          "en": "We usually reply the same day during working hours"
+          "ar": "نرد خلال مواعيد العمل",
+          "en": "We reply during working hours"
         },
         "showContactInfo": true,
-        "showBranchSelect": true,
+        "showBranchSelect": false,
         "successMessage": {
-          "ar": "شكراً لتواصلك معنا! سيرد عليك أحد أفراد فريقنا قريباً.",
-          "en": "Thank you for contacting us! A member of our team will get back to you soon."
+          "ar": "شكراً لتواصلك! هنرد عليك قريباً.",
+          "en": "Thank you for contacting us! We'll get back to you soon."
         },
         "subjects": [
           {
@@ -70,27 +63,6 @@
             }
           },
           {
-            "value": "custom_design",
-            "label": {
-              "ar": "تصميم خاص",
-              "en": "Custom design"
-            }
-          },
-          {
-            "value": "repair",
-            "label": {
-              "ar": "صيانة وتلميع",
-              "en": "Repair & polishing"
-            }
-          },
-          {
-            "value": "gold_price",
-            "label": {
-              "ar": "أسعار الذهب والسبائك",
-              "en": "Gold prices & bars"
-            }
-          },
-          {
             "value": "complaint",
             "label": {
               "ar": "شكوى أو اقتراح",
@@ -98,23 +70,9 @@
             }
           }
         ]
-      }
-    },
-    {
-      "id": "c3",
-      "type": "branches",
+      },
       "isActive": true,
-      "sortOrder": 3,
-      "data": {
-        "title": {
-          "ar": "فروعنا",
-          "en": "Our branches"
-        },
-        "subtitle": {
-          "ar": "زورونا في أقرب فرع إليكم",
-          "en": "Visit the branch nearest to you"
-        }
-      }
+      "sortOrder": 2
     }
   ]
 }

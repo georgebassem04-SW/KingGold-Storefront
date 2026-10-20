@@ -12,9 +12,11 @@
  */
 import type { ClientConfig } from "@/types";
 import { demoClient } from "./demo";
+import { kingGoldClient } from "./king-gold";
 
 const clients: Record<string, ClientConfig> = {
   demo: demoClient,
+  "king-gold": kingGoldClient,
   // gemma: gemmaClient,
 };
 

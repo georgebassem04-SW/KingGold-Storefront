@@ -42,7 +42,8 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
   return {
     title: { default: name, template: `%s | ${name}` },
     description: t(brand.tagline, locale),
-    icons: brand.favicon ? { icon: brand.favicon } : undefined,
+    // Browser tab icon: dashboard → Header → Logo (or Theme & design → Brand). Empty = the logo
+    icons: brand.favicon || brand.logo ? { icon: brand.favicon || brand.logo } : undefined,
     // Picture shown when the site is shared on WhatsApp / social media
     openGraph: brand.shareImage ? { images: [brand.shareImage], siteName: name } : { siteName: name },
   };

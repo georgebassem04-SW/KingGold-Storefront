@@ -13,7 +13,7 @@
  * parseHeader / parseFooter, add it to the dashboard's checks (lib/validation/theme.ts) and panel
  * (components/theme/HeaderPanel.tsx / FooterPanel.tsx), then use it in the storefront's Header.tsx / Footer.tsx.
  */
-import type { ChromeLink, FilterSection, FooterColumn, LocalizedText, ProductButton, ProductButtonStyle, ProductPagePart, ThemeColors, ThemeDarkMode, ThemeFilters, ThemeFooter, ThemeHeader, ThemeProductPage } from "@/types";
+import type { ChromeLink, FilterSection, FooterColumn, FooterGroup, HeaderBuilder, HeaderPart, HeaderPlacement, HeaderSearchStyle, LocalizedText, ProductCardStyle, SoldOutLook, ProductButton, ProductButtonStyle, ProductPagePart, ThemeColors, ThemeDarkMode, ThemeFilters, ThemeFooter, ThemeHeader, ThemeProductPage } from "@/types";
 import { DEFAULT_ICONS, ICON_THEMES, isIcon, type IconSlot } from "@/lib/icon-library";
 
 /** Looks of the open page's link in the top menu (dashboard → Header → Menu style) */
@@ -32,7 +32,10 @@ export function readableOn(hex: string): string {
  * `shape` = the shape's colour when it is a real colour (#RRGGBB); "" when it is automatic (then the header's background fits).
  */
 export const pillTextColor = (chosen: string, shape: string, headerBackground: string): string => chosen || (shape ? readableOn(shape) : headerBackground);
-export const FOOTER_COLUMNS: FooterColumn[] = ["about", "links", "contact", "social"];
+export const FOOTER_COLUMNS: FooterColumn[] = ["about", "links", "contact", "social", "groups"];
+/** How many own columns the footer can have (Footer → Own columns), and links in each */
+export const MAX_FOOTER_GROUPS = 4;
+export const MAX_GROUP_LINKS = 8;
 /** How many extra links the designer can add to the top menu / the footer */
 /**
  * Puts the menu links in the client's order (Header → Menu links → "Arrangement").
@@ -50,6 +53,76 @@ export const MAX_EXTRA_LINKS = 8;
 /** How many pages can be chosen for the top menu */
 export const MAX_MENU_PAGES = 20;
 
+/* ===================== HEADER: FREE POSITIONS ===================== */
+/** Every part that can be placed, in its default order */
+export const HEADER_PARTS: HeaderPart[] = ["text", "logo", "menu", "search", "language", "account", "cart"];
+/** Default positions = the classic header: text in the top strip, logo start, menu centre, icons end */
+export const DEFAULT_BUILDER: HeaderBuilder = {
+  enabled: false,
+  items: [
+    { part: "text", row: "top", zone: "center", show: true },
+    { part: "logo", row: "main", zone: "start", show: true },
+    { part: "menu", row: "main", zone: "center", show: true },
+    { part: "search", row: "main", zone: "end", show: true },
+    { part: "language", row: "main", zone: "end", show: true },
+    { part: "account", row: "main", zone: "end", show: true },
+    { part: "cart", row: "main", zone: "end", show: true },
+  ],
+  topHeight: "compact",
+  bottomHeight: "normal",
+  rowLines: false,
+};
+/** Takes whatever was saved and returns all 7 parts, each once, with safe values (missing parts are added at their default place) */
+export function parseBuilder(input: unknown): HeaderBuilder {
+  const b = obj(input);
+  const d = DEFAULT_BUILDER;
+  const saved = (Array.isArray(b.items) ? b.items : []).map(obj).filter((x) => HEADER_PARTS.includes(x.part as HeaderPart));
+  const seen = new Set<string>();
+  const items: HeaderPlacement[] = [];
+  for (const x of saved) {
+    if (seen.has(x.part as string)) continue;
+    seen.add(x.part as string);
+    const def = d.items.find((i) => i.part === x.part)!;
+    items.push({ part: x.part as HeaderPart, row: oneOf(x.row, ["top", "main", "bottom"] as const, def.row), zone: oneOf(x.zone, ["start", "center", "end"] as const, def.zone), show: bool(x.show, true) });
+  }
+  for (const def of d.items) if (!seen.has(def.part)) items.push({ ...def });
+  return {
+    enabled: bool(b.enabled, d.enabled),
+    items,
+    topHeight: oneOf(b.topHeight, ["compact", "normal"] as const, d.topHeight),
+    bottomHeight: oneOf(b.bottomHeight, ["compact", "normal"] as const, d.bottomHeight),
+    rowLines: bool(b.rowLines, d.rowLines),
+  };
+}
+
+/* ----- Search bar (dashboard → Header → Search bar) ----- */
+export const DEFAULT_SEARCH: HeaderSearchStyle = {
+  look: "simple",
+  width: "narrow",
+  placeholder: { ar: "", en: "" },
+  floatingLabel: false,
+  buttonText: { ar: "", en: "" },
+  buttonTextOn: "hover",
+  fieldBackground: "",
+  fieldBorder: "",
+  labelColor: "",
+  buttonColor: "",
+  buttonTextColor: "",
+  buttonHoverColor: "",
+  buttonHoverTextColor: "",
+  closeButton: true,
+  closeColor: "",
+};
+
+/** Ready-made looks the client can pick in one click (then change any colour or text) */
+export const SEARCH_PRESETS: Record<"simple" | "boxed" | "boxedText" | "outline", Partial<HeaderSearchStyle>> = {
+  simple: { look: "simple", width: "narrow", floatingLabel: false, buttonText: { ar: "", en: "" } },
+  // Like kinggoldeg.com: framed field with the title on top, main-colour button that turns accent with "Search" on hover
+  boxed: { look: "boxed", width: "full", floatingLabel: true, buttonText: { ar: "بحث", en: "Search" }, buttonTextOn: "hover", closeButton: true },
+  boxedText: { look: "boxed", width: "full", floatingLabel: false, buttonText: { ar: "بحث", en: "Search" }, buttonTextOn: "always", closeButton: true },
+  outline: { look: "boxed", width: "narrow", floatingLabel: false, buttonText: { ar: "", en: "" }, closeButton: false, buttonColor: "", fieldBackground: "" },
+};
+
 export const DEFAULT_HEADER: ThemeHeader = {
   layout: "logo-start",
   menuAlign: "center",
@@ -60,7 +133,22 @@ export const DEFAULT_HEADER: ThemeHeader = {
   logoSize: "md",
   showName: "auto",
   hoverColor: "",
-  menu: { home: true, products: true, categories: true, pages: true, pageSlugs: null, order: [], extra: [] },
+  menu: {
+    home: true,
+    products: true,
+    categories: true,
+    pages: true,
+    pageSlugs: null,
+    order: [],
+    extra: [],
+    categoriesDropdown: false,
+    categoriesLabel: { ar: "", en: "" },
+    pagesDropdown: { enabled: false, label: { ar: "", en: "" } },
+    categoriesDropdownIds: [],
+    shopAll: { show: true, label: { ar: "", en: "" } },
+  },
+  dropdown: { background: "", foreground: "", border: true, shadow: true, textSize: "sm", spacing: "normal" },
+  builder: DEFAULT_BUILDER,
   menuSize: "md",
   menuWeight: "normal",
   menuUppercase: false,
@@ -74,9 +162,11 @@ export const DEFAULT_HEADER: ThemeHeader = {
     language: true,
     size: "md",
     set: { search: DEFAULT_ICONS.search, account: DEFAULT_ICONS.account, cart: DEFAULT_ICONS.cart, menu: DEFAULT_ICONS.menu, language: DEFAULT_ICONS.language },
+    display: "icons",
   },
   transparent: { enabled: false, opacity: 0, blur: false, foreground: "" },
-  announcement: { enabled: false, text: { ar: "", en: "" }, href: "", background: "", foreground: "" },
+  announcement: { enabled: false, text: { ar: "", en: "" }, href: "", background: "", foreground: "", align: "center", phoneIcon: false },
+  search: DEFAULT_SEARCH,
 };
 
 export const DEFAULT_FOOTER: ThemeFooter = {
@@ -100,8 +190,51 @@ export const DEFAULT_FOOTER: ThemeFooter = {
   contactIcons: { phone: DEFAULT_ICONS.phone, whatsapp: DEFAULT_ICONS.whatsapp, email: DEFAULT_ICONS.email, address: DEFAULT_ICONS.address, hours: DEFAULT_ICONS.hours },
   transparent: false,
   socialStyle: "circle",
-  bottom: { show: true, text: { ar: "", en: "" }, poweredBy: true, align: "center", background: "" },
+  socialPlacement: "column",
+  groups: [],
+  contactUnderAbout: false,
+  headingSize: "sm",
+  bottom: { show: true, text: { ar: "", en: "" }, poweredBy: true, align: "center", background: "", links: [] },
   backToTop: false,
+};
+
+/** "Sold out" shade + label. Defaults = main-colour shade at 40%, white square box, black words, centred */
+export const DEFAULT_SOLD_OUT: SoldOutLook = {
+  shade: "",
+  strength: 40,
+  grayscale: false,
+  labelBackground: "",
+  labelText: "",
+  label: { ar: "", en: "" },
+  shape: "square",
+  position: "center",
+  size: "md",
+  border: false,
+};
+/** Ready-made looks the client can start from (then fine-tune) */
+export const SOLD_OUT_PRESETS: Record<"classic" | "light" | "dark" | "minimal" | "ribbon", Partial<SoldOutLook>> = {
+  classic: { shade: "", strength: 40, grayscale: false, labelBackground: "", labelText: "", shape: "square", position: "center", size: "md", border: false },
+  light: { shade: "#FFFFFF", strength: 55, grayscale: false, labelBackground: "#FFFFFF", labelText: "#1A1A1A", shape: "rounded", position: "center", size: "md", border: true },
+  dark: { shade: "#000000", strength: 55, grayscale: false, labelBackground: "#000000", labelText: "#FFFFFF", shape: "square", position: "center", size: "lg", border: false },
+  minimal: { shade: "#FFFFFF", strength: 20, grayscale: true, labelBackground: "", labelText: "", shape: "pill", position: "bottom", size: "sm", border: false },
+  ribbon: { shade: "", strength: 0, grayscale: false, labelBackground: "#B42318", labelText: "#FFFFFF", shape: "square", position: "top", size: "sm", border: false },
+};
+
+/** Product cards (Theme & design → Layout → Product cards). Defaults = the original design */
+export const DEFAULT_PRODUCT_CARD: ProductCardStyle = {
+  align: "start",
+  newBadge: true,
+  hoverImage: false,
+  soldOut: "badge",
+  fromPrice: false,
+  frame: false,
+  nameSize: "md",
+  priceSize: "md",
+  hoverButton: { show: false, label: { ar: "", en: "" } },
+  priceSymbol: { ar: "", en: "" },
+  priceDecimals: false,
+  imageBackground: "",
+  soldOutLook: DEFAULT_SOLD_OUT,
 };
 
 /* ---------- small checkers ---------- */
@@ -158,6 +291,20 @@ export function parseHeader(input: unknown): ThemeHeader {
       pageSlugs: Array.isArray(menu.pageSlugs) ? [...new Set(menu.pageSlugs.filter((x): x is string => typeof x === "string" && x.length > 0 && x.length <= 60))].slice(0, MAX_MENU_PAGES) : null,
       order: (Array.isArray(menu.order) ? menu.order : []).filter((x): x is string => typeof x === "string" && x.length > 0 && x.length <= 80).slice(0, 60),
       extra: links(menu.extra),
+      categoriesDropdown: bool(menu.categoriesDropdown, d.menu.categoriesDropdown),
+      categoriesLabel: text(menu.categoriesLabel, 40),
+      pagesDropdown: { enabled: bool(obj(menu.pagesDropdown).enabled, false), label: text(obj(menu.pagesDropdown).label, 40) },
+      categoriesDropdownIds: Array.isArray(menu.categoriesDropdownIds) ? [...new Set(menu.categoriesDropdownIds.filter((x): x is string => typeof x === "string" && x.length > 0 && x.length <= 100))].slice(0, 40) : [],
+      shopAll: { show: bool(obj(menu.shopAll).show, d.menu.shopAll.show), label: text(obj(menu.shopAll).label, 40) },
+    },
+    builder: parseBuilder(h.builder),
+    dropdown: {
+      background: color(obj(h.dropdown).background, ""),
+      foreground: color(obj(h.dropdown).foreground, ""),
+      border: bool(obj(h.dropdown).border, d.dropdown.border),
+      shadow: bool(obj(h.dropdown).shadow, d.dropdown.shadow),
+      textSize: oneOf(obj(h.dropdown).textSize, ["sm", "md", "lg"] as const, d.dropdown.textSize),
+      spacing: oneOf(obj(h.dropdown).spacing, ["compact", "normal", "roomy"] as const, d.dropdown.spacing),
     },
     menuSize: oneOf(h.menuSize, ["sm", "md", "lg"] as const, d.menuSize),
     menuWeight: oneOf(h.menuWeight, ["normal", "bold"] as const, d.menuWeight),
@@ -178,6 +325,7 @@ export function parseHeader(input: unknown): ThemeHeader {
         menu: icon("menu", set.menu, base.menu),
         language: icon("language", set.language, base.language),
       },
+      display: oneOf(icons.display, ["icons", "text"] as const, d.icons.display),
     },
     transparent: {
       enabled: bool(tr.enabled, d.transparent.enabled),
@@ -185,13 +333,39 @@ export function parseHeader(input: unknown): ThemeHeader {
       blur: bool(tr.blur, d.transparent.blur),
       foreground: color(tr.foreground, ""),
     },
+    search: parseSearch(h.search),
     announcement: {
       enabled: bool(a.enabled, d.announcement.enabled),
       text: text(a.text, 200),
       href: safeHref(a.href),
       background: color(a.background, ""),
       foreground: color(a.foreground, ""),
+      align: oneOf(a.align, ["start", "center", "end"] as const, d.announcement.align),
+      phoneIcon: bool(a.phoneIcon, d.announcement.phoneIcon),
     },
+  };
+}
+
+/** Checks the search bar look (missing or wrong values → defaults) */
+export function parseSearch(input: unknown): HeaderSearchStyle {
+  const s = obj(input);
+  const d = DEFAULT_SEARCH;
+  return {
+    look: oneOf(s.look, ["simple", "boxed"] as const, d.look),
+    width: oneOf(s.width, ["narrow", "full"] as const, d.width),
+    placeholder: text(s.placeholder, 60),
+    floatingLabel: bool(s.floatingLabel, d.floatingLabel),
+    buttonText: text(s.buttonText, 30),
+    buttonTextOn: oneOf(s.buttonTextOn, ["always", "hover"] as const, d.buttonTextOn),
+    fieldBackground: color(s.fieldBackground, ""),
+    fieldBorder: color(s.fieldBorder, ""),
+    labelColor: color(s.labelColor, ""),
+    buttonColor: color(s.buttonColor, ""),
+    buttonTextColor: color(s.buttonTextColor, ""),
+    buttonHoverColor: color(s.buttonHoverColor, ""),
+    buttonHoverTextColor: color(s.buttonHoverTextColor, ""),
+    closeButton: bool(s.closeButton, d.closeButton),
+    closeColor: color(s.closeColor, ""),
   };
 }
 
@@ -242,13 +416,20 @@ export function parseFooter(input: unknown): ThemeFooter {
       hours: icon("hours", ci.hours, d.contactIcons.hours),
     },
     transparent: bool(f.transparent, d.transparent),
-    socialStyle: oneOf(f.socialStyle, ["plain", "circle"] as const, d.socialStyle),
+    socialStyle: oneOf(f.socialStyle, ["plain", "circle", "square"] as const, d.socialStyle),
+    socialPlacement: oneOf(f.socialPlacement, ["column", "row"] as const, d.socialPlacement),
+    groups: (Array.isArray(f.groups) ? f.groups : []).slice(0, MAX_FOOTER_GROUPS).map(
+      (g): FooterGroup => ({ title: text(obj(g).title, 60), links: links(obj(g).links).slice(0, MAX_GROUP_LINKS), text: text(obj(g).text, 300) }),
+    ),
+    contactUnderAbout: bool(f.contactUnderAbout, d.contactUnderAbout),
+    headingSize: oneOf(f.headingSize, ["sm", "md", "lg"] as const, d.headingSize),
     bottom: {
       show: bool(b.show, d.bottom.show),
       text: text(b.text, 200),
       poweredBy: bool(b.poweredBy, d.bottom.poweredBy),
       align: oneOf(b.align, ["start", "center", "between"] as const, d.bottom.align),
       background: color(b.background, ""),
+      links: links(b.links),
     },
     backToTop: bool(f.backToTop, d.backToTop),
   };
@@ -264,14 +445,25 @@ export const FILTER_SECTIONS: FilterSection[] = ["category", "offers", "price", 
 /** How many categories can be picked for the filter */
 export const MAX_FILTER_CATEGORIES = 60;
 
-export const DEFAULT_FILTERS: ThemeFilters = { sections: [...FILTER_SECTIONS], categoryIds: [] };
+export const DEFAULT_FILTERS: ThemeFilters = { sections: [...FILTER_SECTIONS], categoryIds: [], display: "sidebar", side: "start", buttonLook: "both", buttonPosition: "end", showCount: true, icon: DEFAULT_ICONS.filter, viewSwitch: false };
 
 export function parseFilters(input: unknown): ThemeFilters {
   const f = obj(input);
   // Known sections only, each once. Not saved yet → the default list
   const sections = Array.isArray(f.sections) ? [...new Set(f.sections.filter((x): x is FilterSection => FILTER_SECTIONS.includes(x as FilterSection)))] : DEFAULT_FILTERS.sections;
   const ids = (Array.isArray(f.categoryIds) ? f.categoryIds : []).filter((x): x is string => typeof x === "string" && x.length > 0 && x.length <= 100);
-  return { sections: [...sections], categoryIds: [...new Set(ids)].slice(0, MAX_FILTER_CATEGORIES) };
+  const d = DEFAULT_FILTERS;
+  return {
+    sections: [...sections],
+    categoryIds: [...new Set(ids)].slice(0, MAX_FILTER_CATEGORIES),
+    display: oneOf(f.display, ["sidebar", "drawer"] as const, d.display),
+    side: oneOf(f.side, ["start", "end"] as const, d.side),
+    buttonLook: oneOf(f.buttonLook, ["icon", "text", "both"] as const, d.buttonLook),
+    buttonPosition: oneOf(f.buttonPosition, ["start", "end"] as const, d.buttonPosition),
+    showCount: bool(f.showCount, d.showCount),
+    icon: icon("filter", f.icon, d.icon),
+    viewSwitch: bool(f.viewSwitch, d.viewSwitch),
+  };
 }
 
 /* ===================== PRODUCT PAGE ===================== */
@@ -298,6 +490,15 @@ export const DEFAULT_PRODUCT_PAGE: ThemeProductPage = {
   buttonsLayout: "stack",
   buttonSize: "md",
   buttonShape: "theme",
+  titleSize: "md",
+  priceSize: "md",
+  cardPriceFormat: false,
+  optionsStyle: "pills",
+  factsBox: false,
+  quantityOwnRow: false,
+  gallery: "thumbs",
+  divider: true,
+  iconEnd: false,
 };
 
 const hexColor = (v: unknown): string => (typeof v === "string" && /^#[0-9a-fA-F]{6}$/.test(v) ? v : "");
@@ -328,6 +529,15 @@ export function parseProductPage(input: unknown): ThemeProductPage {
     buttonsLayout: p.buttonsLayout === "row" ? "row" : "stack",
     buttonSize: pick(p.buttonSize, ["sm", "md", "lg"] as const, "md"),
     buttonShape: pick(p.buttonShape, ["theme", "square", "pill"] as const, "theme"),
+    titleSize: pick(p.titleSize, ["md", "lg", "xl"] as const, "md"),
+    priceSize: pick(p.priceSize, ["md", "lg", "xl"] as const, "md"),
+    cardPriceFormat: p.cardPriceFormat === true,
+    optionsStyle: pick(p.optionsStyle, ["pills", "boxes"] as const, "pills"),
+    factsBox: p.factsBox === true,
+    quantityOwnRow: p.quantityOwnRow === true,
+    gallery: pick(p.gallery, ["thumbs", "stack"] as const, "thumbs"),
+    divider: p.divider !== false,
+    iconEnd: p.iconEnd === true,
   };
 }
 
@@ -415,4 +625,43 @@ export function parseDarkMode(input: unknown, light: ThemeColors): ThemeDarkMode
     if (v) colors[k] = v;
   }
   return { enabled: d.enabled === true, default: d.default === "dark" ? "dark" : "light", colors };
+}
+
+/* ===================== PRODUCT CARDS ===================== */
+/** Takes whatever was saved for the product cards and returns a complete, safe object (unknown values → default) */
+export function parseProductCard(input: unknown): ProductCardStyle {
+  const c = obj(input);
+  const d = DEFAULT_PRODUCT_CARD;
+  return {
+    align: oneOf(c.align, ["start", "center"] as const, d.align),
+    newBadge: bool(c.newBadge, d.newBadge),
+    hoverImage: bool(c.hoverImage, d.hoverImage),
+    soldOut: oneOf(c.soldOut, ["badge", "overlay"] as const, d.soldOut),
+    fromPrice: bool(c.fromPrice, d.fromPrice),
+    frame: bool(c.frame, d.frame),
+    nameSize: oneOf(c.nameSize, ["sm", "md", "lg"] as const, d.nameSize),
+    priceSize: oneOf(c.priceSize, ["sm", "md", "lg"] as const, d.priceSize),
+    hoverButton: { show: bool(obj(c.hoverButton).show, d.hoverButton.show), label: text(obj(c.hoverButton).label, 40) },
+    priceSymbol: text(c.priceSymbol, 8),
+    priceDecimals: bool(c.priceDecimals, d.priceDecimals),
+    imageBackground: color(c.imageBackground, ""),
+    soldOutLook: parseSoldOut(c.soldOutLook),
+  };
+}
+
+export function parseSoldOut(input: unknown): SoldOutLook {
+  const s = obj(input);
+  const d = DEFAULT_SOLD_OUT;
+  return {
+    shade: color(s.shade, d.shade),
+    strength: typeof s.strength === "number" && s.strength >= 0 && s.strength <= 80 ? Math.round(s.strength) : d.strength,
+    grayscale: bool(s.grayscale, d.grayscale),
+    labelBackground: color(s.labelBackground, d.labelBackground),
+    labelText: color(s.labelText, d.labelText),
+    label: text(s.label, 30),
+    shape: oneOf(s.shape, ["square", "rounded", "pill"] as const, d.shape),
+    position: oneOf(s.position, ["center", "top", "bottom"] as const, d.position),
+    size: oneOf(s.size, ["sm", "md", "lg"] as const, d.size),
+    border: bool(s.border, d.border),
+  };
 }

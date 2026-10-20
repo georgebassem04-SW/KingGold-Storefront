@@ -57,6 +57,9 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/products
   };
 }
 
+/** Product name size (dashboard → Product page → Name size) */
+const TITLE_SIZE = { md: "text-3xl md:text-4xl", lg: "text-3xl md:text-5xl", xl: "text-4xl md:text-[3.25rem] md:leading-tight" } as const;
+
 export default async function ProductDetailsPage({ params }: PageProps<"/[locale]/products/[slug]">) {
   const { locale: rawLocale, slug } = await params;
   const locale = rawLocale as Locale;
@@ -66,7 +69,7 @@ export default async function ProductDetailsPage({ params }: PageProps<"/[locale
 
   // Load everything else in parallel
   // What shows on this page, photo side, main button: dashboard → Product page
-  const { productPage: view } = await getSiteTheme();
+  const { productPage: view, layout: themeLayout } = await getSiteTheme();
   const show = view.show;
   const RELATED_COUNT = view.relatedCount;
 
@@ -142,18 +145,22 @@ export default async function ProductDetailsPage({ params }: PageProps<"/[locale
         <ProductGallery
           images={product.images}
           alt={name}
+          look={view.gallery}
+          background={themeLayout.card.imageBackground || undefined}
           badges={product.isNew && show.newBadge ? <Badge>{dict.product.new}</Badge> : undefined}
         />
 
         {/* "Details first" (dashboard → Product page) puts this column before the photos on computers only */}
         <div className={cn(view.imageSide === "end" && "lg:order-first", view.align === "center" && "text-center", view.align === "end" && "text-end")}>
-          <h1 className="text-3xl font-bold md:text-4xl">{name}</h1>
+          {/* Name size: dashboard → Product page → Name size (weight follows Theme & design → Fonts) */}
+          <h1 className={TITLE_SIZE[view.titleSize]}>{name}</h1>
           {show.sku && (
             <p className="mt-2 text-sm text-muted-foreground">
               {dict.product.sku}: <span dir="ltr">{product.sku}</span>
             </p>
           )}
-          <div className="my-6 border-t" />
+          {/* With the price under the name, the line goes after the price (inside ProductPurchase) */}
+          <div className="mt-6">
           <ProductPurchase
             locale={locale}
             labels={dict.product}
@@ -173,9 +180,12 @@ export default async function ProductDetailsPage({ params }: PageProps<"/[locale
             whatsapp={show.whatsapp ? contact.whatsapp : undefined}
             show={{ priceNote: show.priceNote, stock: show.stock, quantity: show.quantity, buyNow: show.buyNow, priceBreakdown: show.priceBreakdown }}
             look={view}
+            // Price look shared with the product cards (own sign "LE", piastres) when switched on
+            priceFormat={view.cardPriceFormat ? { symbol: t(themeLayout.card.priceSymbol, locale), decimals: themeLayout.card.priceDecimals } : undefined}
             cartHref={p("/cart")}
             checkoutHref={p("/checkout")}
           />
+          </div>
         </div>
       </div>
 

@@ -325,3 +325,18 @@ branch pickup come from the dashboard → Shipping & payment (otherwise `mock-da
 | Order to a switched-off area / pickup turned off | `lib/checkout/quote.ts` → blockers `zone_unavailable`, `pickup_unavailable` (texts: `checkout.zoneUnavailable`, `checkout.pickupUnavailable`) |
 | What happens when the gold price moves during checkout | `lib/api/mock.ts` → `placeOrder` (tolerance from `priceChangeTolerancePct`) |
 
+
+## King Gold additions (look options — all set in the dashboard)
+
+| What | Dashboard | Code |
+|---|---|---|
+| Slider height (original / taller / whole screen) | Homepage → Main slider → Height | `components/sections/HeroSlider.tsx` → `HEIGHT` |
+| Categories as square tiles, name on the picture, edge to edge | Homepage → Categories → Look | `components/sections/CategoriesSection.tsx` |
+| Picture + framed text side by side ("split") | Homepage / Site pages → Image + text → Look | `components/sections/ImageTextSection.tsx` |
+| Strip with a video behind the words, small line, words at the start | Homepage → Call to action → Background: Video | `components/sections/CtaSection.tsx` |
+| "Stay connected" Instagram / TikTok pictures | Homepage → Social feed | `components/sections/SocialFeedSection.tsx` |
+| Product cards: centred, second picture on hover, "Sold out" shade, "From" price, frame | Theme & design → Layout → Product cards | `components/product/ProductCard.tsx` · defaults `lib/theme-chrome.ts` → `DEFAULT_PRODUCT_CARD` |
+| Menu drop-downs ("Shop ▾" categories, "About ▾" pages), own name for Categories | Header → Menu links | `components/layout/Header.tsx` |
+| "Search · Log in · Cart (0)" as words | Header → Icons → Show as | `HeaderSearch.tsx`, `CartButton.tsx`, `Header.tsx` |
+| Phone strip at the start with a phone icon | Header → Announcement | `components/layout/Header.tsx` |
+| Own footer columns, contact under the logo, social row, links after the copyright | Footer | `components/layout/Footer.tsx` |

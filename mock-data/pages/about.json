@@ -2,7 +2,7 @@
   "slug": "about",
   "status": "published",
   "menu": "header",
-  "updatedAt": "2026-09-29T10:00:00Z",
+  "updatedAt": "2026-10-16T09:00:00Z",
   "title": {
     "ar": "من نحن",
     "en": "About Us"
@@ -13,295 +13,100 @@
       "en": "About Us"
     },
     "description": {
-      "ar": "قصتنا في صناعة الذهب والمجوهرات منذ أكثر من ٣٠ عاماً.",
-      "en": "Our story in gold and fine jewelry for more than 30 years."
+      "ar": "قصة كينج جولد منذ 1982.",
+      "en": "The story of King Gold since 1982."
     }
   },
   "sections": [
     {
       "id": "a1",
       "type": "page_hero",
-      "isActive": true,
-      "sortOrder": 1,
       "data": {
         "title": {
-          "ar": "من نحن",
-          "en": "About Us"
-        },
-        "subtitle": {
-          "ar": "حرفة متوارثة، وثقة تُبنى قطعة بعد قطعة",
-          "en": "A craft passed down, and trust built one piece at a time"
+          "ar": "قصة كينج جولد",
+          "en": "The Story of King Gold"
         },
         "image": {
-          "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1600&q=80"
-        }
-      }
+          "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/hf_20260310_195546_6e36fbc2-04a7-448c-9478-003ae9216499.jpg"
+        },
+        "height": "md"
+      },
+      "isActive": true,
+      "sortOrder": 1
     },
     {
       "id": "a2",
       "type": "image_text",
-      "isActive": true,
-      "sortOrder": 2,
       "data": {
         "eyebrow": {
-          "ar": "قصتنا",
-          "en": "Our story"
+          "ar": "منذ 1982",
+          "en": "Since 1982"
         },
         "title": {
-          "ar": "من ورشة صغيرة إلى بيت مجوهرات",
-          "en": "From a small workshop to a jewelry house"
+          "ar": "قصة كينج جولد",
+          "en": "The Story of King Gold"
         },
         "body": {
-          "ar": "<p>بدأنا في ورشة صغيرة بشارع الصاغة، بشغف واحد: أن نصنع ذهباً يدوم ويُورَّث.</p><p>اليوم نصمم ونصنع قطعنا بأنفسنا، ونبيع بسعر الذهب اليومي مع مصنعية واضحة، دون مفاجآت.</p>",
-          "en": "<p>We started in a small workshop on El-Sagha Street with one passion: making gold that lasts and is passed down.</p><p>Today we design and craft our own pieces, and sell at the daily gold rate with a clear making charge, no surprises.</p>"
+          "ar": "<p>تأسست كينج جولد عام 1982، وكبرت من ورشة صغيرة لتصبح واحدة من أكبر مصانع مجوهرات الذهب في مصر. بمصنع كبير وموزعين معتمدين كثيرين في أنحاء الجمهورية، يعمل في كينج جولد أكثر من 500 من الحرفيين والموظفين. تشتهر العلامة بتصميماتها الأنيقة والعصرية والفاخرة والفريدة.</p><p>تشكيلة كينج جولد واسعة، من قطع أقل من جرام واحد حتى 500 جرام، لتناسب أذواق واحتياجات مختلفة. وبجانب الحرفية العالية، تستخدم كينج جولد الذهب عيار 18 فقط، لضمان الجودة والمتانة في كل قطعة.</p>",
+          "en": "<p>King Gold, established in 1982, has grown from a small workshop to become one of the largest gold jewelry manufacturers in Egypt. With a large factory and numerous authorized distributors across the country, King Gold employs over 500 skilled workers and staff members. The brand is renowned for its elegant, modern, luxurious, and unique jewelry designs.</p><p>King Gold’s product range is extensive, offering pieces that start from less than 1 gram up to 500 grams, catering to a diverse array of customer preferences and needs. In addition to its impressive craftsmanship, King Gold exclusively uses 18k gold, ensuring high quality and durability in every piece.</p>"
         },
         "image": {
-          "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1000&q=80"
+          "url": "https://cdn.shopify.com/s/files/1/0989/4605/6482/files/instacdn_beubagah_com_b9736b46_ab92_4f13_95ee_0ee7639f347e.jpg"
         },
-        "imagePosition": "end",
-        "cta": {
-          "label": {
-            "ar": "تصفح التشكيلة",
-            "en": "Browse the collection"
-          },
-          "href": "/products"
-        }
-      }
+        "imagePosition": "start"
+      },
+      "isActive": true,
+      "sortOrder": 2
     },
     {
       "id": "a3",
       "type": "stats",
-      "isActive": true,
-      "sortOrder": 3,
       "data": {
         "items": [
           {
             "value": {
-              "ar": "+٣٠",
-              "en": "30+"
+              "ar": "1982",
+              "en": "1982"
             },
             "label": {
-              "ar": "عاماً من الخبرة",
-              "en": "years of experience"
+              "ar": "سنة التأسيس",
+              "en": "Founded"
             }
           },
           {
             "value": {
-              "ar": "٣",
-              "en": "3"
+              "ar": "+500",
+              "en": "500+"
             },
             "label": {
-              "ar": "فروع",
-              "en": "branches"
+              "ar": "حرفي وموظف",
+              "en": "Craftsmen & staff"
             }
           },
           {
             "value": {
-              "ar": "+٥٬٠٠٠",
-              "en": "5,000+"
+              "ar": "18K",
+              "en": "18K"
             },
             "label": {
-              "ar": "تصميم",
-              "en": "designs"
+              "ar": "ذهب عيار 18 فقط",
+              "en": "18K gold only"
             }
           },
           {
             "value": {
-              "ar": "+٥٠ ألف",
-              "en": "50K+"
+              "ar": "1 – 500 جم",
+              "en": "1 – 500 g"
             },
             "label": {
-              "ar": "عميل سعيد",
-              "en": "happy customers"
+              "ar": "أوزان القطع",
+              "en": "Piece weights"
             }
           }
         ]
-      }
-    },
-    {
-      "id": "a4",
-      "type": "features",
+      },
       "isActive": true,
-      "sortOrder": 4,
-      "data": {
-        "title": {
-          "ar": "لماذا نحن",
-          "en": "Why choose us"
-        },
-        "subtitle": {
-          "ar": "وعود بسيطة نلتزم بها في كل قطعة",
-          "en": "Simple promises we keep with every piece"
-        },
-        "columns": 4,
-        "items": [
-          {
-            "icon": "shield",
-            "title": {
-              "ar": "ذهب مدموغ",
-              "en": "Hallmarked gold"
-            },
-            "text": {
-              "ar": "كل قطعة مدموغة رسمياً بعيارها.",
-              "en": "Every piece carries its official karat hallmark."
-            }
-          },
-          {
-            "icon": "scale",
-            "title": {
-              "ar": "تسعير شفاف",
-              "en": "Transparent pricing"
-            },
-            "text": {
-              "ar": "سعر الذهب اليومي + مصنعية معلنة.",
-              "en": "Today's gold rate plus a declared making charge."
-            }
-          },
-          {
-            "icon": "sparkles",
-            "title": {
-              "ar": "صناعة يدوية",
-              "en": "Handcrafted"
-            },
-            "text": {
-              "ar": "تصميم وتشطيب في ورشتنا.",
-              "en": "Designed and finished in our own workshop."
-            }
-          },
-          {
-            "icon": "wrench",
-            "title": {
-              "ar": "خدمة مدى الحياة",
-              "en": "Lifetime care"
-            },
-            "text": {
-              "ar": "تنظيف وتلميع مجاني لقطعك.",
-              "en": "Free cleaning and polishing for your pieces."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "a5",
-      "type": "timeline",
-      "isActive": true,
-      "sortOrder": 5,
-      "data": {
-        "title": {
-          "ar": "رحلتنا",
-          "en": "Our journey"
-        },
-        "items": [
-          {
-            "year": "1994",
-            "title": {
-              "ar": "البداية",
-              "en": "The beginning"
-            },
-            "text": {
-              "ar": "افتتاح أول ورشة في وسط البلد.",
-              "en": "Our first workshop opens downtown."
-            }
-          },
-          {
-            "year": "2008",
-            "title": {
-              "ar": "أول معرض",
-              "en": "First showroom"
-            },
-            "text": {
-              "ar": "افتتاح الفرع الرئيسي.",
-              "en": "The main showroom opens."
-            }
-          },
-          {
-            "year": "2019",
-            "title": {
-              "ar": "التوسع",
-              "en": "Expansion"
-            },
-            "text": {
-              "ar": "فرعان جديدان في القاهرة والإسكندرية.",
-              "en": "Two new branches in Cairo and Alexandria."
-            }
-          },
-          {
-            "year": "2026",
-            "title": {
-              "ar": "المتجر الإلكتروني",
-              "en": "Online store"
-            },
-            "text": {
-              "ar": "تشكيلتنا كاملة متاحة أونلاين.",
-              "en": "Our full collection is now online."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "a6",
-      "type": "rich_text",
-      "isActive": true,
-      "sortOrder": 6,
-      "data": {
-        "title": {
-          "ar": "رسالتنا ورؤيتنا",
-          "en": "Our mission and vision"
-        },
-        "width": "narrow",
-        "body": {
-          "ar": "<h3>رسالتنا</h3><p>أن نقدم ذهباً ومجوهرات بجودة عالية وسعر عادل، مع خدمة تجعل كل عميل يعود إلينا.</p><h3>رؤيتنا</h3><p>أن نكون الاسم الأول الذي تفكر فيه العائلات عند كل مناسبة.</p><ul><li>الجودة قبل كل شيء</li><li>الصدق في السعر والوزن</li><li>احترام وقت العميل</li></ul>",
-          "en": "<h3>Our mission</h3><p>To offer high-quality gold and jewelry at a fair price, with service that makes every customer come back.</p><h3>Our vision</h3><p>To be the first name families think of for every occasion.</p><ul><li>Quality before everything</li><li>Honesty in price and weight</li><li>Respect for our customers' time</li></ul>"
-        }
-      }
-    },
-    {
-      "id": "a7",
-      "type": "branches",
-      "isActive": true,
-      "sortOrder": 7,
-      "data": {
-        "title": {
-          "ar": "زورونا",
-          "en": "Visit us"
-        },
-        "subtitle": {
-          "ar": "يسعدنا استقبالكم في أي من فروعنا",
-          "en": "We'd love to welcome you at any of our branches"
-        }
-      }
-    },
-    {
-      "id": "a8",
-      "type": "cta",
-      "isActive": true,
-      "sortOrder": 8,
-      "data": {
-        "title": {
-          "ar": "ابحث عن قطعتك القادمة",
-          "en": "Find your next piece"
-        },
-        "text": {
-          "ar": "تصفح تشكيلتنا أو تواصل معنا لطلب تصميم خاص.",
-          "en": "Browse our collection or contact us for a custom design."
-        },
-        "primary": {
-          "label": {
-            "ar": "تسوق الآن",
-            "en": "Shop now"
-          },
-          "href": "/products"
-        },
-        "secondary": {
-          "label": {
-            "ar": "تواصل معنا",
-            "en": "Contact us"
-          },
-          "href": "/contact"
-        },
-        "background": "primary"
-      }
+      "sortOrder": 3
     }
   ]
 }

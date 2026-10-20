@@ -2,71 +2,25 @@
   {
     "id": "br-1",
     "name": {
-      "ar": "الفرع الرئيسي",
-      "en": "Main Showroom"
+      "ar": "المصنع – العبور",
+      "en": "Factory – Al Obour"
     },
     "city": {
-      "ar": "القاهرة",
-      "en": "Cairo"
+      "ar": "العبور",
+      "en": "Al Obour"
     },
     "address": {
-      "ar": "١٢ شارع الصاغة، وسط البلد",
-      "en": "12 El-Sagha St., Downtown"
+      "ar": "72 ش، المنطقة الصناعية الأولى، مدينة العبور، القليوبية",
+      "en": "72 St. 1st Industrial Zone, Al Obour City, Qalubya"
     },
-    "phone": "+20 2 2345 6789",
-    "whatsapp": "+201001234567",
+    "phone": "+20 127 582 2964",
+    "whatsapp": "+201275822964",
     "hours": {
-      "ar": "السبت – الخميس: ١١ ص – ١٠ م",
-      "en": "Sat – Thu: 11 AM – 10 PM"
+      "ar": "الاثنين – السبت: ٩ ص – ٥ م",
+      "en": "Monday – Saturday: 9am – 5pm"
     },
-    "mapUrl": "https://maps.google.com/?q=Cairo",
+    "mapUrl": "https://maps.google.com/?q=Al+Obour+City+1st+Industrial+Zone",
     "isPickupPoint": true,
     "sortOrder": 1
-  },
-  {
-    "id": "br-2",
-    "name": {
-      "ar": "فرع مصر الجديدة",
-      "en": "Heliopolis Branch"
-    },
-    "city": {
-      "ar": "القاهرة",
-      "en": "Cairo"
-    },
-    "address": {
-      "ar": "٤٥ شارع الأهرام، مصر الجديدة",
-      "en": "45 El-Ahram St., Heliopolis"
-    },
-    "phone": "+20 2 2678 1234",
-    "hours": {
-      "ar": "يومياً: ١٢ م – ١١ م",
-      "en": "Daily: 12 PM – 11 PM"
-    },
-    "mapUrl": "https://maps.google.com/?q=Heliopolis",
-    "isPickupPoint": true,
-    "sortOrder": 2
-  },
-  {
-    "id": "br-3",
-    "name": {
-      "ar": "فرع الإسكندرية",
-      "en": "Alexandria Branch"
-    },
-    "city": {
-      "ar": "الإسكندرية",
-      "en": "Alexandria"
-    },
-    "address": {
-      "ar": "٨ طريق الحرية، محطة الرمل",
-      "en": "8 El-Horreya Rd., Raml Station"
-    },
-    "phone": "+20 3 4876 5432",
-    "hours": {
-      "ar": "السبت – الخميس: ١١ ص – ١٠ م",
-      "en": "Sat – Thu: 11 AM – 10 PM"
-    },
-    "mapUrl": "https://maps.google.com/?q=Alexandria",
-    "isPickupPoint": false,
-    "sortOrder": 3
   }
 ]

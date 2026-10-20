@@ -31,6 +31,8 @@ const nextConfig: NextConfig = {
     // Add each client's image host here when the API is ready.
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
+      // King Gold sample data: photos from their current Shopify site (remove once photos are in the media library)
+      { protocol: "https", hostname: "cdn.shopify.com" },
       // Images uploaded in the dashboard's media library while developing on your computer
       { protocol: "http", hostname: "localhost", port: "3002" },
       // Images uploaded in the dashboard when it runs online (from DASHBOARD_URL)

@@ -22,6 +22,19 @@ export const formatPrice = (amount: number, currency: string, locale: Locale): s
     maximumFractionDigits: 0,
   }).format(amount);
 
+/**
+ * Price with the product cards' own look (dashboard → Theme & design → Layout → Product cards):
+ * own currency sign ("LE 96,065.00") and / or piastres. No own sign = the normal formatPrice.
+ */
+export const formatCardPrice = (amount: number, currency: string, locale: Locale, symbol: string, decimals: boolean): string => {
+  if (!symbol) {
+    return new Intl.NumberFormat(intlLocale(locale), { style: "currency", currency, minimumFractionDigits: decimals ? 2 : 0, maximumFractionDigits: decimals ? 2 : 0 }).format(amount);
+  }
+  const n = new Intl.NumberFormat(intlLocale(locale), { minimumFractionDigits: decimals ? 2 : 0, maximumFractionDigits: decimals ? 2 : 0 }).format(amount);
+  // Arabic: "٩٦٬٠٦٥ ج.م" · English: "LE 96,065.00"
+  return locale === "ar" ? `${n} ${symbol}` : `${symbol} ${n}`;
+};
+
 export const formatWeight = (grams: number, locale: Locale): string =>
   new Intl.NumberFormat(intlLocale(locale), { maximumFractionDigits: 2 }).format(grams);
 
